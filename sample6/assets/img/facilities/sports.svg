@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradSports" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E36" />
+      <stop offset="60%" stop-color="#075B3B" />
+      <stop offset="100%" stop-color="#087F50" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgGradSports)" />
+  <circle cx="680" cy="110" r="220" fill="#A3D977" opacity="0.08" />
+
+  <!-- Sports Kit & Equipment Grid -->
+  <!-- Cricket Equipment (Left) -->
+  <g transform="translate(180, 140)">
+    <!-- Cricket Bat -->
+    <rect x="25" y="0" width="22" height="120" rx="4" fill="#E09F3E" stroke="#17251D" stroke-width="2" transform="rotate(-20, 25, 0)" />
+    <rect x="22" y="-35" width="8" height="40" rx="3" fill="#FFFFFF" stroke="#17251D" stroke-width="2" transform="rotate(-20, 22, -35)" />
+    <!-- Stumps -->
+    <rect x="80" y="20" width="8" height="110" rx="2" fill="#E09F3E" />
+    <rect x="95" y="20" width="8" height="110" rx="2" fill="#E09F3E" />
+    <rect x="110" y="20" width="8" height="110" rx="2" fill="#E09F3E" />
+    <rect x="76" y="15" width="46" height="5" rx="2" fill="#FFFFFF" />
+    <!-- Red Leather Cricket Ball -->
+    <circle cx="50" cy="130" r="14" fill="#D9383A" stroke="#FFFFFF" stroke-width="1.5" />
+    <path d="M 40 130 C 50 120, 50 140, 60 130" stroke="#FFFFFF" stroke-width="1" fill="none" stroke-dasharray="2 2" />
+  </g>
+
+  <!-- Football (Center) -->
+  <g transform="translate(370, 170)">
+    <circle cx="30" cy="30" r="45" fill="#FFFFFF" stroke="#17251D" stroke-width="3" />
+    <polygon points="30,8 52,22 44,48 16,48 8,22" fill="#17251D" />
+    <line x1="30" y1="8" x2="30" y2="-15" stroke="#17251D" stroke-width="2" />
+    <line x1="52" y1="22" x2="70" y2="15" stroke="#17251D" stroke-width="2" />
+    <line x1="44" y1="48" x2="60" y2="65" stroke="#17251D" stroke-width="2" />
+    <line x1="16" y1="48" x2="0" y2="65" stroke="#17251D" stroke-width="2" />
+    <line x1="8" y1="22" x2="-10" y2="15" stroke="#17251D" stroke-width="2" />
+  </g>
+
+  <!-- Badminton Rackets & Shuttlecock (Right) -->
+  <g transform="translate(520, 130)">
+    <circle cx="40" cy="40" r="32" fill="none" stroke="#A3D977" stroke-width="4" />
+    <!-- Strings -->
+    <path d="M 15 40 L 65 40 M 40 15 L 40 65" stroke="#FFFFFF" stroke-width="1" opacity="0.6" />
+    <rect x="36" y="72" width="8" height="90" rx="3" fill="#FFFFFF" stroke="#17251D" stroke-width="2" />
+    <!-- Shuttlecock -->
+    <circle cx="95" cy="70" r="10" fill="#FFFFFF" stroke="#17251D" stroke-width="1.5" />
+    <polygon points="90,70 120,40 125,55 100,75" fill="#E8F5EC" stroke="#17251D" stroke-width="1.5" />
+  </g>
+
+  <!-- Sports Surface -->
+  <rect x="50" y="380" width="700" height="20" rx="5" fill="#075B3B" stroke="#A3D977" stroke-width="2" />
+
+  <!-- Facility Title Banner -->
+  <rect x="230" y="425" width="340" height="42" rx="21" fill="#064E36" stroke="#A3D977" stroke-width="2" />
+  <text x="400" y="452" font-family="'Outfit', sans-serif" font-size="15.5" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">
+    INDOOR &amp; OUTDOOR SPORTS COMPLEX
+  </text>
+</svg>

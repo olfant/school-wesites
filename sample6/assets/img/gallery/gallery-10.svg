@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g10Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#075B3B" />
+      <stop offset="100%" stop-color="#064E36" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#g10Grad)" />
+  <!-- Traditional Folk Dance Gala -->
+  <g transform="translate(220, 100)">
+    <circle cx="80" cy="50" r="22" fill="#E8F5EC" />
+    <path d="M 40 140 L 120 140 L 90 90 L 70 90 Z" fill="#E09F3E" />
+    <!-- Flute & Notes -->
+    <text x="140" y="70" font-size="28" fill="#A3D977">♫</text>
+  </g>
+  <rect x="120" y="380" width="360" height="38" rx="19" fill="#064E36" stroke="#A3D977" stroke-width="2" />
+  <text x="300" y="404" font-family="'Outfit', sans-serif" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle">
+    TRADITIONAL CULTURAL PROGRAM
+  </text>
+</svg>

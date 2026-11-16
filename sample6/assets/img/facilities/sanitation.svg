@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradSan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E36" />
+      <stop offset="60%" stop-color="#075B3B" />
+      <stop offset="100%" stop-color="#087F50" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgGradSan)" />
+  <circle cx="680" cy="110" r="220" fill="#A3D977" opacity="0.08" />
+
+  <!-- Hygienic Wash Station & Washrooms Block -->
+  <g transform="translate(180, 100)">
+    <!-- Building Block -->
+    <rect x="0" y="20" width="440" height="240" rx="14" fill="#FFFFFF" stroke="#E1EAE3" stroke-width="4" />
+    <!-- Top Green Stripe -->
+    <rect x="0" y="20" width="440" height="35" rx="10" fill="#087F50" />
+    <text x="220" y="44" font-family="'Outfit', sans-serif" font-size="14.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">
+      SEPARATE BOYS, GIRLS &amp; CWSN HYGIENE BLOCKS
+    </text>
+
+    <!-- Boys Entrance (Left) -->
+    <rect x="40" y="90" width="100" height="150" rx="6" fill="#E8F5EC" stroke="#087F50" stroke-width="2" />
+    <circle cx="90" cy="125" r="14" fill="#087F50" />
+    <path d="M 75 170 L 105 170 L 100 145 L 80 145 Z" fill="#087F50" />
+    <text x="90" y="195" font-family="'Outfit', sans-serif" font-size="13" font-weight="800" fill="#064E36" text-anchor="middle">BOYS</text>
+
+    <!-- Handwash Center (Center) -->
+    <rect x="170" y="90" width="100" height="150" rx="6" fill="#F0F6F2" stroke="#A3D977" stroke-width="2" />
+    <circle cx="220" cy="130" r="16" fill="#A3D977" />
+    <path d="M 220 120 C 220 135, 212 142, 220 150 C 228 142, 220 135, 220 120 Z" fill="#087F50" />
+    <text x="220" y="175" font-family="'Outfit', sans-serif" font-size="11.5" font-weight="800" fill="#075B3B" text-anchor="middle">HANDWASH</text>
+    <text x="220" y="195" font-family="'Outfit', sans-serif" font-size="10" font-weight="700" fill="#087F50" text-anchor="middle">HYGIENE</text>
+
+    <!-- Girls Entrance (Right) -->
+    <rect x="300" y="90" width="100" height="150" rx="6" fill="#E8F5EC" stroke="#087F50" stroke-width="2" />
+    <circle cx="350" cy="125" r="14" fill="#087F50" />
+    <polygon points="330,170 370,170 355,145 345,145" fill="#087F50" />
+    <text x="350" y="195" font-family="'Outfit', sans-serif" font-size="13" font-weight="800" fill="#064E36" text-anchor="middle">GIRLS</text>
+  </g>
+
+  <!-- Clean Floor Line -->
+  <rect x="100" y="360" width="600" height="20" rx="4" fill="#064E36" stroke="#A3D977" stroke-width="2" />
+
+  <!-- Facility Title Banner -->
+  <rect x="210" y="425" width="380" height="42" rx="21" fill="#064E36" stroke="#A3D977" stroke-width="2" />
+  <text x="400" y="452" font-family="'Outfit', sans-serif" font-size="15.5" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">
+    MODERN SANITATION &amp; HYGIENE BLOCKS
+  </text>
+</svg>

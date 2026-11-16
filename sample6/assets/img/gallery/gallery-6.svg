@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g6Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E36" />
+      <stop offset="100%" stop-color="#087F50" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#g6Grad)" />
+  <!-- Computer Terminal Matrix -->
+  <g transform="translate(180, 80)">
+    <rect x="0" y="0" width="240" height="150" rx="10" fill="#17251D" stroke="#A3D977" stroke-width="3" />
+    <text x="120" y="80" font-family="monospace" font-size="16" font-weight="700" fill="#A3D977" text-anchor="middle">&lt;PYTHON/&gt;</text>
+  </g>
+  <rect x="120" y="380" width="360" height="38" rx="19" fill="#064E36" stroke="#A3D977" stroke-width="2" />
+  <text x="300" y="404" font-family="'Outfit', sans-serif" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle">
+    COMPUTER LAB PROGRAMMING
+  </text>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradBldg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#064E36" />
+      <stop offset="60%" stop-color="#075B3B" />
+      <stop offset="100%" stop-color="#087F50" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgGradBldg)" />
+
+  <!-- Multi-Storey Building Structure -->
+  <g transform="translate(150, 100)">
+    <rect x="0" y="40" width="500" height="260" rx="8" fill="#FFFFFF" stroke="#E1EAE3" stroke-width="3" />
+    <rect x="0" y="30" width="500" height="15" fill="#087F50" />
+    
+    <!-- Central Pediment / Triangular Gables -->
+    <polygon points="250,-20 180,30 320,30" fill="#087F50" stroke="#A3D977" stroke-width="2" />
+    <circle cx="250" cy="12" r="10" fill="#FFFFFF" />
+
+    <!-- 3 Floors of Windows -->
+    <!-- Floor 3 -->
+    <g fill="#075B3B">
+      <rect x="30" y="60" width="35" height="40" rx="3" />
+      <rect x="85" y="60" width="35" height="40" rx="3" />
+      <rect x="140" y="60" width="35" height="40" rx="3" />
+      <rect x="232" y="60" width="35" height="40" rx="3" fill="#A3D977" />
+      <rect x="325" y="60" width="35" height="40" rx="3" />
+      <rect x="380" y="60" width="35" height="40" rx="3" />
+      <rect x="435" y="60" width="35" height="40" rx="3" />
+
+      <!-- Floor 2 -->
+      <rect x="30" y="125" width="35" height="40" rx="3" />
+      <rect x="85" y="125" width="35" height="40" rx="3" />
+      <rect x="140" y="125" width="35" height="40" rx="3" />
+      <rect x="232" y="125" width="35" height="40" rx="3" fill="#A3D977" />
+      <rect x="325" y="125" width="35" height="40" rx="3" />
+      <rect x="380" y="125" width="35" height="40" rx="3" />
+      <rect x="435" y="125" width="35" height="40" rx="3" />
+
+      <!-- Floor 1 (Ground) -->
+      <rect x="30" y="195" width="35" height="40" rx="3" />
+      <rect x="85" y="195" width="35" height="40" rx="3" />
+      <rect x="140" y="195" width="35" height="40" rx="3" />
+      
+      <!-- Entrance Portal -->
+      <rect x="215" y="180" width="70" height="120" rx="35" fill="#064E36" stroke="#A3D977" stroke-width="2" />
+      
+      <rect x="325" y="195" width="35" height="40" rx="3" />
+      <rect x="380" y="195" width="35" height="40" rx="3" />
+      <rect x="435" y="195" width="35" height="40" rx="3" />
+    </g>
+  </g>
+
+  <!-- Paved Campus Ground -->
+  <rect x="50" y="400" width="700" height="20" rx="5" fill="#075B3B" stroke="#A3D977" stroke-width="2" />
+
+  <!-- Facility Title Banner -->
+  <rect x="210" y="435" width="380" height="42" rx="21" fill="#064E36" stroke="#A3D977" stroke-width="2" />
+  <text x="400" y="462" font-family="'Outfit', sans-serif" font-size="15.5" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">
+    MODERN SCHOOL INFRASTRUCTURE &amp; CAMPUS
+  </text>
+</svg>

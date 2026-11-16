@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="emGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#087F50" />
+      <stop offset="50%" stop-color="#075B3B" />
+      <stop offset="100%" stop-color="#064E36" />
+    </linearGradient>
+    <linearGradient id="innerBg2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E8F5EC" />
+    </linearGradient>
+    <path id="topTextArc2" d="M 70 250 A 180 180 0 0 1 430 250" fill="none" />
+    <path id="bottomTextArc2" d="M 430 250 A 180 180 0 0 1 70 250" fill="none" />
+  </defs>
+
+  <circle cx="250" cy="250" r="240" fill="url(#emGrad2)" stroke="#A3D977" stroke-width="6" />
+  <circle cx="250" cy="250" r="225" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="4 6" opacity="0.7" />
+
+  <text font-family="'Outfit', sans-serif" font-size="20.5" font-weight="800" fill="#FFFFFF" letter-spacing="2.2">
+    <textPath href="#topTextArc2" startOffset="50%" text-anchor="middle">
+      CM SOE UPG GOVT +2 SCHOOL
+    </textPath>
+  </text>
+
+  <text font-family="'Outfit', sans-serif" font-size="21" font-weight="800" fill="#A3D977" letter-spacing="2.5">
+    <textPath href="#bottomTextArc2" startOffset="50%" text-anchor="middle">
+      VNIKETAN HALDIPOKHAR
+    </textPath>
+  </text>
+
+  <circle cx="250" cy="250" r="145" fill="url(#innerBg2)" stroke="#087F50" stroke-width="5" />
+
+  <!-- Torch -->
+  <g transform="translate(0, -10)">
+    <path d="M 250 140 C 265 160, 275 175, 262 195 C 255 185, 248 185, 245 195 C 235 178, 240 155, 250 140 Z" fill="#E09F3E" />
+    <path d="M 250 152 C 258 165, 262 175, 255 188 C 252 182, 248 182, 246 188 C 240 176, 245 162, 250 152 Z" fill="#FFE082" />
+    <path d="M 242 195 L 258 195 L 254 225 L 246 225 Z" fill="#064E36" />
+    <rect x="238" y="195" width="24" height="4" rx="2" fill="#A3D977" />
+  </g>
+
+  <!-- Open Book -->
+  <g transform="translate(0, 15)">
+    <path d="M 250 255 C 220 240, 180 242, 160 250 L 160 300 C 180 292, 220 290, 250 305 Z" fill="#087F50" />
+    <path d="M 248 257 C 220 243, 183 245, 165 252 L 165 296 C 183 289, 220 287, 248 301 Z" fill="#FFFFFF" />
+    <path d="M 250 255 C 280 240, 320 242, 340 250 L 340 300 C 320 292, 280 290, 250 305 Z" fill="#087F50" />
+    <path d="M 252 257 C 280 243, 317 245, 335 252 L 335 296 C 317 289, 280 287, 252 301 Z" fill="#FFFFFF" />
+    <line x1="178" y1="265" x2="235" y2="265" stroke="#A3D977" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="178" y1="275" x2="230" y2="275" stroke="#68776D" stroke-width="2" stroke-linecap="round" />
+    <line x1="265" y1="265" x2="322" y2="265" stroke="#A3D977" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="270" y1="275" x2="322" y2="275" stroke="#68776D" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <rect x="150" y="340" width="200" height="28" rx="14" fill="#064E36" stroke="#A3D977" stroke-width="2" />
+  <text x="250" y="359" font-family="'Outfit', sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">
+    LEARN TODAY, LEAD TOMORROW
+  </text>
+</svg>

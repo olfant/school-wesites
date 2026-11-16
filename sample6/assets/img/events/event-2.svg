@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgEv2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E36" />
+      <stop offset="60%" stop-color="#075B3B" />
+      <stop offset="100%" stop-color="#087F50" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgEv2)" />
+  <circle cx="680" cy="110" r="220" fill="#A3D977" opacity="0.08" />
+
+  <!-- Science Exhibition Model & Glowing Idea Bulb -->
+  <g transform="translate(340, 100)">
+    <!-- Lightbulb Contour -->
+    <path d="M 60 20 C 20 20, 0 55, 10 90 C 20 115, 45 130, 45 150 L 75 150 C 75 130, 100 115, 110 90 C 120 55, 100 20, 60 20 Z" fill="#FFE082" stroke="#E09F3E" stroke-width="4" />
+    <!-- Bulb Base -->
+    <rect x="42" y="152" width="36" height="8" rx="2" fill="#E1EAE3" stroke="#17251D" stroke-width="2" />
+    <rect x="46" y="162" width="28" height="8" rx="2" fill="#E1EAE3" stroke="#17251D" stroke-width="2" />
+    <path d="M 52 172 L 68 172 L 60 180 Z" fill="#17251D" />
+    <!-- Filament -->
+    <path d="M 45 90 L 55 60 L 65 60 L 75 90" fill="none" stroke="#E09F3E" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Surrounding Science Sparks -->
+  <g stroke="#A3D977" stroke-width="3" stroke-linecap="round">
+    <line x1="310" y1="130" x2="280" y2="110" />
+    <line x1="490" y1="130" x2="520" y2="110" />
+    <line x1="400" y1="80" x2="400" y2="50" />
+  </g>
+
+  <!-- Robotic / Solar Project Exhibition Model -->
+  <g transform="translate(180, 260)">
+    <rect x="0" y="20" width="140" height="80" rx="8" fill="#17251D" stroke="#A3D977" stroke-width="2" />
+    <rect x="15" y="35" width="45" height="40" rx="4" fill="#087F50" />
+    <circle cx="95" cy="55" r="16" fill="#A3D977" />
+    <text x="70" y="115" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">ROBOTICS MODEL</text>
+  </g>
+
+  <g transform="translate(480, 260)">
+    <polygon points="70,10 130,40 130,100 10,100 10,40" fill="#0A3C2B" stroke="#FFFFFF" stroke-width="2" />
+    <rect x="35" y="45" width="70" height="40" rx="3" fill="#A3D977" />
+    <text x="70" y="115" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">SOLAR ECO PROJECT</text>
+  </g>
+
+  <rect x="190" y="420" width="420" height="42" rx="21" fill="#064E36" stroke="#A3D977" stroke-width="2" />
+  <text x="400" y="447" font-family="'Outfit', sans-serif" font-size="15.5" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">
+    SCIENCE &amp; INNOVATION EXHIBITION
+  </text>
+</svg>

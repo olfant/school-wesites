@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradPlay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#064E36" />
+      <stop offset="50%" stop-color="#087F50" />
+      <stop offset="100%" stop-color="#075B3B" />
+    </linearGradient>
+    <linearGradient id="grassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A3D977" />
+      <stop offset="100%" stop-color="#087F50" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgGradPlay)" />
+
+  <!-- Running Track Ovals -->
+  <ellipse cx="400" cy="270" rx="350" ry="160" fill="none" stroke="#D9383A" stroke-width="24" opacity="0.85" />
+  <ellipse cx="400" cy="270" rx="325" ry="135" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="8 8" />
+
+  <!-- Green Football / Sports Turf -->
+  <ellipse cx="400" cy="270" rx="300" ry="110" fill="url(#grassGrad)" stroke="#FFFFFF" stroke-width="3" />
+
+  <!-- Center Circle & Halfway Line -->
+  <line x1="400" y1="160" x2="400" y2="380" stroke="#FFFFFF" stroke-width="3" />
+  <circle cx="400" cy="270" r="45" fill="none" stroke="#FFFFFF" stroke-width="3" />
+  <circle cx="400" cy="270" r="4" fill="#FFFFFF" />
+
+  <!-- Goal Post (Left) -->
+  <path d="M 160 230 L 120 230 L 120 310 L 160 310" fill="none" stroke="#FFFFFF" stroke-width="3" />
+  <!-- Goal Post (Right) -->
+  <path d="M 640 230 L 680 230 L 680 310 L 640 310" fill="none" stroke="#FFFFFF" stroke-width="3" />
+
+  <!-- Sports Ball Icons (Football & Cricket Bat) -->
+  <g transform="translate(370, 70)">
+    <circle cx="30" cy="30" r="24" fill="#FFFFFF" stroke="#17251D" stroke-width="2" />
+    <polygon points="30,16 42,24 38,38 22,38 18,24" fill="#17251D" />
+  </g>
+
+  <!-- Facility Title Banner -->
+  <rect x="230" y="425" width="340" height="42" rx="21" fill="#064E36" stroke="#A3D977" stroke-width="2" />
+  <text x="400" y="452" font-family="'Outfit', sans-serif" font-size="15.5" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">
+    SPORTS PLAYGROUND &amp; TRACKS
+  </text>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradComp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E36" />
+      <stop offset="60%" stop-color="#075B3B" />
+      <stop offset="100%" stop-color="#087F50" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgGradComp)" />
+  <circle cx="720" cy="100" r="240" fill="#A3D977" opacity="0.08" />
+
+  <!-- Code / Terminal Matrix Background -->
+  <g opacity="0.15" font-family="monospace" font-size="12" fill="#A3D977">
+    <text x="40" y="50">&lt;html&gt;&lt;body&gt; function initSOELab() { return true; } &lt;/body&gt;&lt;/html&gt;</text>
+    <text x="40" y="80">import numpy as np; import pandas as pd; print('CM SOE LAB')</text>
+    <text x="40" y="110">git commit -m "Excellence in Digital Learning" --soevniketan</text>
+  </g>
+
+  <!-- Computer Workstation 1 (Left) -->
+  <g transform="translate(100, 150)">
+    <rect x="0" y="0" width="160" height="110" rx="8" fill="#17251D" stroke="#A3D977" stroke-width="3" />
+    <rect x="10" y="10" width="140" height="90" rx="4" fill="#0A3C2B" />
+    <text x="80" y="58" font-family="monospace" font-size="14" font-weight="700" fill="#A3D977" text-anchor="middle">&lt;CODE/&gt;</text>
+    <rect x="70" y="110" width="20" height="30" fill="#064E36" />
+    <rect x="50" y="140" width="60" height="8" rx="4" fill="#A3D977" />
+    <rect x="10" y="155" width="140" height="12" rx="3" fill="#064E36" />
+  </g>
+
+  <!-- Computer Workstation 2 (Center - Prominent) -->
+  <g transform="translate(300, 120)">
+    <rect x="0" y="0" width="200" height="140" rx="10" fill="#17251D" stroke="#A3D977" stroke-width="4" />
+    <rect x="12" y="12" width="176" height="116" rx="6" fill="#064E36" />
+    <circle cx="100" cy="55" r="22" fill="#087F50" stroke="#A3D977" stroke-width="2" />
+    <path d="M 92 55 L 108 55 M 100 47 L 100 63" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+    <text x="100" y="102" font-family="'Outfit', sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">PYTHON &amp; ICT LAB</text>
+    <rect x="85" y="140" width="30" height="35" fill="#064E36" />
+    <rect x="60" y="175" width="80" height="10" rx="5" fill="#A3D977" />
+    <rect x="20" y="195" width="160" height="14" rx="4" fill="#075B3B" />
+  </g>
+
+  <!-- Computer Workstation 3 (Right) -->
+  <g transform="translate(540, 150)">
+    <rect x="0" y="0" width="160" height="110" rx="8" fill="#17251D" stroke="#A3D977" stroke-width="3" />
+    <rect x="10" y="10" width="140" height="90" rx="4" fill="#0A3C2B" />
+    <text x="80" y="58" font-family="monospace" font-size="14" font-weight="700" fill="#A3D977" text-anchor="middle">NETWORK OK</text>
+    <rect x="70" y="110" width="20" height="30" fill="#064E36" />
+    <rect x="50" y="140" width="60" height="8" rx="4" fill="#A3D977" />
+    <rect x="10" y="155" width="140" height="12" rx="3" fill="#064E36" />
+  </g>
+
+  <!-- Lab Work Desk Surface -->
+  <rect x="60" y="360" width="680" height="30" rx="6" fill="#064E36" stroke="#A3D977" stroke-width="2" />
+
+  <!-- Facility Title Banner -->
+  <rect x="220" y="425" width="360" height="42" rx="21" fill="#064E36" stroke="#A3D977" stroke-width="2" />
+  <text x="400" y="452" font-family="'Outfit', sans-serif" font-size="15.5" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">
+    MODERN COMPUTER LABORATORY
+  </text>
+</svg>

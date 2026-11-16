@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgEv3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E36" />
+      <stop offset="60%" stop-color="#075B3B" />
+      <stop offset="100%" stop-color="#087F50" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgEv3)" />
+  <circle cx="680" cy="110" r="220" fill="#A3D977" opacity="0.08" />
+
+  <!-- Traditional Cultural Instruments / Jharkhand Foundation Gala (Mandar, Flute) -->
+  <g transform="translate(300, 120)">
+    <!-- Traditional Drum (Mandar) -->
+    <path d="M 40 40 Q 100 20, 160 40 L 170 120 Q 100 140, 30 120 Z" fill="#8D4925" stroke="#FFFFFF" stroke-width="3" />
+    <ellipse cx="35" cy="80" rx="15" ry="40" fill="#E8F5EC" stroke="#17251D" stroke-width="2" />
+    <ellipse cx="165" cy="80" rx="15" ry="40" fill="#E8F5EC" stroke="#17251D" stroke-width="2" />
+    <!-- Drum Straps -->
+    <line x1="45" y1="45" x2="155" y2="115" stroke="#FFE082" stroke-width="2" />
+    <line x1="45" y1="115" x2="155" y2="45" stroke="#FFE082" stroke-width="2" />
+  </g>
+
+  <!-- Bamboo Flute Across Drum -->
+  <rect x="250" y="270" width="300" height="16" rx="8" fill="#E09F3E" stroke="#17251D" stroke-width="2" transform="rotate(-15, 250, 270)" />
+  <circle cx="340" cy="245" r="4" fill="#17251D" />
+  <circle cx="375" cy="236" r="4" fill="#17251D" />
+  <circle cx="410" cy="227" r="4" fill="#17251D" />
+  <circle cx="445" cy="218" r="4" fill="#17251D" />
+
+  <!-- Musical Notes Floating -->
+  <g fill="#A3D977" font-size="28">
+    <text x="220" y="140">♪</text>
+    <text x="560" y="160">♫</text>
+    <text x="200" y="240">♬</text>
+    <text x="580" y="260">♩</text>
+  </g>
+
+  <rect x="190" y="420" width="420" height="42" rx="21" fill="#064E36" stroke="#A3D977" stroke-width="2" />
+  <text x="400" y="447" font-family="'Outfit', sans-serif" font-size="15.5" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">
+    JHARKHAND STATEHOOD &amp; CULTURAL GALA
+  </text>
+</svg>
