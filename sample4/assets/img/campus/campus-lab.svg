@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="labGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#063F27"/>
+      <stop offset="60%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#16864A"/>
+    </linearGradient>
+    <linearGradient id="labCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.14)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.03)"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#labGrad)"/>
+  <rect x="60" y="60" width="680" height="480" rx="20" fill="url(#labCard)" stroke="rgba(255,255,255,0.18)"/>
+
+  <!-- Science Lab Graphic -->
+  <g transform="translate(400, 230)">
+    <!-- Microscope -->
+    <path d="M-60,70 L-20,70 L-20,55 L-60,55 Z" fill="#D9F0DF"/>
+    <path d="M-40,55 L-40,10 C-40,-30 -80,-20 -80,20 L-65,20 C-65,-10 -50,-15 -50,10 L-50,55 Z" fill="#E8F1EC"/>
+    <rect x="-85" y="-30" width="18" height="50" rx="4" fill="#D4AF37" transform="rotate(-30 -76 -5)"/>
+    
+    <!-- Flask / Beaker -->
+    <path d="M40,-30 L60,-30 L60,-10 L85,45 C90,55 80,65 65,65 L35,65 C20,65 10,55 15,45 L40,-10 Z" fill="none" stroke="#D9F0DF" stroke-width="3"/>
+    <path d="M22,40 C30,35 70,35 78,40 L65,65 L35,65 Z" fill="#43A76D" opacity="0.8"/>
+    <circle cx="50" cy="48" r="4" fill="#FFFFFF"/>
+    <circle cx="42" cy="54" r="3" fill="#FFFFFF"/>
+    <circle cx="58" cy="52" r="3" fill="#FFFFFF"/>
+
+    <!-- Test Tube Rack -->
+    <rect x="-140" y="30" width="60" height="35" rx="3" fill="#105A34" stroke="#43A76D"/>
+    <rect x="-135" y="0" width="10" height="35" rx="5" fill="#F9E076" opacity="0.8"/>
+    <rect x="-120" y="-10" width="10" height="45" rx="5" fill="#43A76D" opacity="0.8"/>
+    <rect x="-105" y="5" width="10" height="30" rx="5" fill="#D9F0DF" opacity="0.8"/>
+  </g>
+
+  <!-- Info -->
+  <g transform="translate(100, 410)">
+    <rect x="0" y="0" width="170" height="28" rx="14" fill="#43A76D"/>
+    <text x="85" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">
+      LABORATORIES
+    </text>
+    <text x="0" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">
+      Science & IT Laboratory
+    </text>
+    <text x="0" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="500" fill="#D9F0DF">
+      Modern apparatus for Physics, Chemistry, Biology & ICT skills
+    </text>
+  </g>
+</svg>

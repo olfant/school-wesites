@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>कक्षाएं एवं विषय सूची (Classes &amp; Subjects) | CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR</title>
+  <meta name="description" content="माध्यमिक एवं उच्च माध्यमिक स्तर के पाठ्यक्रम, कक्षाएं, अनिवार्य एवं ऐच्छिक विषयों की विस्तृत विवरणी। +2 विद्या निकेतन, हल्दीपोखर।">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/icons/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Info Bar -->
+  <header class="site-header">
+    <div class="top-info-bar">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+          <div class="d-flex flex-wrap align-items-center gap-3">
+            <span><i class="bi bi-geo-alt-fill text-warning me-1"></i> हल्दीपोखर, पोटका, पूर्वी सिंहभूम (झारखण्ड) – 831002</span>
+            <span class="d-none d-md-inline">|</span>
+            <a href="mailto:vnhs.haldipokhar.e.singhbhum@gmail.com" class="text-decoration-none">
+              <i class="bi bi-envelope-fill text-warning me-1"></i> vnhs.haldipokhar.e.singhbhum@gmail.com
+            </a>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <span class="badge-udise"><i class="bi bi-shield-check me-1"></i> U-DISE: 20180231602</span>
+            <div class="font-size-controls" aria-label="Font Size Controls">
+              <span class="text-white-50 me-1 small">फ़ॉन्ट:</span>
+              <button type="button" class="font-btn" id="fontDecBtn" title="छोटा फ़ॉन्ट (A-)">A-</button>
+              <button type="button" class="font-btn active" id="fontResetBtn" title="सामान्य फ़ॉन्ट (A)">A</button>
+              <button type="button" class="font-btn" id="fontIncBtn" title="बड़ा फ़ॉन्ट (A+)">A+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Branding -->
+    <div class="school-branding-section">
+      <div class="container">
+        <div class="row align-items-center gy-3">
+          <div class="col-lg-8 col-md-9 d-flex align-items-center gap-3">
+            <a href="../index.html" class="flex-shrink-0" aria-label="विद्यालय मुख्य पृष्ठ">
+              <img src="../assets/img/logo/school-logo.svg" alt="विद्या निकेतन विद्यालय प्रतीक चिन्ह" class="school-logo-img">
+            </a>
+            <div>
+              <div class="small text-uppercase fw-semibold text-success mb-1" style="letter-spacing: 0.5px;">
+                झारखण्ड सरकार • स्कूली शिक्षा एवं साक्षरता विभाग • CM School of Excellence (CM SOE)
+              </div>
+              <h1 class="school-brand-title-hi mb-0">CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR</h1>
+              <div class="school-brand-title-en">CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR</div>
+              <p class="school-brand-location"><i class="bi bi-pin-map text-success me-1"></i> हल्दीपोखर, प्रखंड: पोटका, जिला: पूर्वी सिंहभूम (झारखण्ड) – 831002</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-3 d-none d-md-block text-end">
+            <div class="header-meta-badge d-inline-block">
+              <div class="fw-bold text-success"><i class="bi bi-award-fill me-1"></i> उच्च माध्यमिक (+2 स्तर)</div>
+              <div class="text-muted small">JAC Ranchi सम्बद्ध • U-DISE: 20180231602</div>
+              <div class="small text-success fw-medium">कला | विज्ञान | वाणिज्य संकाय</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg main-navbar" aria-label="मुख्य नेविगेशन">
+      <div class="container">
+        <a class="navbar-brand d-lg-none text-white fw-bold py-2" href="../index.html">
+          <i class="bi bi-mortarboard-fill me-1 text-warning"></i> CM SOE +2 विद्या निकेतन
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#schoolNavbarDropdown" aria-controls="schoolNavbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-3"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="schoolNavbarDropdown">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="../index.html"><i class="bi bi-house-door-fill"></i> Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-info-circle-fill"></i> About Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="about-school.html"><i class="bi bi-building"></i> About School</a></li>
+                <li><a class="dropdown-item" href="principal.html"><i class="bi bi-person-badge"></i> Principal's Desk</a></li>
+                <li><a class="dropdown-item" href="mission-vision.html"><i class="bi bi-compass"></i> Mission &amp; Vision</a></li>
+                <li><a class="dropdown-item" href="smc-members.html"><i class="bi bi-people"></i> SMC Members</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-book-half"></i> Academic
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="academic-overview.html"><i class="bi bi-journal-text"></i> Academic Overview</a></li>
+                <li><a class="dropdown-item active" href="classes-subjects.html"><i class="bi bi-diagram-3"></i> Classes &amp; Subjects</a></li>
+                <li><a class="dropdown-item" href="academic-calendar.html"><i class="bi bi-calendar3"></i> Academic Calendar</a></li>
+                <li><a class="dropdown-item" href="teaching-learning.html"><i class="bi bi-lightbulb"></i> Teaching &amp; Learning</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-clipboard-check"></i> Examination
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="results.html"><i class="bi bi-file-earmark-bar-graph"></i> Past Results</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-trophy-fill"></i> Achievements
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="achievements.html"><i class="bi bi-star"></i> Achievements Overview</a></li>
+                <li><a class="dropdown-item" href="cultural-activities.html"><i class="bi bi-music-note-beamed"></i> Cultural Activities</a></li>
+                <li><a class="dropdown-item" href="sports-activities.html"><i class="bi bi-dribbble"></i> Sports Activities</a></li>
+                <li><a class="dropdown-item" href="exhibitions.html"><i class="bi bi-palette"></i> Exhibitions</a></li>
+                <li><a class="dropdown-item" href="skills-competition.html"><i class="bi bi-cpu"></i> Skills Competition</a></li>
+                <li><a class="dropdown-item" href="vocational-activities.html"><i class="bi bi-tools"></i> Vocational Activities</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="admission.html"><i class="bi bi-person-plus-fill"></i> Admission</a></li>
+            <li class="nav-item"><a class="nav-link" href="scout-guide.html"><i class="bi bi-flag-fill"></i> Scout &amp; Guide</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="bi bi-images"></i> Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-telephone-fill"></i> Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>कक्षाएं एवं विषय सूची (Classes &amp; Subjects)</h1>
+      <p class="lead">माध्यमिक (9वीं-10वीं) एवं उच्च माध्यमिक (+2 स्तर, 11वीं-12वीं कला, विज्ञान, वाणिज्य) का विषय प्रारूप।</p>
+      <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html"><i class="bi bi-house"></i> Home</a></li>
+          <li class="breadcrumb-item text-white">Academic</li>
+          <li class="breadcrumb-item active" aria-current="page">Classes &amp; Subjects</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="section-padding">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header text-center mb-5">
+        <span class="section-badge"><i class="bi bi-table me-1"></i> पाठ्यक्रम विवरणी</span>
+        <h2 class="section-title">Class Structure &amp; Subject Matrix</h2>
+        <p class="section-desc">झारखण्ड अधिविद्य परिषद् (JAC) के नवीन दिशा-निर्देशों एवं NCERT पाठ्यक्रम के अनुसार कक्षावार विषय विभाजन।</p>
+      </div>
+
+      <!-- Guidelines Note -->
+      <div class="alert-placeholder mb-4">
+        <i class="bi bi-info-circle-fill me-1"></i>
+        <strong>[ संपादन योग्य सूचना (Editable Placeholder Notice) ] :</strong>
+        कक्षा 11वीं एवं 12वीं में विषय चयन झारखण्ड अधिविद्य परिषद् (JAC Ranchi) के आधिकारिक नियमों और सीट उपलब्धता के आधार पर नामांकन के समय अंतिम रूप से निर्धारित किया जाता है।
+      </div>
+
+      <!-- Responsive Table -->
+      <div class="school-table-container mb-5">
+        <div class="table-responsive">
+          <table class="table school-table table-hover align-middle">
+            <thead>
+              <tr>
+                <th scope="col" style="width: 220px;">कक्षा / संकाय (Class / Stream)</th>
+                <th scope="col">अनिवार्य एवं मुख्य विषय (Subjects)</th>
+                <th scope="col">अतिरिक्त / ऐच्छिक विषय (Details &amp; Electives)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Class 9 -->
+              <tr>
+                <td>
+                  <strong class="text-success fs-6 d-block">कक्षा 9वीं (Class IX)</strong>
+                  <span class="badge bg-light text-dark border">माध्यमिक प्रभाग (Secondary)</span>
+                </td>
+                <td>
+                  <ul class="mb-0 ps-3 small">
+                    <li>राष्ट्रभाषा हिन्दी (Course A / B)</li>
+                    <li>अंग्रेजी (English Language &amp; Literature)</li>
+                    <li>गणित (Mathematics)</li>
+                    <li>विज्ञान (भौतिकी, रसायन, जीवविज्ञान)</li>
+                    <li>सामाजिक विज्ञान (इतिहास, भूगोल, नागरिक शास्त्र, अर्थशास्त्र)</li>
+                  </ul>
+                </td>
+                <td class="small text-muted">
+                  <strong>द्वितीय/तृतीय भाषा:</strong> संस्कृत / क्षेत्रीय-जनजातीय भाषा (संथाली / हो / कुरमाली / बांग्ला - आवश्यकतानुसार)। प्रायोगिक कार्य, सतत आंतरिक मूल्यांकन एवं शारीरिक व स्वास्थ्य शिक्षा।
+                </td>
+              </tr>
+
+              <!-- Class 10 -->
+              <tr>
+                <td>
+                  <strong class="text-success fs-6 d-block">कक्षा 10वीं (Class X)</strong>
+                  <span class="badge bg-success">JAC बोर्ड परीक्षा स्तर</span>
+                </td>
+                <td>
+                  <ul class="mb-0 ps-3 small">
+                    <li>हिन्दी (Hindi)</li>
+                    <li>अंग्रेजी (English)</li>
+                    <li>गणित (Mathematics)</li>
+                    <li>विज्ञान (Science with Practical)</li>
+                    <li>सामाजिक विज्ञान (Social Science)</li>
+                  </ul>
+                </td>
+                <td class="small text-muted">
+                  <strong>बोर्ड परीक्षा सम्बद्धता:</strong> वार्षिक माध्यमिक परीक्षा (Secondary Board Examination, JAC Ranchi)। 80 अंक सैद्धांतिक + 20 अंक विद्यालय स्तरीय आंतरिक एवं प्रायोगिक मूल्यांकन।
+                </td>
+              </tr>
+
+              <!-- Class 11 & 12 Arts -->
+              <tr>
+                <td>
+                  <strong class="text-primary fs-6 d-block">+2 कला संकाय (Arts Stream)</strong>
+                  <span class="badge bg-light text-dark border">कक्षा 11वीं एवं 12वीं</span>
+                </td>
+                <td>
+                  <ul class="mb-0 ps-3 small">
+                    <li><strong>कोर भाषा:</strong> हिन्दी कोर / अंग्रेजी कोर</li>
+                    <li>इतिहास (History)</li>
+                    <li>राजनीति विज्ञान (Political Science)</li>
+                    <li>भूगोल (Geography with Practical)</li>
+                    <li>अर्थशास्त्र (Economics)</li>
+                  </ul>
+                </td>
+                <td class="small text-muted">
+                  <strong>ऐच्छिक विकल्प (Electives):</strong> समाजशास्त्र / दर्शनशास्त्र / संस्कृत / मातृभाषा साहित्य (विद्यालय उपलब्धता अनुसार)। सिविल सेवा, उच्च शिक्षा, पत्रकारिता एवं कानून हेतु उपयुक्त।
+                </td>
+              </tr>
+
+              <!-- Class 11 & 12 Science -->
+              <tr>
+                <td>
+                  <strong class="text-success fs-6 d-block">+2 विज्ञान संकाय (Science Stream)</strong>
+                  <span class="badge bg-light text-dark border">कक्षा 11वीं एवं 12वीं</span>
+                </td>
+                <td>
+                  <ul class="mb-0 ps-3 small">
+                    <li><strong>कोर भाषा:</strong> अंग्रेजी कोर / हिन्दी कोर</li>
+                    <li>भौतिक विज्ञान (Physics with Practical)</li>
+                    <li>रसायन विज्ञान (Chemistry with Practical)</li>
+                    <li>जीवविज्ञान (Biology) / गणित (Mathematics)</li>
+                  </ul>
+                </td>
+                <td class="small text-muted">
+                  <strong>समूह विकल्प:</strong> PCM (इंजीनियरिंग समूह) अथवा PCB (मेडिकल समूह) अथवा PCMB। आधुनिक प्रयोगशालाओं में 30 अंकों का अनिवार्य प्रायोगिक कार्य एवं प्रोजेक्ट संधारण।
+                </td>
+              </tr>
+
+              <!-- Class 11 & 12 Commerce -->
+              <tr>
+                <td>
+                  <strong class="text-warning text-dark fs-6 d-block">+2 वाणिज्य संकाय (Commerce Stream)</strong>
+                  <span class="badge bg-light text-dark border">कक्षा 11वीं एवं 12वीं</span>
+                </td>
+                <td>
+                  <ul class="mb-0 ps-3 small">
+                    <li><strong>कोर भाषा:</strong> अंग्रेजी / हिन्दी</li>
+                    <li>लेखाशास्त्र (Accountancy)</li>
+                    <li>व्यावसायिक अध्ययन (Business Studies)</li>
+                    <li>व्यावसायिक अर्थशास्त्र (Business Economics)</li>
+                    <li>उद्यमिता (Entrepreneurship)</li>
+                  </ul>
+                </td>
+                <td class="small text-muted">
+                  <strong>अतिरिक्त विषय:</strong> वाणिज्यिक गणित (Commercial Arithmetic) / कम्प्यूटर साक्षरता। बैंकिंग, चार्टर्ड अकाउंटेंसी, कॉर्पोरेट प्रबंधन एवं स्वरोजगार हेतु आधारशिला।
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Medium of Instruction & Evaluation Scheme -->
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="school-card p-4 h-100">
+            <h4 class="fw-bold text-success mb-3"><i class="bi bi-chat-left-quote me-2"></i> शिक्षण का माध्यम (Medium of Instruction)</h4>
+            <p class="text-muted small">
+              विद्यालय में शिक्षण का मुख्य माध्यम <strong>हिन्दी</strong> है, साथ ही तकनीकी शब्दावली एवं उच्चतर माध्यमिक विज्ञान व वाणिज्य में द्विभाषी (Hindi &amp; English) शिक्षण विधि का उपयोग किया जाता है ताकि विद्यार्थी राष्ट्रीय स्तर की परीक्षाओं में सहज महसूस करें।
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="school-card p-4 h-100">
+            <h4 class="fw-bold text-success mb-3"><i class="bi bi-award me-2"></i> मूल्यांकन प्रणाली (Assessment Pattern)</h4>
+            <p class="text-muted small">
+              सत्र के दौरान नियमित प्रथम सावधिक (First Terminal), द्वितीय सावधिक तथा वार्षिक परीक्षा का आयोजन किया जाता है। बोर्ड परीक्षार्थियों (10वीं एवं 12वीं) के लिए विशेष प्री-बोर्ड परीक्षा तथा मॉडल टेस्ट पेपर का नियमित अभ्यास कराया जाता है।
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <h4>विद्यालय परिचय</h4>
+          <p class="mb-3">
+            <strong>CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR</strong> (CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR), हल्दीपोखर (पोटका, पूर्वी सिंहभूम) गुणवत्तापूर्ण शिक्षा, चरित्र निर्माण एवं अनुशासन हेतु समर्पित संस्थान है।
+          </p>
+          <div class="small text-white-50">
+            <div><strong class="text-white">U-DISE कोड:</strong> 20180231602</div>
+            <div><strong class="text-white">सम्बद्धता:</strong> JAC Ranchi, झारखण्ड सरकार</div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4>त्वरित लिंक</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+            <li><a href="about-school.html"><i class="bi bi-chevron-right"></i> About School</a></li>
+            <li><a href="principal.html"><i class="bi bi-chevron-right"></i> Principal's Desk</a></li>
+            <li><a href="mission-vision.html"><i class="bi bi-chevron-right"></i> Mission &amp; Vision</a></li>
+            <li><a href="smc-members.html"><i class="bi bi-chevron-right"></i> SMC Members</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6">
+          <h4>महत्वपूर्ण पृष्ठ</h4>
+          <ul class="footer-links">
+            <li><a href="academic-overview.html"><i class="bi bi-chevron-right"></i> Academic</a></li>
+            <li><a href="classes-subjects.html"><i class="bi bi-chevron-right"></i> Classes &amp; Subjects</a></li>
+            <li><a href="results.html"><i class="bi bi-chevron-right"></i> Examination Results</a></li>
+            <li><a href="admission.html"><i class="bi bi-chevron-right"></i> Admission Info</a></li>
+            <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Photo Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4>संपर्क सूत्र</h4>
+          <ul class="footer-contact-list">
+            <li><i class="bi bi-geo-alt-fill"></i> <span>हल्दीपोखर, पोटका, पूर्वी सिंहभूम (झारखण्ड) – 831002</span></li>
+            <li><i class="bi bi-envelope-fill"></i> <a href="mailto:vnhs.haldipokhar.e.singhbhum@gmail.com" class="text-white text-decoration-none">vnhs.haldipokhar.e.singhbhum@gmail.com</a></li>
+            <li><i class="bi bi-shield-check"></i> <span>U-DISE: 20180231602</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <div>&copy; <span id="copyrightYear"></span> <strong>CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR</strong> (CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR). सर्वाधिकार सुरक्षित।</div>
+        <div class="text-white-50">U-DISE: 20180231602 • Potka, East Singhbhum</div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="शीर्ष पर जाएं"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/site-data.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

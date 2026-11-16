@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <rect width="600" height="450" fill="#0c4424"/>
+  <!-- Exhibition Science Project Stand -->
+  <rect x="80" y="70" width="440" height="220" rx="8" fill="#16864A" stroke="#F9D423" stroke-width="3"/>
+  <text x="300" y="140" font-family="'Hind', sans-serif" font-size="24" font-weight="700" fill="#FFFFFF" text-anchor="middle">विज्ञान एवं नवाचार प्रदर्शनी</text>
+  <text x="300" y="175" font-family="'Poppins', sans-serif" font-size="14" fill="#F9D423" text-anchor="middle">Science Models &amp; Environmental Projects</text>
+  <circle cx="300" cy="225" r="28" fill="#F9D423"/>
+  <text x="300" y="232" font-family="'Poppins', sans-serif" font-size="18" font-weight="700" fill="#064525" text-anchor="middle">STEM</text>
+  <!-- Bottom info -->
+  <rect y="360" width="600" height="90" fill="#064525"/>
+  <text x="300" y="395" font-family="'Hind', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">छात्र परियोजना एवं मॉडल प्रदर्शन</text>
+  <text x="300" y="422" font-family="'Poppins', sans-serif" font-size="13" fill="#A5D6A7" text-anchor="middle">Inspire Awards, Science Congress &amp; Craft Exhibits</text>
+</svg>

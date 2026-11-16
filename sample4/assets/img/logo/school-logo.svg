@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9E076"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#AA771C"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16864A"/>
+      <stop offset="100%" stop-color="#063F27"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#063F27" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Ring -->
+  <circle cx="120" cy="120" r="114" fill="none" stroke="url(#goldGrad)" stroke-width="5" filter="url(#shadow)"/>
+  <circle cx="120" cy="120" r="106" fill="url(#greenGrad)" stroke="#D4AF37" stroke-width="2"/>
+  <circle cx="120" cy="120" r="82" fill="#FFFFFF" stroke="url(#goldGrad)" stroke-width="2.5"/>
+
+  <!-- Curved Text Path -->
+  <path id="textPathTop" d="M 30,120 A 90,90 0 1,1 210,120" fill="none" stroke="none"/>
+  <path id="textPathBottom" d="M 206,126 A 86,86 0 0,1 34,126" fill="none" stroke="none"/>
+
+  <text font-family="'Noto Sans Devanagari', 'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" letter-spacing="1">
+    <textPath href="#textPathTop" startOffset="50%" text-anchor="middle">
+      +2 राजकीयकृत विद्या निकेतन उच्च विद्यालय
+    </textPath>
+  </text>
+  <text font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#F9E076" letter-spacing="1.5">
+    <textPath href="#textPathBottom" startOffset="50%" text-anchor="middle">
+      HALDIPOKHAR • POTKA • JHARKHAND
+    </textPath>
+  </text>
+
+  <!-- Central Shield -->
+  <g transform="translate(120, 118)">
+    <!-- Foliage Wreath -->
+    <path d="M-60,5 C-60,35 -30,60 0,68 C30,60 60,35 60,5 C50,-10 40,-5 35,0 C38,20 18,48 0,55 C-18,48 -38,20 -35,0 C-40,-5 -50,-10 -60,5 Z" fill="#D9F0DF"/>
+    
+    <!-- Shield Background -->
+    <path d="M-45,-45 L45,-45 L45,10 C45,38 15,55 0,60 C-15,55 -45,38 -45,10 Z" fill="#F5F9F6" stroke="#105A34" stroke-width="2.5"/>
+    <path d="M-40,-40 L40,-40 L40,8 C40,34 14,49 0,54 C-14,49 -40,34 -40,8 Z" fill="#FFFFFF"/>
+
+    <!-- Lamp of Knowledge (Deepak) -->
+    <g transform="translate(0, -18)">
+      <ellipse cx="0" cy="12" rx="22" ry="7" fill="url(#goldGrad)"/>
+      <path d="M-22,12 Q0,26 22,12 Q14,24 -14,24 Z" fill="#AA771C"/>
+      <path d="M-10,24 L10,24 L6,30 L-6,30 Z" fill="url(#goldGrad)"/>
+      <ellipse cx="0" cy="30" rx="14" ry="3" fill="#D4AF37"/>
+      <!-- Flame -->
+      <path d="M0,7 C-6,-2 -7,-12 0,-22 C7,-12 6,-2 0,7 Z" fill="#FF5722"/>
+      <path d="M0,6 C-3,-1 -4,-8 0,-16 C4,-8 3,-1 0,6 Z" fill="#FFC107"/>
+      <circle cx="0" cy="-2" r="3" fill="#FFF9C4"/>
+    </g>
+
+    <!-- Open Book -->
+    <g transform="translate(0, 22)">
+      <path d="M-28,4 C-18,-4 -8,0 0,4 L0,18 C-8,14 -18,10 -28,18 Z" fill="#105A34"/>
+      <path d="M-26,5 C-17,-2 -8,2 -2,5 L-2,16 C-8,13 -17,9 -26,16 Z" fill="#FFFFFF"/>
+      <line x1="-22" y1="8" x2="-6" y2="6" stroke="#105A34" stroke-width="1.2"/>
+      <line x1="-22" y1="11" x2="-6" y2="9" stroke="#105A34" stroke-width="1.2"/>
+      <line x1="-22" y1="14" x2="-8" y2="12" stroke="#105A34" stroke-width="1.2"/>
+
+      <path d="M28,4 C18,-4 8,0 0,4 L0,18 C8,14 18,10 28,18 Z" fill="#105A34"/>
+      <path d="M26,5 C17,-2 8,2 2,5 L2,16 C8,13 17,9 26,16 Z" fill="#FFFFFF"/>
+      <line x1="22" y1="8" x2="6" y2="6" stroke="#105A34" stroke-width="1.2"/>
+      <line x1="22" y1="11" x2="6" y2="9" stroke="#105A34" stroke-width="1.2"/>
+      <line x1="22" y1="14" x2="8" y2="12" stroke="#105A34" stroke-width="1.2"/>
+    </g>
+
+    <!-- Small Stars -->
+    <path d="M-30,-28 L-28,-23 L-23,-23 L-27,-20 L-25,-15 L-30,-18 L-35,-15 L-33,-20 L-37,-23 L-32,-23 Z" fill="url(#goldGrad)"/>
+    <path d="M30,-28 L32,-23 L37,-23 L33,-20 L35,-15 L30,-18 L25,-15 L27,-20 L23,-23 L28,-23 Z" fill="url(#goldGrad)"/>
+  </g>
+
+  <!-- Motto Banner -->
+  <g transform="translate(120, 198)">
+    <rect x="-65" y="-10" width="130" height="20" rx="10" fill="url(#goldGrad)" stroke="#063F27" stroke-width="1.5"/>
+    <text font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="800" fill="#063F27" text-anchor="middle" y="3.5" letter-spacing="1.2">
+      VIDYA DADATI VINAYAM
+    </text>
+  </g>
+</svg>

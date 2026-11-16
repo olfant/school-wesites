@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="achSpGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#063F27"/>
+      <stop offset="60%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#16864A"/>
+    </linearGradient>
+    <linearGradient id="goldSp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9E076"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#AA771C"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#achSpGrad)"/>
+  <rect x="60" y="60" width="680" height="480" rx="20" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)"/>
+
+  <!-- Sports Medal Graphic -->
+  <g transform="translate(400, 220)">
+    <!-- Ribbons -->
+    <polygon points="-25,-55 -5,0 -15,0 -35,-55" fill="#FF5722"/>
+    <polygon points="25,-55 5,0 15,0 35,-55" fill="#FF5722"/>
+    <polygon points="-15,-55 0,0 -5,0 -20,-55" fill="#FFFFFF"/>
+    <polygon points="15,-55 0,0 5,0 20,-55" fill="#FFFFFF"/>
+    <!-- Medal Disc -->
+    <circle cx="0" cy="20" r="38" fill="url(#goldSp)" stroke="#AA771C" stroke-width="2"/>
+    <circle cx="0" cy="20" r="30" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="0" y="27" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="900" fill="#063F27" text-anchor="middle">
+      1
+    </text>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(100, 410)">
+    <rect x="0" y="0" width="180" height="28" rx="14" fill="#43A76D"/>
+    <text x="90" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">
+      SPORTS HONORS
+    </text>
+    <text x="0" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">
+      Athletic Championships &amp; Medals
+    </text>
+    <text x="0" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="500" fill="#D9F0DF">
+      Block and district level laurels in football, volleyball, sprints and field events
+    </text>
+  </g>
+</svg>

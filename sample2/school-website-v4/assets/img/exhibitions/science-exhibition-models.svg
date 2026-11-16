@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="heroSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#062E3B"/>
+      <stop offset="60%" stop-color="#0F526B"/>
+      <stop offset="100%" stop-color="#16864A"/>
+    </linearGradient>
+    <linearGradient id="cinematicVignette" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.2"/>
+      <stop offset="60%" stop-color="#000000" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#063E27" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+    </filter>
+  </defs>
+
+  
+        <!-- Science Exhibition & Skills Showcase -->
+        <rect width="1200" height="800" fill="url(#heroSky)"/>
+        
+        <!-- Exhibition Booths -->
+        <rect x="120" y="240" width="440" height="420" rx="8" fill="#FFFFFF" stroke="#105A34" stroke-width="4"/>
+        <rect x="640" y="240" width="440" height="420" rx="8" fill="#FFFFFF" stroke="#105A34" stroke-width="4"/>
+        
+        <!-- Booth Banners -->
+        <rect x="120" y="240" width="440" height="60" rx="8" fill="#105A34"/>
+        <text x="340" y="280" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">RENEWABLE ENERGY &amp; ROBOTICS</text>
+
+        <rect x="640" y="240" width="440" height="60" rx="8" fill="#063E27"/>
+        <text x="860" y="280" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">VOCATIONAL SKILLS &amp; CRAFTS</text>
+
+        <!-- Project Displays -->
+        <!-- Windmill & Solar Model -->
+        <line x1="340" y1="520" x2="340" y2="380" stroke="#64748B" stroke-width="8"/>
+        <circle cx="340" cy="380" r="12" fill="#D97706"/>
+        <line x1="340" y1="380" x2="300" y2="340" stroke="#38BDF8" stroke-width="6"/>
+        <line x1="340" y1="380" x2="380" y2="340" stroke="#38BDF8" stroke-width="6"/>
+        <line x1="340" y1="380" x2="340" y2="430" stroke="#38BDF8" stroke-width="6"/>
+        
+        <!-- Solar Panel Grid -->
+        <polygon points="220,530 280,530 270,570 200,570" fill="#1E3A8A" stroke="#93C5FD" stroke-width="2"/>
+        
+        <!-- Gear / Circuit Innovation on Right -->
+        <circle cx="860" cy="460" r="70" fill="none" stroke="#D97706" stroke-width="12" stroke-dasharray="20 10"/>
+        <circle cx="860" cy="460" r="40" fill="#105A34"/>
+        <circle cx="860" cy="460" r="15" fill="#FDE047"/>
+        
+
+  <!-- Dark Green Cinematic Vignette Overlay -->
+  <rect width="1200" height="800" fill="url(#cinematicVignette)"/>
+
+  <!-- Artistic Lower Third Title Badge -->
+  <g transform="translate(60, 650)">
+    <rect x="0" y="0" width="180" height="32" rx="16" fill="#38BDF8" opacity="0.9"/>
+    <text x="90" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">
+      INNOVATION
+    </text>
+    <text x="0" y="65" font-family="'Plus Jakarta Sans', 'Segoe UI', sans-serif" font-size="28" font-weight="800" fill="#FFFFFF" letter-spacing="0.5">
+      Annual Science & Innovation Fair
+    </text>
+    <text x="0" y="92" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="500" fill="#E2E8F0">
+      Student-Made Working Models in Renewable Energy & Engineering
+    </text>
+  </g>
+</svg>

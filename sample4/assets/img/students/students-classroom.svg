@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="scGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#063F27"/>
+      <stop offset="60%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#16864A"/>
+    </linearGradient>
+    <linearGradient id="scCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.14)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.03)"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#scGrad)"/>
+  <rect x="60" y="60" width="680" height="480" rx="20" fill="url(#scCard)" stroke="rgba(255,255,255,0.18)"/>
+
+  <!-- Classroom Board & Teacher/Students -->
+  <g transform="translate(400, 230)">
+    <!-- Green Blackboard -->
+    <rect x="-180" y="-80" width="360" height="130" rx="6" fill="#063F27" stroke="#D4AF37" stroke-width="3"/>
+    <text x="0" y="-40" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="700" fill="#D9F0DF" text-anchor="middle">
+      Concept Clarity &amp; Active Learning
+    </text>
+    <text x="0" y="-15" font-family="'Noto Sans Devanagari', sans-serif" font-size="14" fill="#FFFFFF" text-anchor="middle">
+      अध्ययन • अनुशासन • आत्मविश्वास
+    </text>
+    <line x1="-120" y1="10" x2="120" y2="10" stroke="#43A76D" stroke-dasharray="4 4" stroke-width="2"/>
+
+    <!-- Desks & Student Silhouettes -->
+    <rect x="-140" y="70" width="80" height="25" rx="3" fill="#DCE8DF"/>
+    <rect x="60" y="70" width="80" height="25" rx="3" fill="#DCE8DF"/>
+    <!-- Student Heads -->
+    <circle cx="-100" cy="55" r="16" fill="#105A34"/>
+    <circle cx="100" cy="55" r="16" fill="#105A34"/>
+  </g>
+
+  <!-- Info -->
+  <g transform="translate(100, 410)">
+    <rect x="0" y="0" width="160" height="28" rx="14" fill="#43A76D"/>
+    <text x="80" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">
+      CLASSROOM
+    </text>
+    <text x="0" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">
+      Interactive Teaching &amp; Learning
+    </text>
+    <text x="0" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="500" fill="#D9F0DF">
+      Structured curriculum, dedicated faculty guidance and supportive academic culture
+    </text>
+  </g>
+</svg>

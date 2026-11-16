@@ -1,0 +1,351 @@
+/**
+ * ====================================================================
+ * RESPONSIVE CSS — SWISS GRID SYSTEM
+ * CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR, हल्दीपोखर
+ * Responsive Breakpoints: 320px, 375px, 576px, 768px, 1024px, 1366px, 1440px
+ * ====================================================================
+ */
+
+/* ------------------------------------------------------------------
+   DESKTOP & LARGE SCREENS (Above 1200px)
+------------------------------------------------------------------ */
+@media (min-width: 1200px) {
+  .hero-main-headline {
+    font-size: 4.8rem;
+  }
+}
+
+/* ------------------------------------------------------------------
+   LAPTOPS & TABLETS LANDSCAPE (Max-Width 1199px)
+------------------------------------------------------------------ */
+@media (max-width: 1199.98px) {
+  .nav-link-item {
+    padding: 16px 10px;
+    font-size: 0.8rem;
+  }
+
+  .branding-wrap {
+    gap: 16px;
+  }
+
+  .brand-hindi-name {
+    font-size: 1.2rem;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 30px;
+  }
+
+  .admission-steps-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ------------------------------------------------------------------
+   TABLETS PORTRAIT & SMALL SCREENS (Max-Width 991.98px)
+------------------------------------------------------------------ */
+@media (max-width: 991.98px) {
+  /* Navigation switch to Hamburger & Mobile Drawer */
+  .main-menu-nav {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .branding-actions .header-action-badge {
+    display: none;
+  }
+
+  /* Section Padding Reduced on Tablets */
+  :root {
+    --section-pad: 70px 0;
+  }
+
+  /* Section 01 — Hero Stacking */
+  .hero-grid-row {
+    flex-direction: column-reverse;
+  }
+
+  .hero-visual-frame {
+    margin-bottom: 40px;
+  }
+
+  .hero-img-wrap img {
+    height: 360px;
+  }
+
+  /* Section 03 — Directory Rows */
+  .swiss-dir-row {
+    grid-template-columns: 60px 180px 1fr 40px;
+    padding: 16px 18px;
+    font-size: 0.92rem;
+  }
+
+  /* Section 04 — Philosophy Stacking */
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .philosophy-col {
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    padding: 36px 24px;
+  }
+
+  .philosophy-col:last-child {
+    border-bottom: none;
+  }
+
+  /* Section 07 — Academic Row Stacking */
+  .academic-row-item {
+    grid-template-columns: 60px 220px 1fr 100px;
+    padding: 20px 24px;
+  }
+
+  /* Section 08 — Journey Switch: Desktop timeline hides, Mobile shows */
+  .learning-timeline-desktop {
+    display: none;
+  }
+
+  .learning-timeline-mobile {
+    display: block;
+  }
+
+  /* Section 09 — Activities Grid Stacking */
+  .activities-swiss-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Section 10 — Notice Row Stacking */
+  .notice-row-item {
+    grid-template-columns: 110px 110px 1fr 120px;
+    padding: 14px 18px;
+  }
+
+  /* Section 12 — Gallery Grid Stacking */
+  .gallery-grid-masonry {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-item-card.featured {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .gallery-item-card.featured .gallery-thumb-wrap {
+    height: 380px;
+  }
+
+  /* Section 14 — Contact Row Stacking */
+  .contact-info-cards-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* Footer Stacking */
+  .footer-top-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+
+  .principal-portrait-frame {
+    margin-bottom: 30px;
+  }
+
+  .principal-portrait-frame img {
+    height: 400px;
+  }
+}
+
+/* ------------------------------------------------------------------
+   PHONES & SMALL MOBILE (Max-Width 767.98px)
+------------------------------------------------------------------ */
+@media (max-width: 767.98px) {
+  :root {
+    --section-pad: 54px 0;
+  }
+
+  .top-utility-bar {
+    height: auto;
+    padding: 6px 0;
+  }
+
+  .top-utility-bar .swiss-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .top-utility-right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .branding-wrap {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .brand-identity {
+    gap: 12px;
+  }
+
+  .school-logo-img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .brand-hindi-name {
+    font-size: 1.1rem;
+  }
+
+  .brand-english-title {
+    font-size: 0.78rem;
+  }
+
+  .branding-actions .btn-swiss-accent {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+
+  .hero-main-headline {
+    font-size: 2.6rem;
+  }
+
+  .hero-img-wrap img {
+    height: 280px;
+  }
+
+  /* Swiss Directory Mobile Layout */
+  .swiss-dir-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 16px;
+  }
+
+  .dir-serial {
+    font-size: 0.82rem;
+  }
+
+  .dir-arrow {
+    display: none;
+  }
+
+  /* Academic Directory Mobile Layout */
+  .academic-row-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 18px;
+  }
+
+  .academic-row-item .num {
+    font-size: 1.1rem;
+  }
+
+  .academic-row-item .desc {
+    padding-right: 0;
+  }
+
+  .academic-row-item .action {
+    justify-content: flex-start;
+  }
+
+  /* Activities Stacking */
+  .activities-swiss-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Notices Mobile Row */
+  .notice-row-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 16px;
+  }
+
+  .notice-filter-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .notice-search-box {
+    width: 100%;
+  }
+
+  /* Examination Results Filters */
+  .results-filter-bar {
+    flex-direction: column;
+  }
+
+  /* Admission Steps Stacking */
+  .admission-steps-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Gallery Stacking */
+  .gallery-grid-masonry {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item-card.featured {
+    grid-column: span 1;
+  }
+
+  .gallery-item-card.featured .gallery-thumb-wrap {
+    height: 260px;
+  }
+
+  /* Campus Card Overlay Mobile */
+  .campus-overlay-card {
+    position: static;
+    max-width: 100%;
+    margin-top: 16px;
+  }
+
+  /* Footer Bottom */
+  .footer-bottom-bar {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ------------------------------------------------------------------
+   EXTRA SMALL SCREENS (320px – 375px)
+------------------------------------------------------------------ */
+@media (max-width: 375px) {
+  .hero-main-headline {
+    font-size: 2.2rem;
+  }
+
+  .hero-school-name-hindi {
+    font-size: 1.1rem;
+  }
+
+  .swiss-editorial-title {
+    font-size: 1.75rem;
+  }
+
+  .brand-hindi-name {
+    font-size: 0.98rem;
+  }
+
+  .btn-swiss-primary,
+  .btn-swiss-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+}

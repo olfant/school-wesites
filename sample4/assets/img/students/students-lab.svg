@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="slGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#063F27"/>
+      <stop offset="60%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#16864A"/>
+    </linearGradient>
+    <linearGradient id="slCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.14)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.03)"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#slGrad)"/>
+  <rect x="60" y="60" width="680" height="480" rx="20" fill="url(#slCard)" stroke="rgba(255,255,255,0.18)"/>
+
+  <!-- Science Practicals Graphic -->
+  <g transform="translate(400, 230)">
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#D9F0DF" stroke-dasharray="8 6" stroke-width="2"/>
+    <ellipse cx="0" cy="0" rx="95" ry="40" fill="none" stroke="#43A76D" stroke-width="2" transform="rotate(30)"/>
+    <ellipse cx="0" cy="0" rx="95" ry="40" fill="none" stroke="#43A76D" stroke-width="2" transform="rotate(-30)"/>
+    <circle cx="0" cy="0" r="18" fill="#F9E076"/>
+    <!-- Atom electrons -->
+    <circle cx="-50" cy="-40" r="6" fill="#D9F0DF"/>
+    <circle cx="50" cy="40" r="6" fill="#D9F0DF"/>
+  </g>
+
+  <!-- Info -->
+  <g transform="translate(100, 410)">
+    <rect x="0" y="0" width="170" height="28" rx="14" fill="#43A76D"/>
+    <text x="85" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">
+      LABORATORY
+    </text>
+    <text x="0" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">
+      Practical Science Demonstrations
+    </text>
+    <text x="0" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="500" fill="#D9F0DF">
+      Encouraging investigative thinking, experiment execution and scientific acumen
+    </text>
+  </g>
+</svg>

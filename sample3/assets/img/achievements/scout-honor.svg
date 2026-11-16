@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#F3F8F4"/>
+  <rect x="25" y="25" width="750" height="450" fill="#FFFFFF" stroke="#D9E5DC" stroke-width="2"/>
+
+  <!-- Scout & Guide Rajyapuraskar / Governor Award Motif -->
+  <g transform="translate(400, 230)">
+    <polygon points="0,-100 80,-40 80,60 0,110 -80,60 -80,-40" fill="#073E28" stroke="#16864A" stroke-width="3"/>
+    <polygon points="0,-90 70,-38 70,52 0,98 -70,52 -70,-38" fill="#105A34"/>
+    
+    <!-- Trefoil Crest -->
+    <path d="M 0,-50 C -15,-65 -25,-40 -15,-20 C -25,-25 -40,-10 -25,10 C -10,30 0,15 0,45 C 0,15 10,30 25,10 C 40,-10 25,-25 15,-20 C 25,-40 15,-65 0,-50 Z" 
+          fill="#E5C158"/>
+    <circle cx="0" cy="5" r="4" fill="#073E28"/>
+    <text x="0" y="75" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">RAJYA PURASKAR</text>
+  </g>
+
+  <!-- Swiss Header -->
+  <rect x="50" y="50" width="230" height="30" fill="#073E28"/>
+  <text x="165" y="70" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">SCOUT ACCREDITATION • [OFFICIAL]</text>
+  <text x="400" y="445" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#647268" text-anchor="middle">
+    Governor Scout &amp; Guide Award, Camp Honors &amp; Community Bravery Citations
+  </text>
+</svg>

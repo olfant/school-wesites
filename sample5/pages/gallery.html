@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>चित्र वीथिका (School Photo Gallery) | CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR</title>
+  <meta name="description" content="विद्यालय परिसर, कक्षा-कक्ष, खेलकूद, सांस्कृतिक कार्यक्रम, विज्ञान प्रदर्शनी एवं स्काउट-गाइड की आकर्षक चित्र वीथिका। +2 विद्या निकेतन, हल्दीपोखर।">
+  <link rel="icon" type="image/svg+xml" href="../assets/img/icons/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Info Bar -->
+  <header class="site-header">
+    <div class="top-info-bar">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+          <div class="d-flex flex-wrap align-items-center gap-3">
+            <span><i class="bi bi-geo-alt-fill text-warning me-1"></i> हल्दीपोखर, पोटका, पूर्वी सिंहभूम (झारखण्ड) – 831002</span>
+            <span class="d-none d-md-inline">|</span>
+            <a href="mailto:vnhs.haldipokhar.e.singhbhum@gmail.com" class="text-decoration-none">
+              <i class="bi bi-envelope-fill text-warning me-1"></i> vnhs.haldipokhar.e.singhbhum@gmail.com
+            </a>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <span class="badge-udise"><i class="bi bi-shield-check me-1"></i> U-DISE: 20180231602</span>
+            <div class="font-size-controls" aria-label="Font Size Controls">
+              <span class="text-white-50 me-1 small">फ़ॉन्ट:</span>
+              <button type="button" class="font-btn" id="fontDecBtn" title="छोटा फ़ॉन्ट (A-)">A-</button>
+              <button type="button" class="font-btn active" id="fontResetBtn" title="सामान्य फ़ॉन्ट (A)">A</button>
+              <button type="button" class="font-btn" id="fontIncBtn" title="बड़ा फ़ॉन्ट (A+)">A+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Branding -->
+    <div class="school-branding-section">
+      <div class="container">
+        <div class="row align-items-center gy-3">
+          <div class="col-lg-8 col-md-9 d-flex align-items-center gap-3">
+            <a href="../index.html" class="flex-shrink-0" aria-label="विद्यालय मुख्य पृष्ठ">
+              <img src="../assets/img/logo/school-logo.svg" alt="विद्या निकेतन विद्यालय प्रतीक चिन्ह" class="school-logo-img">
+            </a>
+            <div>
+              <div class="small text-uppercase fw-semibold text-success mb-1" style="letter-spacing: 0.5px;">
+                झारखण्ड सरकार • स्कूली शिक्षा एवं साक्षरता विभाग
+              </div>
+              <h1 class="school-brand-title-hi mb-0">CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR</h1>
+              <div class="school-brand-title-en">Upgraded Govt. +2 Vidya Niketan High School, Haldipokhar</div>
+              <p class="school-brand-location"><i class="bi bi-pin-map text-success me-1"></i> हल्दीपोखर, पोटका, पूर्वी सिंहभूम (झारखण्ड) – 831002</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-3 d-none d-md-block text-end">
+            <div class="header-meta-badge d-inline-block">
+              <div class="fw-bold text-success"><i class="bi bi-award-fill me-1"></i> उच्च माध्यमिक (+2 स्तर)</div>
+              <div class="text-muted small">JAC Ranchi सम्बद्ध • U-DISE: 20180231602</div>
+              <div class="small text-success fw-medium">कला | विज्ञान | वाणिज्य संकाय</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg main-navbar" aria-label="मुख्य नेविगेशन">
+      <div class="container">
+        <a class="navbar-brand d-lg-none text-white fw-bold py-2" href="../index.html">
+          <i class="bi bi-mortarboard-fill me-1 text-warning"></i> +2 विद्या निकेतन
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#schoolNavbarDropdown" aria-controls="schoolNavbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-3"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="schoolNavbarDropdown">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="../index.html"><i class="bi bi-house-door-fill"></i> Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-info-circle-fill"></i> About Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="about-school.html"><i class="bi bi-building"></i> About School</a></li>
+                <li><a class="dropdown-item" href="principal.html"><i class="bi bi-person-badge"></i> Principal's Desk</a></li>
+                <li><a class="dropdown-item" href="mission-vision.html"><i class="bi bi-compass"></i> Mission &amp; Vision</a></li>
+                <li><a class="dropdown-item" href="smc-members.html"><i class="bi bi-people"></i> SMC Members</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-book-half"></i> Academic
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="academic-overview.html"><i class="bi bi-journal-text"></i> Academic Overview</a></li>
+                <li><a class="dropdown-item" href="classes-subjects.html"><i class="bi bi-diagram-3"></i> Classes &amp; Subjects</a></li>
+                <li><a class="dropdown-item" href="academic-calendar.html"><i class="bi bi-calendar3"></i> Academic Calendar</a></li>
+                <li><a class="dropdown-item" href="teaching-learning.html"><i class="bi bi-lightbulb"></i> Teaching &amp; Learning</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-clipboard-check"></i> Examination
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="results.html"><i class="bi bi-file-earmark-bar-graph"></i> Past Results</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-trophy-fill"></i> Achievements
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="achievements.html"><i class="bi bi-star"></i> Achievements Overview</a></li>
+                <li><a class="dropdown-item" href="cultural-activities.html"><i class="bi bi-music-note-beamed"></i> Cultural Activities</a></li>
+                <li><a class="dropdown-item" href="sports-activities.html"><i class="bi bi-dribbble"></i> Sports Activities</a></li>
+                <li><a class="dropdown-item" href="exhibitions.html"><i class="bi bi-palette"></i> Exhibitions</a></li>
+                <li><a class="dropdown-item" href="skills-competition.html"><i class="bi bi-cpu"></i> Skills Competition</a></li>
+                <li><a class="dropdown-item" href="vocational-activities.html"><i class="bi bi-tools"></i> Vocational Activities</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="admission.html"><i class="bi bi-person-plus-fill"></i> Admission</a></li>
+            <li class="nav-item"><a class="nav-link" href="scout-guide.html"><i class="bi bi-flag-fill"></i> Scout &amp; Guide</a></li>
+            <li class="nav-item"><a class="nav-link active" href="gallery.html"><i class="bi bi-images"></i> Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-telephone-fill"></i> Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>चित्र वीथिका (School Photo Gallery)</h1>
+      <p class="lead">विद्यालय के गौरवशाली पलों, आयोजनों, अधोसंरचना एवं छात्र उपलब्धियों का छायाचित्र संग्रह।</p>
+      <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html"><i class="bi bi-house"></i> Home</a></li>
+          <li class="breadcrumb-item text-white">Media</li>
+          <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="section-padding">
+    <div class="container">
+      <!-- Gallery Category Filter Buttons -->
+      <div class="gallery-filter-buttons" role="tablist" aria-label="चित्र वीथिका श्रेणियां">
+        <button type="button" class="gallery-filter-btn active" data-category="all">सभी चित्र (All)</button>
+        <button type="button" class="gallery-filter-btn" data-category="campus">School Campus</button>
+        <button type="button" class="gallery-filter-btn" data-category="classroom">Classrooms</button>
+        <button type="button" class="gallery-filter-btn" data-category="cultural">Cultural Programs</button>
+        <button type="button" class="gallery-filter-btn" data-category="sports">Sports Activities</button>
+        <button type="button" class="gallery-filter-btn" data-category="annual">Annual Functions</button>
+        <button type="button" class="gallery-filter-btn" data-category="exhibition">Exhibitions</button>
+        <button type="button" class="gallery-filter-btn" data-category="scout">Scout &amp; Guide</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4" id="galleryGrid">
+        <!-- Item 1: Campus -->
+        <div class="col gallery-grid-col" data-category="campus">
+          <div class="gallery-card" data-img-src="../assets/img/gallery/gallery-campus.svg" data-caption="मुख्य विद्यालय भवन एवं हरा-भरा परिसर, हल्दीपोखर">
+            <img src="../assets/img/gallery/gallery-campus.svg" alt="मुख्य विद्यालय भवन हल्दीपोखर">
+            <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <h5>मुख्य विद्यालय परिसर</h5>
+              <span><i class="bi bi-building"></i> School Campus</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Classroom -->
+        <div class="col gallery-grid-col" data-category="classroom">
+          <div class="gallery-card" data-img-src="../assets/img/gallery/gallery-classroom.svg" data-caption="स्मार्ट कक्षा-कक्ष एवं इंटरएक्टिव शिक्षण सत्र">
+            <img src="../assets/img/gallery/gallery-classroom.svg" alt="स्मार्ट क्लासरूम">
+            <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <h5>स्मार्ट क्लासरूम शिक्षण</h5>
+              <span><i class="bi bi-laptop"></i> Classrooms</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Cultural -->
+        <div class="col gallery-grid-col" data-category="cultural">
+          <div class="gallery-card" data-img-src="../assets/img/gallery/gallery-cultural.svg" data-caption="सांस्कृतिक उत्सव, लोकनृत्य एवं संगीत प्रस्तुति">
+            <img src="../assets/img/gallery/gallery-cultural.svg" alt="सांस्कृतिक कार्यक्रम">
+            <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <h5>सांस्कृतिक लोकनृत्य</h5>
+              <span><i class="bi bi-music-note-beamed"></i> Cultural Programs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Sports -->
+        <div class="col gallery-grid-col" data-category="sports">
+          <div class="gallery-card" data-img-src="../assets/img/gallery/gallery-sports.svg" data-caption="वार्षिक खेलकूद उत्सव एवं एथलेटिक्स स्पर्धा">
+            <img src="../assets/img/gallery/gallery-sports.svg" alt="खेलकूद प्रतियोगिता">
+            <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <h5>वार्षिक खेल महोत्सव</h5>
+              <span><i class="bi bi-trophy"></i> Sports Activities</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Exhibition -->
+        <div class="col gallery-grid-col" data-category="exhibition">
+          <div class="gallery-card" data-img-src="../assets/img/gallery/gallery-exhibition.svg" data-caption="विज्ञान एवं नवाचार मॉडल प्रदर्शनी">
+            <img src="../assets/img/gallery/gallery-exhibition.svg" alt="विज्ञान प्रदर्शनी">
+            <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <h5>विज्ञान एवं नवाचार मॉडल</h5>
+              <span><i class="bi bi-palette"></i> Exhibitions</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: Scout & Guide -->
+        <div class="col gallery-grid-col" data-category="scout">
+          <div class="gallery-card" data-img-src="../assets/img/gallery/gallery-scout.svg" data-caption="भारत स्काउट्स एवं गाइड्स दल ड्रिल एवं सेवा कार्य">
+            <img src="../assets/img/gallery/gallery-scout.svg" alt="स्काउट एवं गाइड">
+            <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <h5>स्काउट एवं गाइड दल</h5>
+              <span><i class="bi bi-flag"></i> Scout &amp; Guide</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 7: Annual Function -->
+        <div class="col gallery-grid-col" data-category="annual">
+          <div class="gallery-card" data-img-src="../assets/img/gallery/gallery-annual.svg" data-caption="वार्षिकोत्सव एवं मेधावी छात्र सम्मान समारोह">
+            <img src="../assets/img/gallery/gallery-annual.svg" alt="वार्षिकोत्सव">
+            <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <h5>वार्षिकोत्सव व सम्मान</h5>
+              <span><i class="bi bi-star"></i> Annual Functions</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 8: Lab & Learning (Classroom Category) -->
+        <div class="col gallery-grid-col" data-category="classroom">
+          <div class="gallery-card" data-img-src="../assets/img/campus/lab.svg" data-caption="विज्ञान एवं कम्प्यूटर प्रायोगिक प्रयोगशाला">
+            <img src="../assets/img/campus/lab.svg" alt="विज्ञान प्रयोगशाला">
+            <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <h5>विज्ञान एवं कम्प्यूटर लैब</h5>
+              <span><i class="bi bi-cpu"></i> Classrooms &amp; Labs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 9: Library (Campus Category) -->
+        <div class="col gallery-grid-col" data-category="campus">
+          <div class="gallery-card" data-img-src="../assets/img/campus/library.svg" data-caption="समृद्ध विद्यालय पुस्तकालय एवं स्वाध्याय कक्ष">
+            <img src="../assets/img/campus/library.svg" alt="पुस्तकालय">
+            <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <h5>विद्यालय पुस्तकालय</h5>
+              <span><i class="bi bi-book"></i> School Campus</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 10: Playground (Sports Category) -->
+        <div class="col gallery-grid-col" data-category="sports">
+          <div class="gallery-card" data-img-src="../assets/img/campus/playground.svg" data-caption="विद्यालय खेल प्रांगण एवं रनिंग ट्रैक">
+            <img src="../assets/img/campus/playground.svg" alt="खेल मैदान">
+            <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+            <div class="gallery-overlay">
+              <h5>विद्यालय खेल प्रांगण</h5>
+              <span><i class="bi bi-dribbble"></i> Sports Ground</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="modal fade lightbox-modal" id="galleryLightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-6"><i class="bi bi-image me-1 text-warning"></i> चित्र वीथिका (Photo Viewer)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="" id="lightboxModalImg" class="lightbox-img" alt="Gallery Photo">
+          <div id="lightboxModalCaption" class="lightbox-caption"></div>
+          <div class="d-flex justify-content-between mt-3">
+            <button type="button" class="btn btn-outline-light btn-sm" id="lightboxPrevBtn"><i class="bi bi-chevron-left"></i> पिछला</button>
+            <button type="button" class="btn btn-outline-light btn-sm" id="lightboxNextBtn">अगला <i class="bi bi-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <h4>विद्यालय परिचय</h4>
+          <p class="mb-3">
+            <strong>CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR</strong>, हल्दीपोखर (पोटका, पूर्वी सिंहभूम) गुणवत्तापूर्ण शिक्षा, चरित्र निर्माण एवं अनुशासन हेतु समर्पित संस्थान है।
+          </p>
+          <div class="small text-white-50">
+            <div><strong class="text-white">U-DISE कोड:</strong> 20180231602</div>
+            <div><strong class="text-white">सम्बद्धता:</strong> JAC Ranchi, झारखण्ड सरकार</div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4>त्वरित लिंक</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+            <li><a href="about-school.html"><i class="bi bi-chevron-right"></i> About School</a></li>
+            <li><a href="principal.html"><i class="bi bi-chevron-right"></i> Principal's Desk</a></li>
+            <li><a href="mission-vision.html"><i class="bi bi-chevron-right"></i> Mission &amp; Vision</a></li>
+            <li><a href="smc-members.html"><i class="bi bi-chevron-right"></i> SMC Members</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6">
+          <h4>महत्वपूर्ण पृष्ठ</h4>
+          <ul class="footer-links">
+            <li><a href="academic-overview.html"><i class="bi bi-chevron-right"></i> Academic</a></li>
+            <li><a href="classes-subjects.html"><i class="bi bi-chevron-right"></i> Classes &amp; Subjects</a></li>
+            <li><a href="results.html"><i class="bi bi-chevron-right"></i> Examination Results</a></li>
+            <li><a href="admission.html"><i class="bi bi-chevron-right"></i> Admission Info</a></li>
+            <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Photo Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4>संपर्क सूत्र</h4>
+          <ul class="footer-contact-list">
+            <li><i class="bi bi-geo-alt-fill"></i> <span>हल्दीपोखर, पोटका, पूर्वी सिंहभूम (झारखण्ड) – 831002</span></li>
+            <li><i class="bi bi-envelope-fill"></i> <a href="mailto:vnhs.haldipokhar.e.singhbhum@gmail.com" class="text-white text-decoration-none">vnhs.haldipokhar.e.singhbhum@gmail.com</a></li>
+            <li><i class="bi bi-shield-check"></i> <span>U-DISE: 20180231602</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <div>&copy; <span id="copyrightYear"></span> <strong>CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR</strong>. सर्वाधिकार सुरक्षित।</div>
+        <div class="text-white-50">U-DISE: 20180231602 • Potka, East Singhbhum</div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="शीर्ष पर जाएं"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/site-data.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

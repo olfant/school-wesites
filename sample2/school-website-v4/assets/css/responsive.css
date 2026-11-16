@@ -1,0 +1,315 @@
+/**
+ * ====================================================================
+ * +2 राजकीयकृत विद्या निकेतन उच्च विद्यालय, हल्दीपोखर
+ * RESPONSIVE ADAPTATION STYLESHEET
+ * Breakpoints: 1440px, 1366px, 1024px, 768px, 576px, 375px, 320px
+ * ====================================================================
+ */
+
+/* 1. Large Displays (1366px - 1440px) */
+@media (min-width: 1366px) {
+  .container, .container-lg, .container-xl, .container-xxl {
+    max-width: 1280px;
+  }
+}
+
+/* 2. Desktop to Laptop Transition (Max 1200px) */
+@media (max-width: 1200px) {
+  .campus-story-grid {
+    grid-template-columns: 58% 42%;
+    gap: 2.5rem;
+  }
+
+  .info-band-grid {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1.5rem;
+  }
+
+  .info-band-item:nth-child(3)::after {
+    display: none;
+  }
+
+  .asymmetric-academic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .academic-panel-featured,
+  .academic-panel-sidebar {
+    grid-column: span 12;
+  }
+
+  .lightbox-prev { left: 10px; }
+  .lightbox-next { right: 10px; }
+}
+
+/* 3. Tablets & Small Laptops (Max 1024px) */
+@media (max-width: 1024px) {
+  .cinematic-hero-section {
+    min-height: 75vh;
+  }
+
+  .hero-main-headline {
+    font-size: 2.8rem;
+  }
+
+  .campus-story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .campus-large-media img {
+    height: 420px;
+  }
+
+  .campus-story-content {
+    padding-right: 0;
+  }
+
+  .experience-card.span-6,
+  .experience-card.span-4 {
+    grid-column: span 6;
+  }
+
+  .achievement-feature-item,
+  .achievement-feature-item.reverse {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .achievement-feature-item.reverse {
+    direction: ltr;
+  }
+
+  .achievement-img-wrap {
+    height: 320px;
+  }
+
+  .principal-quote-box {
+    padding-left: 0;
+    margin-top: 2.5rem;
+  }
+}
+
+/* 4. Medium Tablets (Max 768px) */
+@media (max-width: 768px) {
+  /* Navigation & Header */
+  .top-info-strip {
+    text-align: center;
+  }
+
+  .top-info-item {
+    margin-right: 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  .branding-logo-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .school-header-logo {
+    width: 65px;
+    height: 65px;
+  }
+
+  .school-name-hindi {
+    font-size: 1.25rem;
+  }
+
+  .school-name-english {
+    font-size: 0.85rem;
+  }
+
+  .school-address-subtitle {
+    justify-content: center;
+  }
+
+  .branding-actions-col {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  /* Hero Section */
+  .cinematic-hero-section {
+    min-height: 80vh;
+  }
+
+  .hero-main-headline {
+    font-size: 2.2rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-cinematic-primary,
+  .btn-cinematic-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Info Band */
+  .info-band-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .info-band-item::after {
+    display: none !important;
+  }
+
+  /* Vertical Timeline Shift on Mobile */
+  .values-timeline-container::before {
+    left: 24px;
+  }
+
+  .timeline-row,
+  .timeline-row.inverted {
+    padding-left: 65px;
+    padding-right: 0;
+    justify-content: flex-start;
+    margin-bottom: 2.5rem;
+  }
+
+  .timeline-marker {
+    left: 24px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 0.85rem;
+  }
+
+  .timeline-content-card {
+    padding: 1.25rem;
+  }
+
+  /* Campus Experience */
+  .experience-card.span-6,
+  .experience-card.span-4 {
+    grid-column: span 12;
+    height: 320px;
+  }
+
+  /* Overlapping Photo Grid */
+  .photo-story-hero-wrapper {
+    height: 380px;
+  }
+
+  .photo-overlapping-grid {
+    grid-template-columns: 1fr;
+    margin-top: 1.5rem;
+    padding: 0;
+  }
+
+  .photo-thumb-card {
+    height: 200px;
+  }
+
+  /* Notices Panel */
+  .notices-header-box {
+    padding: 1.5rem;
+  }
+
+  .notice-row-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.85rem;
+  }
+
+  /* Results Table Scroll */
+  .results-table-container {
+    overflow-x: auto;
+  }
+
+  .results-table {
+    min-width: 600px;
+  }
+
+  /* Footer */
+  .footer-bottom-bar {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+/* 5. Mobile Devices (Max 576px) */
+@media (max-width: 576px) {
+  body {
+    font-size: 15px;
+  }
+
+  .school-identity-section,
+  .campus-story-section,
+  .principal-cinematic-section,
+  .academic-excellence-section,
+  .campus-experience-section,
+  .educational-values-section,
+  .achievements-section,
+  .notices-section,
+  .results-section,
+  .photo-story-section,
+  .admission-cta-section,
+  .contact-section-home {
+    padding: 4.5rem 0;
+  }
+
+  .inner-hero-banner {
+    padding: 3.5rem 0 2.5rem;
+  }
+
+  .inner-hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-main-headline {
+    font-size: 1.85rem;
+  }
+
+  .editorial-headline,
+  .campus-story-title {
+    font-size: 1.75rem;
+  }
+
+  .editorial-image-frame img,
+  .principal-portrait-container img {
+    height: 320px;
+  }
+
+  .editorial-badge-float {
+    position: static;
+    border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg);
+    max-width: 100%;
+  }
+
+  .contact-info-block {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .back-to-top-btn {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+/* 6. Very Small Screens (375px - 320px) */
+@media (max-width: 375px) {
+  .school-name-hindi {
+    font-size: 1.1rem;
+  }
+
+  .hero-main-headline {
+    font-size: 1.6rem;
+  }
+
+  .hero-subheading {
+    font-size: 1.05rem;
+  }
+
+  .mobile-drawer {
+    width: 280px;
+  }
+}

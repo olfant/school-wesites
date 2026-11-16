@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="heroSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#063E27"/>
+      <stop offset="60%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="cinematicVignette" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.2"/>
+      <stop offset="60%" stop-color="#000000" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#063E27" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+    </filter>
+  </defs>
+
+  
+        <!-- Principal Desk Setup -->
+        <rect width="1200" height="800" fill="url(#heroSky)"/>
+        
+        <!-- Office Wall & Bookshelf Background -->
+        <rect x="100" y="150" width="1000" height="420" rx="8" fill="#063E27" opacity="0.9"/>
+        <g fill="#DCE7DE" opacity="0.3">
+            <rect x="140" y="200" width="200" height="15" />
+            <rect x="140" y="280" width="200" height="15" />
+            <rect x="140" y="360" width="200" height="15" />
+            <rect x="860" y="200" width="200" height="15" />
+            <rect x="860" y="280" width="200" height="15" />
+            <rect x="860" y="360" width="200" height="15" />
+        </g>
+        
+        <!-- Executive Desk -->
+        <rect x="250" y="520" width="700" height="200" rx="8" fill="#1E293B"/>
+        <rect x="230" y="500" width="740" height="30" rx="4" fill="#334155"/>
+        
+        <!-- Desk Items: Globe, Pen Stand, Official Files, Emblem -->
+        <circle cx="340" cy="460" r="30" fill="#38BDF8" opacity="0.8"/>
+        <path d="M 340 430 A 30 30 0 0 1 340 490 Z" fill="#16864A"/>
+        <rect x="335" y="490" width="10" height="20" fill="#94A3B8"/>
+        
+        <rect x="780" y="460" width="80" height="45" rx="3" fill="#D97706"/>
+        <rect x="790" y="450" width="80" height="45" rx="3" fill="#105A34"/>
+        
+        <!-- Dignified Leader Silhouette / Desk Presence -->
+        <circle cx="600" cy="340" r="60" fill="#E2E8F0"/>
+        <path d="M 480 500 C 480 410 540 400 600 400 C 660 400 720 410 720 500 Z" fill="#0F172A"/>
+        <polygon points="600,430 585,480 615,480" fill="#DC2626"/>
+        
+
+  <!-- Dark Green Cinematic Vignette Overlay -->
+  <rect width="1200" height="800" fill="url(#cinematicVignette)"/>
+
+  <!-- Artistic Lower Third Title Badge -->
+  <g transform="translate(60, 650)">
+    <rect x="0" y="0" width="180" height="32" rx="16" fill="#F59E0B" opacity="0.9"/>
+    <text x="90" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">
+      LEADERSHIP
+    </text>
+    <text x="0" y="65" font-family="'Plus Jakarta Sans', 'Segoe UI', sans-serif" font-size="28" font-weight="800" fill="#FFFFFF" letter-spacing="0.5">
+      Office of the Head of Institution
+    </text>
+    <text x="0" y="92" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="500" fill="#E2E8F0">
+      Visionary Leadership Guiding Institutional Excellence
+    </text>
+  </g>
+</svg>

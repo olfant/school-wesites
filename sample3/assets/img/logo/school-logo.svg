@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="swissGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16864A"/>
+      <stop offset="100%" stop-color="#073E28"/>
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C158"/>
+      <stop offset="100%" stop-color="#B88A23"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Circle Outer Ring -->
+  <circle cx="250" cy="250" r="236" fill="#FFFFFF" stroke="#073E28" stroke-width="6"/>
+  <circle cx="250" cy="250" r="222" fill="#F3F8F4" stroke="#16864A" stroke-width="2" stroke-dasharray="8 4"/>
+
+  <!-- Circular Text Path Ring -->
+  <path id="textCircleTop" d="M 60,250 A 190,190 0 0,1 440,250" fill="none"/>
+  <path id="textCircleBottom" d="M 440,250 A 190,190 0 0,1 60,250" fill="none"/>
+
+  <text font-family="'Plus Jakarta Sans', 'Arial', sans-serif" font-size="20" font-weight="800" fill="#073E28" letter-spacing="3.5">
+    <textPath href="#textCircleTop" startOffset="50%" text-anchor="middle">
+      CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR
+    </textPath>
+  </text>
+
+  <text font-family="'Plus Jakarta Sans', 'Arial', sans-serif" font-size="16" font-weight="700" fill="#105A34" letter-spacing="4">
+    <textPath href="#textCircleBottom" startOffset="50%" text-anchor="middle">
+      HALDIPOKHAR • POTKA • ESTD. JHARKHAND
+    </textPath>
+  </text>
+
+  <!-- Geometric Inner Shield -->
+  <path d="M 130,130 L 370,130 C 370,130 370,270 250,355 C 130,270 130,130 130,130 Z" 
+        fill="url(#swissGreenGrad)" stroke="#FFFFFF" stroke-width="4"/>
+
+  <!-- Inner Hairline Border -->
+  <path d="M 144,144 L 356,144 C 356,144 356,260 250,336 C 144,260 144,144 144,144 Z" 
+        fill="none" stroke="#4AA875" stroke-width="1.5" stroke-dasharray="4 2"/>
+
+  <!-- Center Symbol: Knowledge Flame / Rising Sun -->
+  <circle cx="250" cy="180" r="26" fill="url(#goldAccent)"/>
+  <!-- Sun Rays -->
+  <line x1="250" y1="140" x2="250" y2="148" stroke="#E5C158" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="218" y1="152" x2="225" y2="159" stroke="#E5C158" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="282" y1="152" x2="275" y2="159" stroke="#E5C158" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Open Book Symbol of Wisdom -->
+  <path d="M 250,224 C 230,214 195,214 175,224 L 175,264 C 195,254 230,254 250,264 C 270,254 305,254 325,264 L 325,224 C 305,214 270,214 250,224 Z" 
+        fill="#FFFFFF" stroke="#D9E5DC" stroke-width="2"/>
+  <line x1="250" y1="224" x2="250" y2="264" stroke="#105A34" stroke-width="2.5"/>
+
+  <!-- Book Lines -->
+  <line x1="188" y1="233" x2="238" y2="228" stroke="#16864A" stroke-width="1.5"/>
+  <line x1="188" y1="242" x2="238" y2="237" stroke="#16864A" stroke-width="1.5"/>
+  <line x1="188" y1="251" x2="238" y2="246" stroke="#16864A" stroke-width="1.5"/>
+  <line x1="262" y1="228" x2="312" y2="233" stroke="#16864A" stroke-width="1.5"/>
+  <line x1="262" y1="237" x2="312" y2="242" stroke="#16864A" stroke-width="1.5"/>
+  <line x1="262" y1="246" x2="312" y2="251" stroke="#16864A" stroke-width="1.5"/>
+
+  <!-- Sprout of Values & Growth -->
+  <path d="M 250,270 Q 240,290 230,285 Q 235,274 250,270 Z" fill="#4AA875"/>
+  <path d="M 250,270 Q 260,290 270,285 Q 265,274 250,270 Z" fill="#4AA875"/>
+  <line x1="250" y1="266" x2="250" y2="305" stroke="#E8F3EA" stroke-width="2.5"/>
+
+  <!-- Motto Banner Below Shield -->
+  <rect x="180" y="375" width="140" height="28" rx="4" fill="#073E28" stroke="#16864A" stroke-width="1.5"/>
+  <text x="250" y="394" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#E8F3EA" text-anchor="middle" letter-spacing="2">
+    ज्ञानम् • शीलम् • प्रगतिः
+  </text>
+
+  <!-- Stars -->
+  <polygon points="105,250 110,240 120,240 112,246 115,256 105,250" fill="#16864A"/>
+  <polygon points="395,250 390,240 380,240 388,246 385,256 395,250" fill="#16864A"/>
+</svg>

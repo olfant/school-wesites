@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="heroSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#063E27"/>
+      <stop offset="60%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#16864A"/>
+    </linearGradient>
+    <linearGradient id="cinematicVignette" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.2"/>
+      <stop offset="60%" stop-color="#000000" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#063E27" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+    </filter>
+  </defs>
+
+  
+        <!-- Students Learning Scene -->
+        <rect width="1200" height="800" fill="url(#heroSky)"/>
+        <circle cx="600" cy="750" r="500" fill="#EAF5ED" opacity="0.8"/>
+        
+        <!-- Modern Learning Pod / Table -->
+        <ellipse cx="600" cy="580" rx="420" ry="90" fill="#FFFFFF" stroke="#DCE7DE" stroke-width="4"/>
+        <ellipse cx="600" cy="580" rx="380" ry="70" fill="#F1F8F3"/>
+        
+        <!-- Laptops, Books & Notepads on Table -->
+        <rect x="540" y="540" width="120" height="60" rx="6" fill="#334155"/>
+        <polygon points="530,600 670,600 680,620 520,620" fill="#64748B"/>
+        <rect x="360" y="550" width="70" height="50" rx="3" fill="#105A34"/>
+        <rect x="760" y="555" width="80" height="45" rx="3" fill="#D97706"/>
+        
+        <!-- Student Avatars / Silhouettes -->
+        <!-- Student 1 (Left) -->
+        <circle cx="340" cy="380" r="45" fill="#063E27"/>
+        <path d="M 270 510 C 270 440 310 430 340 430 C 370 430 410 440 410 510 Z" fill="#105A34"/>
+        
+        <!-- Student 2 (Center) -->
+        <circle cx="600" cy="350" r="48" fill="#063E27"/>
+        <path d="M 520 490 C 520 410 560 400 600 400 C 640 400 680 410 680 490 Z" fill="#16864A"/>
+        
+        <!-- Student 3 (Right) -->
+        <circle cx="860" cy="380" r="45" fill="#063E27"/>
+        <path d="M 790 510 C 790 440 830 430 860 430 C 890 430 930 440 930 510 Z" fill="#105A34"/>
+        
+
+  <!-- Dark Green Cinematic Vignette Overlay -->
+  <rect width="1200" height="800" fill="url(#cinematicVignette)"/>
+
+  <!-- Artistic Lower Third Title Badge -->
+  <g transform="translate(60, 650)">
+    <rect x="0" y="0" width="180" height="32" rx="16" fill="#35A66B" opacity="0.9"/>
+    <text x="90" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">
+      SCOUT & GUIDE
+    </text>
+    <text x="0" y="65" font-family="'Plus Jakarta Sans', 'Segoe UI', sans-serif" font-size="28" font-weight="800" fill="#FFFFFF" letter-spacing="0.5">
+      Bharat Scouts & Guides Training Camp
+    </text>
+    <text x="0" y="92" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="500" fill="#E2E8F0">
+      Outdoor survival skills, pioneer badge and discipline
+    </text>
+  </g>
+</svg>

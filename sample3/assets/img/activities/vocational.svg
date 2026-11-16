@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#F3F8F4"/>
+  <rect x="25" y="25" width="750" height="450" fill="#FFFFFF" stroke="#D9E5DC" stroke-width="2"/>
+
+  <!-- Vocational Tools Layout (Craft, Agriculture / Electrical / IT skills) -->
+  <!-- Workshop Table -->
+  <rect x="100" y="280" width="600" height="25" fill="#073E28"/>
+  <rect x="130" y="305" width="20" height="130" fill="#105A34"/>
+  <rect x="650" y="305" width="20" height="130" fill="#105A34"/>
+
+  <!-- Multimeter & Circuit (Electrical Vocational Unit) -->
+  <g transform="translate(160, 160)">
+    <rect x="20" y="20" width="70" height="100" rx="6" fill="#E5C158" stroke="#B88A23" stroke-width="2"/>
+    <rect x="30" y="30" width="50" height="35" rx="2" fill="#073E28"/>
+    <text x="55" y="52" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#4AA875" text-anchor="middle">230 V</text>
+    <circle cx="55" cy="85" r="14" fill="#FFFFFF" stroke="#073E28" stroke-width="2"/>
+    <line x1="55" y1="85" x2="62" y2="78" stroke="#FF5722" stroke-width="2"/>
+    <!-- Probes -->
+    <path d="M 40,120 Q 20,150 50,170" stroke="#FF0000" stroke-width="2.5" fill="none"/>
+    <path d="M 70,120 Q 90,150 110,165" stroke="#1D3024" stroke-width="2.5" fill="none"/>
+  </g>
+
+  <!-- Plant Nursery Pot (Agricultural Skills in Rural Context) -->
+  <g transform="translate(360, 150)">
+    <polygon points="30,130 90,130 80,75 40,75" fill="#A0522D"/>
+    <!-- Green Sprout & Leaves -->
+    <path d="M 60,75 Q 40,40 25,50 Q 35,70 60,75 Z" fill="#4AA875"/>
+    <path d="M 60,75 Q 80,35 95,45 Q 85,68 60,75 Z" fill="#16864A"/>
+    <line x1="60" y1="75" x2="60" y2="30" stroke="#105A34" stroke-width="3"/>
+    <circle cx="60" cy="26" r="6" fill="#E5C158"/>
+  </g>
+
+  <!-- Precision Caliper & Carpentry Rule -->
+  <g transform="translate(540, 160)">
+    <rect x="20" y="40" width="130" height="14" fill="#D9E5DC" stroke="#647268" stroke-width="1.5"/>
+    <!-- Caliper jaw -->
+    <polygon points="30,40 30,110 42,95 42,40" fill="#647268"/>
+    <polygon points="80,40 80,110 68,95 68,40" fill="#105A34"/>
+    <line x1="45" y1="44" x2="45" y2="50" stroke="#073E28" stroke-width="1"/>
+    <line x1="55" y1="44" x2="55" y2="50" stroke="#073E28" stroke-width="1"/>
+    <line x1="65" y1="44" x2="65" y2="50" stroke="#073E28" stroke-width="1"/>
+    <line x1="75" y1="44" x2="75" y2="50" stroke="#073E28" stroke-width="1"/>
+  </g>
+
+  <!-- Swiss Header -->
+  <rect x="50" y="50" width="200" height="30" fill="#073E28"/>
+  <text x="150" y="70" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">VOCATIONAL ACTIVITY • 05</text>
+  <text x="400" y="445" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#647268" text-anchor="middle">
+    Hands-On Practical Training, Agriculture, Craft &amp; Applied Industry Skills
+  </text>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650" width="100%" height="100%">
+  <defs>
+    <linearGradient id="portraitBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8F3EA"/>
+      <stop offset="60%" stop-color="#F3F8F4"/>
+      <stop offset="100%" stop-color="#D9E5DC"/>
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#073E28"/>
+      <stop offset="100%" stop-color="#105A34"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="500" height="650" fill="url(#portraitBg)"/>
+
+  <!-- Swiss Hairline Inner Frame -->
+  <rect x="25" y="25" width="450" height="600" fill="none" stroke="#105A34" stroke-width="1.5"/>
+  <line x1="25" y1="45" x2="475" y2="45" stroke="#D9E5DC" stroke-width="1"/>
+  <line x1="25" y1="605" x2="475" y2="605" stroke="#D9E5DC" stroke-width="1"/>
+
+  <!-- Geometric Subtle Grid in Upper Half -->
+  <circle cx="250" cy="240" r="140" fill="#FFFFFF" stroke="#4AA875" stroke-width="2" stroke-dasharray="6 3"/>
+
+  <!-- Dignified Silhouette / Head & Shoulders -->
+  <!-- Shoulders & Coat -->
+  <path d="M 80,590 L 140,390 L 220,380 L 250,420 L 280,380 L 360,390 L 420,590 Z" fill="url(#suitGrad)"/>
+  <!-- White Shirt & Tie -->
+  <polygon points="220,380 280,380 265,450 250,490 235,450" fill="#FFFFFF"/>
+  <polygon points="245,410 255,410 258,480 250,510 242,480" fill="#E5C158"/>
+  <polygon points="242,400 258,400 254,415 246,415" fill="#B88A23"/>
+
+  <!-- Head / Face Silhouette -->
+  <circle cx="250" cy="240" r="75" fill="#D3E0D8"/>
+  <path d="M 175,230 C 175,150 220,130 250,130 C 280,130 325,150 325,230 C 325,245 320,270 310,275 C 290,295 270,305 250,305 C 230,305 210,295 190,275 C 180,270 175,245 175,230 Z" fill="#BFD0C5"/>
+
+  <!-- Academic Glasses Minimal Linework -->
+  <circle cx="225" cy="230" r="18" fill="none" stroke="#073E28" stroke-width="3"/>
+  <circle cx="275" cy="230" r="18" fill="none" stroke="#073E28" stroke-width="3"/>
+  <line x1="243" y1="230" x2="257" y2="230" stroke="#073E28" stroke-width="3"/>
+
+  <!-- Collar and Lapels -->
+  <path d="M 180,390 L 230,470 L 220,380 Z" fill="#042D1C"/>
+  <path d="M 320,390 L 270,470 L 280,380 Z" fill="#042D1C"/>
+
+  <!-- Swiss Corner Crosses -->
+  <text x="35" y="40" font-family="'Space Grotesk', sans-serif" font-size="12" fill="#105A34" font-weight="700">+</text>
+  <text x="455" y="40" font-family="'Space Grotesk', sans-serif" font-size="12" fill="#105A34" font-weight="700">+</text>
+  <text x="35" y="620" font-family="'Space Grotesk', sans-serif" font-size="12" fill="#105A34" font-weight="700">+</text>
+  <text x="455" y="620" font-family="'Space Grotesk', sans-serif" font-size="12" fill="#105A34" font-weight="700">+</text>
+
+  <!-- Swiss Information Placard at Bottom -->
+  <g transform="translate(60, 520)">
+    <rect width="380" height="60" rx="3" fill="#073E28" stroke="#16864A" stroke-width="1.5"/>
+    <text x="190" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">
+      [OFFICIAL PRINCIPAL PORTRAIT]
+    </text>
+    <text x="190" y="44" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="500" fill="#4AA875" text-anchor="middle" letter-spacing="1">
+      HEADMASTER / PRINCIPAL IN-CHARGE • +2 RVNHS
+    </text>
+  </g>
+</svg>

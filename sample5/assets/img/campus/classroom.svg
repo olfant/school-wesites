@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="classWall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F7FAF8"/>
+      <stop offset="100%" stop-color="#EAF5ED"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="380" fill="url(#classWall)"/>
+  <!-- Floor -->
+  <rect y="380" width="800" height="120" fill="#DCE8DF"/>
+  <line x1="0" y1="380" x2="800" y2="380" stroke="#105A34" stroke-width="3"/>
+  <!-- Windows on Left Wall -->
+  <rect x="50" y="80" width="120" height="180" fill="#C5E3CE" stroke="#105A34" stroke-width="4"/>
+  <line x1="110" y1="80" x2="110" y2="260" stroke="#105A34" stroke-width="3"/>
+  <line x1="50" y1="170" x2="170" y2="170" stroke="#105A34" stroke-width="3"/>
+  <!-- Green Chalkboard / Smartboard in Front -->
+  <rect x="250" y="60" width="480" height="230" rx="8" fill="#064525" stroke="#8D6E63" stroke-width="8"/>
+  <text x="490" y="120" font-family="'Hind', sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">कक्षा कक्ष • SMART CLASSROOM</text>
+  <text x="490" y="160" font-family="'Poppins', sans-serif" font-size="16" fill="#F9D423" text-anchor="middle">Active Learning &amp; Audio-Visual Education</text>
+  <line x1="320" y1="180" x2="660" y2="180" stroke="#16864A" stroke-width="2"/>
+  <text x="490" y="220" font-family="'Poppins', sans-serif" font-size="14" fill="#EAF5ED" text-anchor="middle">Interactive Pedagogy • Student Engagement • Concept Clarity</text>
+  <!-- Teacher's Podium Desk -->
+  <rect x="560" y="310" width="100" height="80" fill="#6D4C41" stroke="#3E2723" stroke-width="2"/>
+  <!-- Student Benches & Desks in perspective -->
+  <g fill="#A1887F" stroke="#4E342E" stroke-width="2">
+    <rect x="220" y="340" width="140" height="25" rx="3"/>
+    <rect x="230" y="365" width="12" height="45"/>
+    <rect x="340" y="365" width="12" height="45"/>
+    <rect x="390" y="340" width="140" height="25" rx="3"/>
+    <rect x="400" y="365" width="12" height="45"/>
+    <rect x="510" y="365" width="12" height="45"/>
+  </g>
+</svg>

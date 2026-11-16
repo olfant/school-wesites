@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EAF5ED"/>
+      <stop offset="100%" stop-color="#C5E3CE"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- Trees background -->
+  <circle cx="120" cy="240" r="80" fill="#16864A" opacity="0.4"/>
+  <circle cx="200" cy="220" r="90" fill="#105A34" opacity="0.5"/>
+  <circle cx="680" cy="230" r="90" fill="#16864A" opacity="0.4"/>
+  <circle cx="600" cy="210" r="80" fill="#105A34" opacity="0.5"/>
+  <!-- School Building Front -->
+  <rect x="150" y="200" width="500" height="190" rx="4" fill="#FFFFFF" stroke="#105A34" stroke-width="3"/>
+  <polygon points="140,200 400,110 660,200" fill="#105A34"/>
+  <rect x="250" y="140" width="300" height="40" rx="4" fill="#064525"/>
+  <text x="400" y="165" font-family="'Hind', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">+2 राजकीयकृत विद्या निकेतन उच्च विद्यालय</text>
+  <!-- Veranda Pillars -->
+  <line x1="200" y1="200" x2="200" y2="390" stroke="#105A34" stroke-width="8"/>
+  <line x1="300" y1="200" x2="300" y2="390" stroke="#105A34" stroke-width="8"/>
+  <line x1="500" y1="200" x2="500" y2="390" stroke="#105A34" stroke-width="8"/>
+  <line x1="600" y1="200" x2="600" y2="390" stroke="#105A34" stroke-width="8"/>
+  <path d="M 370,290 A 30,30 0 0,1 430,290 L 430,390 L 370,390 Z" fill="#064525"/>
+  <!-- Windows -->
+  <rect x="225" y="230" width="50" height="60" rx="3" fill="#EAF5ED" stroke="#16864A" stroke-width="2"/>
+  <rect x="525" y="230" width="50" height="60" rx="3" fill="#EAF5ED" stroke="#16864A" stroke-width="2"/>
+  <!-- Ground Lawn -->
+  <rect x="0" y="390" width="800" height="110" fill="#16864A"/>
+  <polygon points="400,390 480,500 320,500" fill="#DCE8DF"/>
+  <text x="400" y="475" font-family="'Poppins', sans-serif" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">School Campus • हल्दीपोखर (झारखण्ड)</text>
+</svg>

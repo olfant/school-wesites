@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#063F27"/>
+      <stop offset="60%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#16864A"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g2Grad)"/>
+  <rect x="50" y="50" width="700" height="500" rx="20" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.18)"/>
+  <g transform="translate(400, 230)">
+    <circle cx="0" cy="0" r="70" fill="rgba(217, 240, 223, 0.2)"/>
+    <rect x="-80" y="-40" width="160" height="90" rx="4" fill="#063F27" stroke="#D4AF37" stroke-width="2"/>
+    <line x1="-50" y1="-10" x2="50" y2="-10" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="-50" y1="10" x2="30" y2="10" stroke="#FFFFFF" stroke-width="2"/>
+  </g>
+  <g transform="translate(80, 420)">
+    <rect x="0" y="0" width="140" height="26" rx="13" fill="#43A76D"/>
+    <text x="70" y="17" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">CLASSROOM</text>
+    <text x="0" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">Engaged Secondary Classroom</text>
+    <text x="0" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="500" fill="#D9F0DF">Active concept discussion, disciplined focus and teacher guidance</text>
+  </g>
+</svg>

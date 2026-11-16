@@ -1,0 +1,1413 @@
+/* ==========================================================================
+   +2 राजकीयकृत विद्या निकेतन उच्च विद्यालय | HALDIPOKHAR, POTKA, JHARKHAND
+   Design Concept: MODERN CAMPUS BENTO GRID + GREEN INSTITUTIONAL DESIGN (v3)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   01. CSS Custom Properties / Design Tokens
+   -------------------------------------------------------------------------- */
+:root {
+  --primary-green: #105A34;
+  --dark-green: #063F27;
+  --accent-green: #16864A;
+  --bright-green: #43A76D;
+  --mint-green: #D9F0DF;
+  --mint-light: #EEF8F1;
+  --light-bg: #F5F9F6;
+  --white: #FFFFFF;
+  --text-dark: #26372D;
+  --text-muted: #718075;
+  --border-color: #DCE8DF;
+  --border-light: rgba(220, 232, 223, 0.7);
+  --gold-accent: #D4AF37;
+  --gold-light: #F9E076;
+
+  /* Typography */
+  --font-primary: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-hindi: 'Noto Sans Devanagari', 'Plus Jakarta Sans', sans-serif;
+
+  /* Corner Radii */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-pill: 9999px;
+
+  /* Elevation Shadows */
+  --shadow-subtle: 0 4px 20px rgba(16, 90, 52, 0.05);
+  --shadow-card: 0 8px 24px rgba(6, 63, 39, 0.08);
+  --shadow-hover: 0 16px 36px rgba(6, 63, 39, 0.14);
+  --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.04);
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-base: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Accessibility Font Size Scaling */
+html.font-size-sm { font-size: 14px; }
+html.font-size-md { font-size: 16px; }
+html.font-size-lg { font-size: 18px; }
+
+/* --------------------------------------------------------------------------
+   02. Base & Reset
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text-dark);
+  background-color: var(--light-bg);
+  line-height: 1.65;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  color: var(--dark-green);
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+.font-hindi {
+  font-family: var(--font-hindi);
+}
+
+p {
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.text-muted-custom {
+  color: var(--text-muted);
+}
+
+a {
+  color: var(--accent-green);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--dark-green);
+}
+
+/* Focus styles for accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--bright-green);
+  outline-offset: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   03. Badges, Buttons & Interactive Elements
+   -------------------------------------------------------------------------- */
+.bento-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.85rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  border-radius: var(--radius-pill);
+  background-color: var(--mint-green);
+  color: var(--dark-green);
+  border: 1px solid rgba(16, 90, 52, 0.15);
+  margin-bottom: 0.75rem;
+  width: fit-content;
+}
+
+.bento-badge-white {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--dark-green);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.bento-badge-dark {
+  background-color: var(--dark-green);
+  color: var(--mint-green);
+  border-color: rgba(217, 240, 223, 0.25);
+}
+
+.bento-badge-accent {
+  background-color: var(--accent-green);
+  color: var(--white);
+  border-color: transparent;
+}
+
+.btn-green-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--accent-green);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: var(--radius-pill);
+  border: none;
+  box-shadow: 0 4px 14px rgba(22, 134, 74, 0.3);
+  transition: all var(--transition-base);
+  text-decoration: none;
+}
+
+.btn-green-primary:hover {
+  background-color: var(--dark-green);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(6, 63, 39, 0.25);
+}
+
+.btn-green-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: var(--primary-green);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.65rem 1.35rem;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--primary-green);
+  transition: all var(--transition-base);
+  text-decoration: none;
+}
+
+.btn-green-outline:hover {
+  background-color: var(--primary-green);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.btn-white-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--white);
+  color: var(--dark-green);
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 0.65rem 1.25rem;
+  border-radius: var(--radius-pill);
+  border: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: all var(--transition-base);
+  text-decoration: none;
+}
+
+.btn-white-pill:hover {
+  background-color: var(--mint-green);
+  color: var(--dark-green);
+  transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------------------------
+   04. Global Header: Utility Bar, Brand Header & Navbar
+   -------------------------------------------------------------------------- */
+.top-utility-bar {
+  background-color: var(--dark-green);
+  color: var(--mint-green);
+  font-size: 0.82rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid rgba(217, 240, 223, 0.1);
+}
+
+.top-utility-bar a {
+  color: var(--mint-green);
+  transition: opacity var(--transition-fast);
+}
+
+.top-utility-bar a:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.accessibility-btn {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(217, 240, 223, 0.25);
+  color: var(--white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-xs);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.accessibility-btn:hover, .accessibility-btn.active {
+  background: var(--bright-green);
+  color: var(--white);
+}
+
+/* Main Brand Header */
+.main-brand-header {
+  background-color: var(--white);
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.brand-emblem-wrap {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+}
+
+.brand-emblem-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.school-title-hindi {
+  font-family: var(--font-hindi);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--dark-green);
+  margin-bottom: 0.15rem;
+  line-height: 1.25;
+}
+
+.school-subtitle-en {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent-green);
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+}
+
+.school-meta-pills {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+
+.meta-pill {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background-color: var(--light-bg);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.header-action-box {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+/* Main Dark Green Navbar */
+.main-navbar-sticky {
+  background-color: var(--dark-green);
+  border-bottom: 2px solid var(--accent-green);
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  padding: 0;
+  box-shadow: 0 4px 18px rgba(6, 63, 39, 0.18);
+  transition: all var(--transition-base);
+}
+
+.navbar-nav .nav-link {
+  color: #E2ECE5 !important;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.95rem 0.85rem !important;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+  color: var(--white) !important;
+  background-color: rgba(22, 134, 74, 0.45);
+}
+
+.navbar-nav .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--bright-green);
+}
+
+/* Animated Dropdown Menu */
+.navbar-nav .dropdown-menu {
+  background-color: var(--dark-green);
+  border: 1px solid rgba(67, 167, 109, 0.3);
+  border-radius: var(--radius-md);
+  padding: 0.5rem;
+  margin-top: 0.2rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  animation: dropdownFade 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-item {
+  color: #E2ECE5;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.55rem 0.85rem;
+  border-radius: var(--radius-xs);
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: var(--accent-green);
+  color: var(--white);
+  transform: translateX(3px);
+}
+
+.dropdown-item.active {
+  background-color: var(--accent-green);
+  color: var(--white);
+  font-weight: 700;
+}
+
+/* Mobile Toggle Button */
+.navbar-toggler-custom {
+  border: 1px solid rgba(217, 240, 223, 0.3);
+  color: var(--white);
+  padding: 0.45rem 0.75rem;
+  border-radius: var(--radius-sm);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Offcanvas Mobile Drawer */
+.offcanvas-dark {
+  background-color: var(--dark-green);
+  color: var(--white);
+  border-left: 2px solid var(--accent-green);
+}
+
+.offcanvas-dark .offcanvas-header {
+  border-bottom: 1px solid rgba(217, 240, 223, 0.15);
+}
+
+.offcanvas-dark .nav-link {
+  color: #E2ECE5 !important;
+  padding: 0.75rem 0.5rem !important;
+  font-size: 0.95rem;
+  border-bottom: 1px solid rgba(217, 240, 223, 0.08);
+}
+
+/* --------------------------------------------------------------------------
+   05. Bento Grid Layout System
+   -------------------------------------------------------------------------- */
+.bento-section {
+  padding: 4.5rem 0;
+  position: relative;
+}
+
+.bento-section-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--dark-green);
+  letter-spacing: -0.5px;
+}
+
+.bento-section-lead {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 650px;
+}
+
+.bento-grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.25rem;
+}
+
+/* General Bento Card Container */
+.bento-card {
+  position: relative;
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-subtle);
+  overflow: hidden;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+  display: flex;
+  flex-direction: column;
+}
+
+.bento-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--bright-green);
+}
+
+/* Card Variations */
+.bento-card-green {
+  background: linear-gradient(135deg, var(--dark-green) 0%, var(--primary-green) 100%);
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.bento-card-green h2, .bento-card-green h3, .bento-card-green h4, .bento-card-green p {
+  color: var(--white);
+}
+
+.bento-card-mint {
+  background-color: var(--mint-green);
+  border-color: #C1E4CB;
+  color: var(--dark-green);
+}
+
+.bento-card-image-bg {
+  position: relative;
+  background-color: var(--dark-green);
+  color: var(--white);
+  overflow: hidden;
+}
+
+.bento-card-image-bg img.bento-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.bento-card-image-bg:hover img.bento-bg-img {
+  transform: scale(1.04);
+}
+
+.bento-card-image-bg .bento-card-content {
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
+  padding: 1.75rem;
+  background: linear-gradient(180deg, rgba(6, 63, 39, 0) 0%, rgba(6, 63, 39, 0.6) 40%, rgba(6, 63, 39, 0.95) 100%);
+}
+
+.bento-card-body {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   06. Specific Section Styling
+   -------------------------------------------------------------------------- */
+/* Section 01: Hero Bento Dashboard */
+.bento-hero-section {
+  padding: 2.5rem 0 3.5rem 0;
+  background: linear-gradient(180deg, #EBF5EE 0%, var(--light-bg) 100%);
+}
+
+.bento-hero-featured {
+  grid-column: span 7;
+  grid-row: span 2;
+  min-height: 480px;
+}
+
+.bento-hero-intro {
+  grid-column: span 5;
+  min-height: 240px;
+}
+
+.bento-hero-academic {
+  grid-column: span 5;
+  min-height: 220px;
+}
+
+.bento-hero-studentlife {
+  grid-column: span 5;
+  min-height: 200px;
+}
+
+.bento-hero-location {
+  grid-column: span 4;
+  min-height: 200px;
+}
+
+.bento-hero-level {
+  grid-column: span 3;
+  min-height: 200px;
+}
+
+/* Section 02: School At A Glance Tiles */
+.glance-tile {
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-subtle);
+}
+
+.glance-tile:hover {
+  border-color: var(--bright-green);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card);
+}
+
+.glance-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-sm);
+  background-color: var(--mint-green);
+  color: var(--primary-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.glance-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  margin-bottom: 0.15rem;
+}
+
+.glance-value {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--dark-green);
+  margin-bottom: 0;
+  line-height: 1.25;
+}
+
+/* Section 04: Core Pillars Cards */
+.pillar-card {
+  padding: 2rem;
+  height: 100%;
+}
+
+.pillar-number {
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: var(--mint-green);
+  line-height: 1;
+  font-family: var(--font-primary);
+}
+
+.pillar-icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  background-color: var(--mint-green);
+  color: var(--primary-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  transition: all var(--transition-base);
+}
+
+.pillar-card:hover .pillar-icon-box {
+  background-color: var(--accent-green);
+  color: var(--white);
+  transform: scale(1.08);
+}
+
+/* Section 05: Principal's Message */
+.principal-bento-wrap {
+  background-color: var(--white);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.principal-quote-icon {
+  font-size: 3.5rem;
+  color: var(--bright-green);
+  opacity: 0.3;
+  line-height: 1;
+}
+
+/* Section 07: Campus Life Grid */
+.campus-life-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.25rem;
+}
+
+.campus-life-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-subtle);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  text-decoration: none;
+}
+
+.campus-life-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.campus-life-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.campus-life-card:hover img {
+  transform: scale(1.06);
+}
+
+.campus-life-overlay {
+  position: relative;
+  z-index: 2;
+  padding: 1.5rem;
+  background: linear-gradient(180deg, rgba(6, 63, 39, 0) 0%, rgba(6, 63, 39, 0.7) 40%, rgba(6, 63, 39, 0.95) 100%);
+}
+
+.campus-life-overlay h4 {
+  color: var(--white);
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.campus-life-overlay p {
+  color: var(--mint-green);
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.campus-life-link {
+  color: var(--gold-light);
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: gap var(--transition-fast);
+}
+
+.campus-life-card:hover .campus-life-link {
+  gap: 0.75rem;
+}
+
+/* Section 08: Learning & Student Development Timeline */
+.timeline-item {
+  position: relative;
+  padding-left: 2.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 0.55rem;
+  top: 1.5rem;
+  bottom: -1.75rem;
+  width: 2px;
+  background-color: var(--border-color);
+}
+
+.timeline-item:last-child::before {
+  display: none;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--accent-green);
+  border: 3px solid var(--white);
+  box-shadow: 0 0 0 2px var(--accent-green);
+}
+
+/* Section 09: Notice & Announcement Center */
+.notice-card {
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-subtle);
+  display: flex;
+  flex-direction: column;
+}
+
+.notice-card:hover {
+  border-color: var(--bright-green);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+
+.notice-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.78rem;
+}
+
+.notice-date {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.notice-category-badge {
+  padding: 0.2rem 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  border-radius: var(--radius-pill);
+  background-color: var(--mint-green);
+  color: var(--dark-green);
+}
+
+.notice-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--dark-green);
+  margin-bottom: 0.4rem;
+  line-height: 1.35;
+}
+
+.notice-summary {
+  font-size: 0.88rem;
+  color: var(--text-dark);
+  margin-bottom: 0.75rem;
+}
+
+.notice-search-box {
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+
+.notice-search-box input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.6rem;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--border-color);
+  background-color: var(--white);
+  font-size: 0.9rem;
+  transition: all var(--transition-fast);
+}
+
+.notice-search-box input:focus {
+  border-color: var(--accent-green);
+  box-shadow: 0 0 0 3px rgba(22, 134, 74, 0.15);
+  outline: none;
+}
+
+.notice-search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+}
+
+/* Category Filter Pills */
+.filter-pills-wrap {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.filter-pill-btn {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  color: var(--text-dark);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-pill-btn:hover {
+  border-color: var(--accent-green);
+  color: var(--dark-green);
+}
+
+.filter-pill-btn.active {
+  background-color: var(--dark-green);
+  color: var(--white);
+  border-color: var(--dark-green);
+}
+
+/* Section 10: Examination Results Filter & Table */
+.results-filter-card {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-card);
+}
+
+.table-custom-green {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.table-custom-green thead th {
+  background-color: var(--dark-green);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 0.85rem 1rem;
+  border: none;
+}
+
+.table-custom-green tbody td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.88rem;
+  color: var(--text-dark);
+  vertical-align: middle;
+}
+
+.table-custom-green tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table-custom-green tbody tr:hover {
+  background-color: var(--mint-light);
+}
+
+/* Section 11: School Gallery Bento */
+.gallery-bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.25rem;
+}
+
+.gallery-tile {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-subtle);
+  cursor: pointer;
+  min-height: 240px;
+  background-color: var(--dark-green);
+}
+
+.gallery-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.gallery-tile:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-tile-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(6, 63, 39, 0) 0%, rgba(6, 63, 39, 0.5) 40%, rgba(6, 63, 39, 0.92) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.25rem;
+  opacity: 1;
+  transition: opacity var(--transition-base);
+}
+
+.gallery-tile-overlay h5 {
+  color: var(--white);
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.gallery-tile-overlay p {
+  color: var(--mint-green);
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+/* Lightbox Modal */
+.lightbox-modal {
+  display: none;
+  position: fixed;
+  z-index: 1060;
+  inset: 0;
+  background-color: rgba(6, 63, 39, 0.95);
+  backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.lightbox-modal.is-active {
+  display: flex;
+}
+
+.lightbox-content-box {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  background: var(--dark-green);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--accent-green);
+}
+
+.lightbox-img-wrap {
+  width: 100%;
+  max-height: 550px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-img-wrap img {
+  max-width: 100%;
+  max-height: 550px;
+  object-fit: contain;
+}
+
+.lightbox-caption-bar {
+  padding: 1.25rem 1.75rem;
+  background-color: var(--dark-green);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lightbox-close-btn, .lightbox-nav-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: var(--white);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.lightbox-close-btn:hover, .lightbox-nav-btn:hover {
+  background: var(--bright-green);
+}
+
+/* Section 12: Admission Feature Panel */
+.admission-banner-bento {
+  background: linear-gradient(135deg, var(--dark-green) 0%, #0c4e2c 100%);
+  border-radius: var(--radius-xl);
+  padding: 3.5rem 3rem;
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(217, 240, 223, 0.2);
+  box-shadow: var(--shadow-card);
+}
+
+.admission-banner-bento::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(67, 167, 109, 0.3) 0%, rgba(6, 63, 39, 0) 70%);
+}
+
+/* Section 13: Contact Information Bento */
+.contact-info-card {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  height: 100%;
+  box-shadow: var(--shadow-subtle);
+  transition: all var(--transition-fast);
+}
+
+.contact-info-card:hover {
+  border-color: var(--bright-green);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card);
+}
+
+.contact-icon-large {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-md);
+  background-color: var(--mint-green);
+  color: var(--primary-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Section 14: Global Footer */
+.global-footer-green {
+  background-color: var(--dark-green);
+  color: #D3E5D9;
+  padding: 4.5rem 0 2rem 0;
+  border-top: 3px solid var(--accent-green);
+  position: relative;
+}
+
+.footer-heading {
+  color: var(--white);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footer-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 32px;
+  height: 2px;
+  background-color: var(--bright-green);
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links-list li {
+  margin-bottom: 0.65rem;
+}
+
+.footer-links-list a {
+  color: #D3E5D9;
+  font-size: 0.88rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all var(--transition-fast);
+}
+
+.footer-links-list a:hover {
+  color: var(--white);
+  transform: translateX(4px);
+}
+
+.footer-bottom-bar {
+  margin-top: 3.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(217, 240, 223, 0.12);
+  font-size: 0.82rem;
+  color: #A3C4B0;
+}
+
+/* Back to Top Button */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--accent-green);
+  color: var(--white);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-base);
+  z-index: 1020;
+}
+
+.back-to-top-btn.is-shown {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top-btn:hover {
+  background-color: var(--dark-green);
+  transform: translateY(-4px);
+}
+
+/* --------------------------------------------------------------------------
+   07. Inner Pages UI: Hero Banners, Breadcrumbs & Modules
+   -------------------------------------------------------------------------- */
+.inner-page-hero {
+  background: linear-gradient(135deg, var(--dark-green) 0%, var(--primary-green) 100%);
+  color: var(--white);
+  padding: 3.5rem 0 3rem 0;
+  border-bottom: 3px solid var(--accent-green);
+  position: relative;
+  overflow: hidden;
+}
+
+.inner-page-hero h1 {
+  color: var(--white);
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.inner-page-hero p.lead {
+  color: var(--mint-green);
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin-bottom: 0;
+}
+
+.custom-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.custom-breadcrumb a {
+  color: var(--mint-green);
+  text-decoration: none;
+}
+
+.custom-breadcrumb a:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.custom-breadcrumb span.separator {
+  color: rgba(217, 240, 223, 0.5);
+}
+
+.custom-breadcrumb span.current {
+  color: var(--white);
+  font-weight: 700;
+}
+
+/* FAQ Accordion Styling */
+.accordion-custom-green .accordion-item {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md) !important;
+  margin-bottom: 0.85rem;
+  overflow: hidden;
+  background-color: var(--white);
+  box-shadow: var(--shadow-subtle);
+}
+
+.accordion-custom-green .accordion-button {
+  background-color: var(--white);
+  color: var(--dark-green);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1.1rem 1.25rem;
+  box-shadow: none;
+}
+
+.accordion-custom-green .accordion-button:not(.collapsed) {
+  background-color: var(--mint-light);
+  color: var(--primary-green);
+}
+
+.accordion-custom-green .accordion-button:focus {
+  box-shadow: 0 0 0 3px rgba(22, 134, 74, 0.15);
+}
+
+/* --------------------------------------------------------------------------
+   08. Scroll Reveal Animations & Micro-interactions
+   -------------------------------------------------------------------------- */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll,
+  .bento-card,
+  .campus-life-card img,
+  .gallery-tile img,
+  .btn-green-primary,
+  .btn-green-outline {
+    transition: none !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   09. Responsive Bento Grid Breakpoints
+   -------------------------------------------------------------------------- */
+@media (max-width: 1199.98px) {
+  .bento-hero-featured {
+    grid-column: span 12;
+    min-height: 420px;
+  }
+  .bento-hero-intro {
+    grid-column: span 6;
+  }
+  .bento-hero-academic {
+    grid-column: span 6;
+  }
+  .bento-hero-studentlife {
+    grid-column: span 6;
+  }
+  .bento-hero-location {
+    grid-column: span 6;
+  }
+  .bento-hero-level {
+    grid-column: span 12;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .bento-grid-12 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .bento-hero-featured {
+    grid-column: span 6;
+    min-height: 380px;
+  }
+  .bento-hero-intro,
+  .bento-hero-academic,
+  .bento-hero-studentlife,
+  .bento-hero-location,
+  .bento-hero-level {
+    grid-column: span 6;
+  }
+  .campus-life-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .campus-life-card {
+    grid-column: span 3;
+  }
+  .gallery-bento-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .gallery-tile {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .bento-grid-12,
+  .campus-life-grid,
+  .gallery-bento-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .bento-hero-featured {
+    min-height: 340px;
+  }
+  .school-title-hindi {
+    font-size: 1.15rem;
+  }
+  .bento-section {
+    padding: 3rem 0;
+  }
+  .bento-section-title {
+    font-size: 1.8rem;
+  }
+  .inner-page-hero h1 {
+    font-size: 1.85rem;
+  }
+  .admission-banner-bento {
+    padding: 2.25rem 1.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .brand-emblem-wrap {
+    width: 54px;
+    height: 54px;
+  }
+  .school-title-hindi {
+    font-size: 1rem;
+  }
+  .bento-card-body {
+    padding: 1.25rem;
+  }
+  .bento-hero-featured .bento-card-content {
+    padding: 1.25rem;
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schoolNameHindi": "CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR",
+  "schoolNameEnglish": "+2 Rajkiyakrit Vidya Niketan High School",
+  "udiseCode": "20180231602",
+  "location": {
+    "village": "हल्दीपोखर (Haldipokhar)",
+    "block": "पोटका (Potka)",
+    "district": "पूर्वी सिंहभूम (East Singhbhum)",
+    "state": "झारखण्ड (Jharkhand)",
+    "pincode": "831002",
+    "fullAddress": "हल्दीपोखर, पोटका, पूर्वी सिंहभूम, झारखण्ड – 831002 (Haldipokhar, Potka, East Singhbhum, Jharkhand – 831002)"
+  },
+  "email": "vnhs.haldipokhar.e.singhbhum@gmail.com",
+  "educationalLevel": "+2 Higher Secondary (Secondary & Higher Secondary)",
+  "affiliation": "Jharkhand Academic Council (JAC), Ranchi",
+  "schoolDescription": "The school focuses on quality education, good values, discipline, life skills and all-round student development.",
+  "principal": {
+    "namePlaceholder": "[Official Principal Name — As per School Records]",
+    "designation": "Headmaster / Principal In-Charge",
+    "qualificationPlaceholder": "[Post Graduate / B.Ed / M.Ed — Official Record Pending]",
+    "message": "Welcome to +2 Rajkiyakrit Vidya Niketan High School, Haldipokhar. Our continuous pursuit is to nurture disciplined, creative and responsible young citizens equipped with academic excellence, ethical grounding and practical life skills."
+  },
+  "mainActivities": [
+    "Academic Programs",
+    "Cultural Activities",
+    "Sports Activities",
+    "Scout & Guide",
+    "Exhibitions",
+    "Skills Competition",
+    "Vocational Activities"
+  ]
+}

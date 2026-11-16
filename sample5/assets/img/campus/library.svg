@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="libWall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F4EBE1"/>
+      <stop offset="100%" stop-color="#E8DCCF"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#libWall)"/>
+  <!-- Bookshelf 1 (Left) -->
+  <rect x="50" y="60" width="180" height="340" rx="4" fill="#4E342E" stroke="#3E2723" stroke-width="3"/>
+  <rect x="65" y="80" width="150" height="5" fill="#3E2723"/>
+  <rect x="65" y="150" width="150" height="5" fill="#3E2723"/>
+  <rect x="65" y="220" width="150" height="5" fill="#3E2723"/>
+  <rect x="65" y="290" width="150" height="5" fill="#3E2723"/>
+  <rect x="65" y="360" width="150" height="5" fill="#3E2723"/>
+  <!-- Bookshelf 2 (Right) -->
+  <rect x="570" y="60" width="180" height="340" rx="4" fill="#4E342E" stroke="#3E2723" stroke-width="3"/>
+  <rect x="585" y="80" width="150" height="5" fill="#3E2723"/>
+  <rect x="585" y="150" width="150" height="5" fill="#3E2723"/>
+  <rect x="585" y="220" width="150" height="5" fill="#3E2723"/>
+  <rect x="585" y="290" width="150" height="5" fill="#3E2723"/>
+  <rect x="585" y="360" width="150" height="5" fill="#3E2723"/>
+  <!-- Colorful Books spines -->
+  <g>
+    <!-- Left shelf books -->
+    <rect x="70" y="87" width="18" height="60" fill="#105A34"/>
+    <rect x="90" y="92" width="22" height="55" fill="#C62828"/>
+    <rect x="114" y="85" width="16" height="62" fill="#1565C0"/>
+    <rect x="132" y="90" width="20" height="57" fill="#F9A825"/>
+    <rect x="154" y="88" width="18" height="59" fill="#2E7D32"/>
+    <rect x="174" y="95" width="24" height="52" fill="#6A1B9A"/>
+    <!-- Shelf 2 -->
+    <rect x="70" y="157" width="20" height="60" fill="#E65100"/>
+    <rect x="92" y="160" width="24" height="57" fill="#00695C"/>
+    <rect x="118" y="155" width="16" height="62" fill="#AD1457"/>
+    <rect x="136" y="162" width="20" height="55" fill="#283593"/>
+    <rect x="158" y="158" width="25" height="59" fill="#105A34"/>
+  </g>
+  <!-- Reading Room Signboard -->
+  <rect x="270" y="70" width="260" height="70" rx="8" fill="#105A34" stroke="#F9D423" stroke-width="2"/>
+  <text x="400" y="102" font-family="'Hind', sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">विद्यालय पुस्तकालय</text>
+  <text x="400" y="125" font-family="'Poppins', sans-serif" font-size="13" font-weight="500" fill="#F9D423" text-anchor="middle">School Central Library &amp; Reading Room</text>
+  <!-- Central Study Table with Lamps -->
+  <rect x="260" y="310" width="280" height="90" rx="6" fill="#8D6E63" stroke="#4E342E" stroke-width="2"/>
+  <!-- Open books on table -->
+  <polygon points="320,330 350,320 380,330 380,345 350,335 320,345" fill="#FFFFFF" stroke="#105A34"/>
+  <polygon points="420,330 450,320 480,330 480,345 450,335 420,345" fill="#FFFFFF" stroke="#105A34"/>
+  <!-- Floor -->
+  <rect y="400" width="800" height="100" fill="#105A34"/>
+  <text x="400" y="455" font-family="'Poppins', sans-serif" font-size="14" font-weight="500" fill="#EAF5ED" text-anchor="middle">Rich Repository of Reference Books, NCERT Textbooks &amp; Periodicals</text>
+</svg>

@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="heroSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E1F0E7"/>
+      <stop offset="60%" stop-color="#F5F9F6"/>
+      <stop offset="100%" stop-color="#D9F0DF"/>
+    </linearGradient>
+    <linearGradient id="heroGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#063F27"/>
+      <stop offset="40%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#16864A"/>
+    </linearGradient>
+    <linearGradient id="bldg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#F8FAF9"/>
+      <stop offset="100%" stop-color="#E5ECE7"/>
+    </linearGradient>
+    <linearGradient id="darkOverlay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(6, 63, 39, 0.25)"/>
+      <stop offset="40%" stop-color="rgba(6, 63, 39, 0.5)"/>
+      <stop offset="100%" stop-color="rgba(6, 63, 39, 0.94)"/>
+    </linearGradient>
+    <pattern id="bentoGridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(16, 90, 52, 0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#heroSky)"/>
+  <rect width="1200" height="800" fill="url(#bentoGridPattern)"/>
+
+  <!-- Distant Hills -->
+  <path d="M0,500 Q300,450 600,490 T1200,480 L1200,800 L0,800 Z" fill="#D3E8DC"/>
+  <path d="M0,530 Q250,490 550,520 T1200,510 L1200,800 L0,800 Z" fill="#BFDFCB"/>
+
+  <!-- School Main Facade -->
+  <rect x="300" y="270" width="600" height="310" rx="6" fill="url(#bldg)" stroke="#DCE8DF" stroke-width="2"/>
+  <rect x="280" y="250" width="640" height="26" rx="4" fill="url(#heroGreen)"/>
+  
+  <!-- Central Gable Entrance -->
+  <rect x="510" y="220" width="180" height="360" rx="6" fill="#FFFFFF" stroke="#DCE8DF" stroke-width="2"/>
+  <polygon points="500,220 600,130 700,220" fill="url(#heroGreen)"/>
+  <circle cx="600" cy="180" r="20" fill="#F9E076" stroke="#063F27" stroke-width="2"/>
+
+  <!-- Signboard -->
+  <rect x="525" y="235" width="150" height="28" rx="4" fill="#105A34"/>
+  <text x="600" y="254" font-family="'Noto Sans Devanagari', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+    +2 विद्या निकेतन उच्च विद्यालय
+  </text>
+
+  <!-- Architectural Pillars -->
+  <rect x="535" y="280" width="16" height="300" fill="#E2ECE5"/>
+  <rect x="575" y="280" width="16" height="300" fill="#E2ECE5"/>
+  <rect x="610" y="280" width="16" height="300" fill="#E2ECE5"/>
+  <rect x="650" y="280" width="16" height="300" fill="#E2ECE5"/>
+  <path d="M575,580 L575,470 Q600,450 625,470 L625,580 Z" fill="#063F27"/>
+
+  <!-- Classroom Windows -->
+  <g fill="#105A34" opacity="0.85">
+    <rect x="330" y="300" width="45" height="55" rx="3"/>
+    <rect x="395" y="300" width="45" height="55" rx="3"/>
+    <rect x="460" y="300" width="40" height="55" rx="3"/>
+    <rect x="330" y="380" width="45" height="55" rx="3"/>
+    <rect x="395" y="380" width="45" height="55" rx="3"/>
+    <rect x="460" y="380" width="40" height="55" rx="3"/>
+    <rect x="330" y="460" width="45" height="55" rx="3"/>
+    <rect x="395" y="460" width="45" height="55" rx="3"/>
+    <rect x="460" y="460" width="40" height="55" rx="3"/>
+
+    <rect x="700" y="300" width="40" height="55" rx="3"/>
+    <rect x="760" y="300" width="45" height="55" rx="3"/>
+    <rect x="825" y="300" width="45" height="55" rx="3"/>
+    <rect x="700" y="380" width="40" height="55" rx="3"/>
+    <rect x="760" y="380" width="45" height="55" rx="3"/>
+    <rect x="825" y="380" width="45" height="55" rx="3"/>
+    <rect x="700" y="460" width="40" height="55" rx="3"/>
+    <rect x="760" y="460" width="45" height="55" rx="3"/>
+    <rect x="825" y="460" width="45" height="55" rx="3"/>
+  </g>
+
+  <!-- Side Wings -->
+  <rect x="120" y="340" width="180" height="240" fill="#F1F6F3" stroke="#DCE8DF"/>
+  <rect x="110" y="325" width="200" height="18" fill="url(#heroGreen)"/>
+  <rect x="900" y="340" width="180" height="240" fill="#F1F6F3" stroke="#DCE8DF"/>
+  <rect x="890" y="325" width="200" height="18" fill="url(#heroGreen)"/>
+
+  <!-- Indian Flag Post in Forecourt -->
+  <g transform="translate(600, 560)">
+    <line x1="0" y1="20" x2="0" y2="-210" stroke="#718075" stroke-width="4"/>
+    <circle cx="0" cy="-212" r="5" fill="#D4AF37"/>
+    <g transform="translate(2, -210)">
+      <rect x="0" y="0" width="70" height="14" fill="#FF9933"/>
+      <rect x="0" y="14" width="70" height="14" fill="#FFFFFF"/>
+      <rect x="0" y="28" width="70" height="14" fill="#138808"/>
+      <circle cx="35" cy="21" r="5" fill="none" stroke="#000080" stroke-width="1.2"/>
+    </g>
+  </g>
+
+  <!-- Green Grass Foreground & Pathway -->
+  <path d="M0,580 L460,580 L520,800 L0,800 Z" fill="#105A34"/>
+  <path d="M1200,580 L740,580 L680,800 L1200,800 Z" fill="#105A34"/>
+  <polygon points="460,580 740,580 680,800 520,800" fill="#E8F1EC"/>
+
+  <!-- Trees -->
+  <circle cx="100" cy="520" r="60" fill="#16864A"/>
+  <circle cx="140" cy="490" r="50" fill="#43A76D"/>
+  <circle cx="1100" cy="520" r="60" fill="#16864A"/>
+  <circle cx="1060" cy="490" r="50" fill="#43A76D"/>
+
+  <!-- Bento Dark Image Overlay -->
+  <rect width="1200" height="800" fill="url(#darkOverlay)"/>
+
+  <!-- Live Campus Typography Overlay -->
+  <g transform="translate(70, 590)">
+    <rect x="0" y="0" width="200" height="34" rx="17" fill="#16864A"/>
+    <circle cx="17" cy="17" r="5" fill="#D9F0DF"/>
+    <text x="35" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" letter-spacing="2">
+      LEARN • GROW • ACHIEVE
+    </text>
+    <text x="0" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-size="44" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">
+      Welcome to Our School
+    </text>
+    <text x="0" y="120" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="500" fill="#D9F0DF">
+      +2 राजकीयकृत विद्या निकेतन उच्च विद्यालय • हल्दीपोखर, पोटका, झारखण्ड
+    </text>
+  </g>
+</svg>

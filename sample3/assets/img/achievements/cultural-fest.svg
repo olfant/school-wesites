@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#F3F8F4"/>
+  <rect x="25" y="25" width="750" height="450" fill="#FFFFFF" stroke="#D9E5DC" stroke-width="2"/>
+
+  <!-- Cultural Shield & Certificate Motif -->
+  <g transform="translate(400, 230)">
+    <!-- Certificate Parchment -->
+    <rect x="-120" y="-100" width="240" height="180" rx="4" fill="#FFFFFF" stroke="#105A34" stroke-width="3"/>
+    <rect x="-110" y="-90" width="220" height="160" fill="none" stroke="#E5C158" stroke-width="1.5" stroke-dasharray="6 3"/>
+    
+    <text x="0" y="-60" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#073E28" text-anchor="middle">CERTIFICATE OF MERIT</text>
+    <line x1="-70" y1="-50" x2="70" y2="-50" stroke="#105A34" stroke-width="1.5"/>
+    <text x="0" y="-30" font-family="'Space Grotesk', sans-serif" font-size="10" fill="#647268" text-anchor="middle">STATE CULTURAL MEET</text>
+
+    <!-- Rosette Seal -->
+    <circle cx="0" cy="20" r="32" fill="#E5C158" stroke="#B88A23" stroke-width="2"/>
+    <circle cx="0" cy="20" r="24" fill="#105A34"/>
+    <text x="0" y="25" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1st</text>
+    <!-- Rosette ribbons -->
+    <polygon points="-12,48 -22,85 0,72 22,85 12,48" fill="#E5C158"/>
+  </g>
+
+  <!-- Swiss Header -->
+  <rect x="50" y="50" width="230" height="30" fill="#073E28"/>
+  <text x="165" y="70" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">CULTURAL RECOGNITION • [OFFICIAL]</text>
+  <text x="400" y="445" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#647268" text-anchor="middle">
+    Youth Festival, Literary Competitions &amp; Traditional Performing Arts Honors
+  </text>
+</svg>

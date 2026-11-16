@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="scgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#063F27"/>
+      <stop offset="60%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#16864A"/>
+    </linearGradient>
+    <linearGradient id="scgCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.15)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#scgGrad)"/>
+  <rect x="60" y="60" width="680" height="480" rx="20" fill="url(#scgCard)" stroke="rgba(255,255,255,0.2)"/>
+
+  <!-- Scout & Guide Trefoil & Fleur-de-lis Emblem -->
+  <g transform="translate(400, 220)">
+    <circle cx="0" cy="0" r="95" fill="rgba(217, 240, 223, 0.12)"/>
+    <circle cx="0" cy="0" r="70" fill="rgba(255, 255, 255, 0.18)" stroke="#D9F0DF" stroke-width="2"/>
+    <circle cx="0" cy="0" r="50" fill="#FFFFFF"/>
+    
+    <!-- Trefoil / Arrowhead -->
+    <path d="M0,-30 L10,-5 L22,-5 C25,-5 25,10 12,12 L12,20 L-12,20 L-12,12 C-25,10 -25,-5 -22,-5 L-10,-5 Z" fill="#063F27"/>
+    <!-- Compass Star -->
+    <circle cx="0" cy="-2" r="5" fill="#D4AF37"/>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(100, 410)">
+    <rect x="0" y="0" width="180" height="28" rx="14" fill="#43A76D"/>
+    <text x="90" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">
+      SCOUT &amp; GUIDE
+    </text>
+    <text x="0" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">
+      Bharat Scouts &amp; Guides Troop
+    </text>
+    <text x="0" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="500" fill="#D9F0DF">
+      Leadership development, character training, outdoor survival and community service
+    </text>
+  </g>
+</svg>

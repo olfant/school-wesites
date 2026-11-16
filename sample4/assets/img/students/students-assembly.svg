@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="saGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#063F27"/>
+      <stop offset="60%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#16864A"/>
+    </linearGradient>
+    <linearGradient id="saCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.14)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.03)"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#saGrad)"/>
+  <rect x="60" y="60" width="680" height="480" rx="20" fill="url(#saCard)" stroke="rgba(255,255,255,0.18)"/>
+
+  <!-- Morning Assembly Graphic -->
+  <g transform="translate(400, 220)">
+    <!-- Flag Post -->
+    <line x1="0" y1="70" x2="0" y2="-90" stroke="#FFFFFF" stroke-width="3"/>
+    <g transform="translate(0, -90)">
+      <rect x="0" y="0" width="50" height="10" fill="#FF9933"/>
+      <rect x="0" y="10" width="50" height="10" fill="#FFFFFF"/>
+      <rect x="0" y="20" width="50" height="10" fill="#138808"/>
+    </g>
+    <!-- Disciplined Student Rows -->
+    <g fill="#D9F0DF">
+      <circle cx="-120" cy="40" r="12"/>
+      <circle cx="-60" cy="40" r="12"/>
+      <circle cx="60" cy="40" r="12"/>
+      <circle cx="120" cy="40" r="12"/>
+
+      <circle cx="-120" cy="80" r="12"/>
+      <circle cx="-60" cy="80" r="12"/>
+      <circle cx="60" cy="80" r="12"/>
+      <circle cx="120" cy="80" r="12"/>
+    </g>
+  </g>
+
+  <!-- Info -->
+  <g transform="translate(100, 410)">
+    <rect x="0" y="0" width="160" height="28" rx="14" fill="#43A76D"/>
+    <text x="80" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">
+      ASSEMBLY
+    </text>
+    <text x="0" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">
+      Morning Assembly &amp; Values
+    </text>
+    <text x="0" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="500" fill="#D9F0DF">
+      Inculcating civic duties, universal brotherhood, prayers and daily motivation
+    </text>
+  </g>
+</svg>

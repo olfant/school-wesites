@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="heroSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#063E27"/>
+      <stop offset="60%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#16864A"/>
+    </linearGradient>
+    <linearGradient id="cinematicVignette" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.2"/>
+      <stop offset="60%" stop-color="#000000" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#063E27" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+    </filter>
+  </defs>
+
+  
+        <!-- Sky & Atmosphere -->
+        <rect width="1920" height="1080" fill="url(#heroSky)"/>
+        <circle cx="1550" cy="220" r="180" fill="#FDE68A" opacity="0.4" filter="url(#glow)"/>
+        
+        <!-- Mountains & Green Hills -->
+        <path d="M 0 650 Q 400 480 900 620 T 1920 540 L 1920 1080 L 0 1080 Z" fill="#0C4A2B" opacity="0.8"/>
+        <path d="M 0 720 Q 550 560 1200 700 T 1920 660 L 1920 1080 L 0 1080 Z" fill="#083821"/>
+
+        <!-- School Building Architecture -->
+        <rect x="350" y="440" width="1220" height="380" rx="8" fill="#FFFFFF"/>
+        <rect x="350" y="420" width="1220" height="30" fill="#105A34"/>
+        <polygon points="960,300 320,430 1600,430" fill="#063E27"/>
+        
+        <!-- Columns & Arches -->
+        <g fill="#EAF5ED" stroke="#105A34" stroke-width="2">
+            <rect x="420" y="460" width="50" height="340"/>
+            <rect x="540" y="460" width="50" height="340"/>
+            <rect x="660" y="460" width="50" height="340"/>
+            <rect x="780" y="460" width="50" height="340"/>
+            <rect x="1090" y="460" width="50" height="340"/>
+            <rect x="1210" y="460" width="50" height="340"/>
+            <rect x="1330" y="460" width="50" height="340"/>
+            <rect x="1450" y="460" width="50" height="340"/>
+        </g>
+        
+        <!-- Grand Portico & Clock Tower -->
+        <rect x="860" y="340" width="200" height="480" fill="#F8FAFC" stroke="#16864A" stroke-width="4"/>
+        <circle cx="960" cy="400" r="35" fill="#E2E8F0" stroke="#063E27" stroke-width="4"/>
+        <line x1="960" y1="400" x2="960" y2="380" stroke="#063E27" stroke-width="4"/>
+        <line x1="960" y1="400" x2="975" y2="400" stroke="#063E27" stroke-width="4"/>
+        
+        <!-- Indian National Tricolor Flag -->
+        <line x1="960" y1="300" x2="960" y2="210" stroke="#64748B" stroke-width="6"/>
+        <path d="M 960 215 C 990 205 1020 225 1050 215 L 1050 255 C 1020 265 990 245 960 255 Z" fill="#FF9933"/>
+        <path d="M 960 230 C 990 220 1020 240 1050 230 L 1050 245 C 1020 255 990 235 960 245 Z" fill="#FFFFFF"/>
+        <circle cx="1005" cy="237" r="5" fill="#000080"/>
+        <path d="M 960 245 C 990 235 1020 255 1050 245 L 1050 260 C 1020 270 990 250 960 260 Z" fill="#138808"/>
+
+        <!-- Foreground Lawn & Trees -->
+        <rect x="0" y="800" width="1920" height="280" fill="#0A4226"/>
+        <path d="M 0 880 C 400 840 1400 840 1920 880 L 1920 1080 L 0 1080 Z" fill="#063E27"/>
+        
+        <!-- Pathway -->
+        <polygon points="960,820 650,1080 1270,1080" fill="#E2E8F0" opacity="0.3"/>
+        
+        <!-- Cinematic Trees -->
+        <g fill="#16864A" opacity="0.95">
+          <circle cx="200" cy="780" r="140"/>
+          <circle cx="280" cy="720" r="110"/>
+          <circle cx="140" cy="740" r="90"/>
+          <rect x="190" y="860" width="25" height="150" fill="#451A03"/>
+
+          <circle cx="1720" cy="780" r="150"/>
+          <circle cx="1640" cy="710" r="120"/>
+          <circle cx="1800" cy="730" r="100"/>
+          <rect x="1710" y="860" width="28" height="150" fill="#451A03"/>
+        </g>
+        
+
+  <!-- Dark Green Cinematic Vignette Overlay -->
+  <rect width="1920" height="1080" fill="url(#cinematicVignette)"/>
+
+  <!-- Artistic Lower Third Title Badge -->
+  <g transform="translate(60, 900)">
+    <rect x="0" y="0" width="180" height="32" rx="16" fill="#35A66B" opacity="0.9"/>
+    <text x="90" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">
+      CINEMATIC CAMPUS
+    </text>
+    <text x="0" y="65" font-family="'Plus Jakarta Sans', 'Segoe UI', sans-serif" font-size="28" font-weight="800" fill="#FFFFFF" letter-spacing="0.5">
+      +2 राजकीयकृत विद्या निकेतन उच्च विद्यालय
+    </text>
+    <text x="0" y="92" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="500" fill="#E2E8F0">
+      Empowering Minds • Building Futures • Haldipokhar Campus
+    </text>
+  </g>
+</svg>

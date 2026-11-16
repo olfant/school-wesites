@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <rect width="600" height="450" fill="#105A34"/>
+  <!-- Sports Trophy & Football -->
+  <circle cx="300" cy="170" r="80" fill="#16864A" stroke="#F9D423" stroke-width="4"/>
+  <text x="300" y="165" font-family="'Hind', sans-serif" font-size="24" font-weight="700" fill="#FFFFFF" text-anchor="middle">वार्षिक खेल उत्सव</text>
+  <text x="300" y="195" font-family="'Poppins', sans-serif" font-size="14" font-weight="600" fill="#F9D423" text-anchor="middle">Annual Sports Meet</text>
+  <!-- Running track curves -->
+  <path d="M 0,320 Q 300,240 600,320" fill="none" stroke="#EAF5ED" stroke-width="3" stroke-dasharray="6,4"/>
+  <!-- Bottom info -->
+  <rect y="360" width="600" height="90" fill="#064525"/>
+  <text x="300" y="395" font-family="'Hind', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">खेल प्रतियोगिताएँ व एथलेटिक्स</text>
+  <text x="300" y="422" font-family="'Poppins', sans-serif" font-size="13" fill="#A5D6A7" text-anchor="middle">Football, Volleyball, Athletics &amp; District Tournaments</text>
+</svg>

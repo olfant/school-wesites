@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#F3F8F4"/>
+  <rect x="25" y="25" width="750" height="450" fill="#FFFFFF" stroke="#D9E5DC" stroke-width="2"/>
+
+  <!-- Lab Workbench -->
+  <rect x="80" y="280" width="640" height="30" fill="#073E28"/>
+  <rect x="110" y="310" width="20" height="130" fill="#105A34"/>
+  <rect x="390" y="310" width="20" height="130" fill="#105A34"/>
+  <rect x="670" y="310" width="20" height="130" fill="#105A34"/>
+
+  <!-- Beakers & Flasks -->
+  <!-- Conical Flask 1 -->
+  <path d="M 170,280 L 195,220 L 195,190 L 205,190 L 205,220 L 230,280 Z" fill="#E8F3EA" stroke="#16864A" stroke-width="2.5"/>
+  <path d="M 178,280 L 190,250 L 210,250 L 222,280 Z" fill="#4AA875" opacity="0.6"/>
+  <!-- Bubbles -->
+  <circle cx="200" cy="240" r="3" fill="#105A34"/>
+  <circle cx="204" cy="225" r="2" fill="#105A34"/>
+
+  <!-- Test Tube Stand -->
+  <rect x="270" y="220" width="120" height="60" fill="none" stroke="#647268" stroke-width="2"/>
+  <!-- Tubes -->
+  <rect x="285" y="195" width="12" height="75" rx="6" fill="#E8F3EA" stroke="#073E28" stroke-width="1.5"/>
+  <rect x="287" y="235" width="8" height="32" rx="4" fill="#E5C158"/>
+  <rect x="310" y="195" width="12" height="75" rx="6" fill="#E8F3EA" stroke="#073E28" stroke-width="1.5"/>
+  <rect x="312" y="225" width="8" height="42" rx="4" fill="#16864A"/>
+  <rect x="335" y="195" width="12" height="75" rx="6" fill="#E8F3EA" stroke="#073E28" stroke-width="1.5"/>
+  <rect x="337" y="245" width="8" height="22" rx="4" fill="#4AA875"/>
+
+  <!-- Microscope -->
+  <g transform="translate(480, 160)">
+    <!-- Base -->
+    <rect x="20" y="110" width="70" height="10" rx="3" fill="#1D3024"/>
+    <!-- Arm -->
+    <path d="M 30,110 C 30,70 70,50 70,20 L 50,20" stroke="#073E28" stroke-width="8" fill="none"/>
+    <!-- Eyepiece Tube -->
+    <rect x="40" y="10" width="14" height="45" rx="2" fill="#16864A" transform="rotate(25, 47, 32)"/>
+    <!-- Stage -->
+    <rect x="15" y="75" width="45" height="6" fill="#1D3024"/>
+    <!-- Objective lens -->
+    <rect x="32" y="55" width="10" height="16" fill="#E5C158"/>
+  </g>
+
+  <!-- Swiss Header -->
+  <rect x="50" y="50" width="180" height="30" fill="#073E28"/>
+  <text x="140" y="70" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">SCIENCE LAB • 05</text>
+  <text x="400" y="445" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#647268" text-anchor="middle">
+    Physics, Chemistry &amp; Biology Experimental Demonstration Laboratory
+  </text>
+</svg>

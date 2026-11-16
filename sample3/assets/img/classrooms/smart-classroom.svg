@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#F3F8F4"/>
+  <rect x="25" y="25" width="750" height="450" fill="#FFFFFF" stroke="#D9E5DC" stroke-width="2"/>
+
+  <!-- Large Classroom Board -->
+  <rect x="180" y="70" width="440" height="220" rx="4" fill="#073E28" stroke="#16864A" stroke-width="4"/>
+  
+  <!-- Content on Blackboard (Math / Science / Values) -->
+  <text x="210" y="115" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="700" fill="#E8F3EA">
+    +2 RVNHS • INTERACTIVE LEARNING
+  </text>
+  <line x1="210" y1="125" x2="590" y2="125" stroke="#4AA875" stroke-width="1.5"/>
+  <text x="210" y="155" font-family="'Space Grotesk', sans-serif" font-size="14" fill="#FFFFFF">
+    Topic: Quadratic Equations &amp; Motion Laws
+  </text>
+  <text x="210" y="185" font-family="'Space Grotesk', sans-serif" font-size="13" fill="#E5C158">
+    Formula: ax² + bx + c = 0 | s = ut + ½at²
+  </text>
+  <text x="210" y="215" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#4AA875">
+    Values: "Discipline is the bridge between goals &amp; accomplishment."
+  </text>
+  <circle cx="560" cy="180" r="28" fill="none" stroke="#E5C158" stroke-width="2" stroke-dasharray="4 2"/>
+  <line x1="560" y1="180" x2="585" y2="165" stroke="#FFFFFF" stroke-width="2"/>
+
+  <!-- Teacher at Podium / Board -->
+  <g transform="translate(100, 180)">
+    <circle cx="25" cy="20" r="14" fill="#1D3024"/>
+    <path d="M 10,38 L 40,38 L 36,110 L 14,110 Z" fill="#105A34"/>
+    <line x1="38" y1="50" x2="70" y2="30" stroke="#1D3024" stroke-width="3"/>
+    <circle cx="70" cy="30" r="4" fill="#E5C158"/>
+  </g>
+
+  <!-- Student Desks in Front -->
+  <g fill="#105A34" stroke="#073E28">
+    <!-- Desk Row 1 -->
+    <rect x="120" y="360" width="160" height="20" rx="3" fill="#073E28"/>
+    <rect x="135" y="380" width="10" height="70" fill="#1D3024"/>
+    <rect x="255" y="380" width="10" height="70" fill="#1D3024"/>
+    <!-- Student sitting -->
+    <circle cx="200" cy="330" r="12" fill="#1D3024"/>
+    <path d="M 188,344 L 212,344 L 210,375 L 190,375 Z" fill="#16864A"/>
+
+    <!-- Desk Row 2 -->
+    <rect x="320" y="360" width="160" height="20" rx="3" fill="#073E28"/>
+    <rect x="335" y="380" width="10" height="70" fill="#1D3024"/>
+    <rect x="455" y="380" width="10" height="70" fill="#1D3024"/>
+    <!-- Student sitting -->
+    <circle cx="400" cy="330" r="12" fill="#1D3024"/>
+    <path d="M 388,344 L 412,344 L 410,375 L 390,375 Z" fill="#4AA875"/>
+
+    <!-- Desk Row 3 -->
+    <rect x="520" y="360" width="160" height="20" rx="3" fill="#073E28"/>
+    <rect x="535" y="380" width="10" height="70" fill="#1D3024"/>
+    <rect x="655" y="380" width="10" height="70" fill="#1D3024"/>
+    <!-- Student sitting -->
+    <circle cx="600" cy="330" r="12" fill="#1D3024"/>
+    <path d="M 588,344 L 612,344 L 610,375 L 590,375 Z" fill="#16864A"/>
+  </g>
+
+  <!-- Swiss Index Tag Top Left -->
+  <rect x="45" y="45" width="140" height="26" fill="#073E28"/>
+  <text x="115" y="62" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">CLASSROOM • 04</text>
+</svg>

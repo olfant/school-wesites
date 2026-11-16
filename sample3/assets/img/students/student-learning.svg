@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#F3F8F4"/>
+  <rect x="25" y="25" width="750" height="450" fill="#FFFFFF" stroke="#D9E5DC" stroke-width="2"/>
+
+  <!-- Geometric Study Circle -->
+  <circle cx="400" cy="250" r="150" fill="#E8F3EA" stroke="#16864A" stroke-width="2" stroke-dasharray="8 4"/>
+
+  <!-- Center Table with Study Materials -->
+  <circle cx="400" cy="250" r="70" fill="#FFFFFF" stroke="#073E28" stroke-width="2.5"/>
+  <!-- Open Books & Notepads -->
+  <rect x="365" y="235" width="30" height="20" fill="#105A34"/>
+  <rect x="405" y="235" width="30" height="20" fill="#16864A"/>
+  <circle cx="400" cy="250" r="8" fill="#E5C158"/>
+
+  <!-- 4 Students collaborating at circle points -->
+  <!-- Student Top -->
+  <g transform="translate(375, 110)">
+    <circle cx="25" cy="18" r="14" fill="#1D3024"/>
+    <path d="M 12,35 L 38,35 L 35,70 L 15,70 Z" fill="#105A34"/>
+  </g>
+  <!-- Student Right -->
+  <g transform="translate(520, 220)">
+    <circle cx="25" cy="18" r="14" fill="#1D3024"/>
+    <path d="M 12,35 L 38,35 L 35,70 L 15,70 Z" fill="#073E28"/>
+  </g>
+  <!-- Student Bottom -->
+  <g transform="translate(375, 330)">
+    <circle cx="25" cy="18" r="14" fill="#1D3024"/>
+    <path d="M 12,35 L 38,35 L 35,70 L 15,70 Z" fill="#16864A"/>
+  </g>
+  <!-- Student Left -->
+  <g transform="translate(230, 220)">
+    <circle cx="25" cy="18" r="14" fill="#1D3024"/>
+    <path d="M 12,35 L 38,35 L 35,70 L 15,70 Z" fill="#4AA875"/>
+  </g>
+
+  <!-- Swiss Index Tag Top Left -->
+  <rect x="45" y="45" width="180" height="28" fill="#073E28"/>
+  <text x="135" y="64" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">PEER COLLABORATION • 08</text>
+  <text x="400" y="445" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#647268" text-anchor="middle">
+    Collaborative Inquiry, Group Problem Solving &amp; Knowledge Exchange
+  </text>
+</svg>

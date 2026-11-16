@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#F3F8F4"/>
+  <rect x="25" y="25" width="750" height="450" fill="#FFFFFF" stroke="#D9E5DC" stroke-width="2"/>
+
+  <!-- Golden Cup Trophy -->
+  <g transform="translate(400, 240)">
+    <!-- Base -->
+    <rect x="-60" y="80" width="120" height="30" rx="3" fill="#073E28"/>
+    <rect x="-45" y="65" width="90" height="15" fill="#1D3024"/>
+    <text x="0" y="100" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" fill="#4AA875" text-anchor="middle">CHAMPIONSHIP</text>
+    
+    <!-- Stem -->
+    <polygon points="-15,65 15,65 20,20 -20,20" fill="#E5C158" stroke="#B88A23" stroke-width="2"/>
+
+    <!-- Cup Body -->
+    <path d="M -50,-90 L 50,-90 C 50,-90 55,20 0,20 C -55,20 -50,-90 -50,-90 Z" fill="#E5C158" stroke="#B88A23" stroke-width="3"/>
+    
+    <!-- Cup Rim & Highlight -->
+    <ellipse cx="0" cy="-90" rx="50" ry="12" fill="#FFE58F" stroke="#B88A23" stroke-width="2"/>
+    <path d="M -15,-70 L -5,-70 L -10,0 L -20,0 Z" fill="#FFFFFF" opacity="0.4"/>
+
+    <!-- Cup Handles -->
+    <path d="M -50,-70 C -95,-70 -95,-10 -40,-10" stroke="#E5C158" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M 50,-70 C 95,-70 95,-10 40,-10" stroke="#E5C158" stroke-width="8" fill="none" stroke-linecap="round"/>
+
+    <!-- Star on Cup -->
+    <polygon points="0,-45 4,-33 16,-33 7,-25 10,-13 0,-20 -10,-13 -7,-25 -16,-33 -4,-33" fill="#073E28"/>
+  </g>
+
+  <!-- Swiss Header -->
+  <rect x="50" y="50" width="220" height="30" fill="#073E28"/>
+  <text x="160" y="70" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">SPORTS TROPHIES • [OFFICIAL]</text>
+  <text x="400" y="445" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#647268" text-anchor="middle">
+    District &amp; State Level Athletics, Kho-Kho, Football &amp; Volleyball Accolades
+  </text>
+</svg>

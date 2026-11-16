@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#F3F8F4"/>
+  <rect x="25" y="25" width="750" height="450" fill="#FFFFFF" stroke="#D9E5DC" stroke-width="2"/>
+
+  <!-- Scout Fleur-de-lis / Clover Trefoil Motif in Center -->
+  <g transform="translate(330, 110)">
+    <!-- Central Shield -->
+    <path d="M 70,20 C 50,-10 30,30 50,60 C 30,50 10,70 30,100 C 50,130 65,110 70,160 C 75,110 90,130 110,100 C 130,70 110,50 90,60 C 110,30 90,-10 70,20 Z" 
+          fill="#105A34" stroke="#073E28" stroke-width="3"/>
+    <!-- Center Needle / Compass Line -->
+    <polygon points="70,15 75,140 65,140" fill="#E5C158"/>
+    <!-- Ring Collar -->
+    <rect x="52" y="110" width="36" height="12" rx="3" fill="#073E28"/>
+    <!-- Stars on Petals -->
+    <polygon points="40,75 42,70 47,70 43,73 45,78 40,75" fill="#FFFFFF"/>
+    <polygon points="100,75 102,70 107,70 103,73 105,78 100,75" fill="#FFFFFF"/>
+    <!-- Motto Scroll -->
+    <path d="M 20,175 C 50,160 90,160 120,175 L 115,190 C 85,178 55,178 25,190 Z" fill="#E5C158" stroke="#B88A23" stroke-width="1.5"/>
+    <text x="70" y="185" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" fill="#073E28" text-anchor="middle" letter-spacing="1">BE PREPARED</text>
+  </g>
+
+  <!-- Left: Scout Tent & Campfire -->
+  <g transform="translate(140, 240)">
+    <!-- Tent -->
+    <polygon points="60,20 10,110 110,110" fill="#16864A" stroke="#073E28" stroke-width="2"/>
+    <polygon points="60,20 60,110 110,110" fill="#105A34"/>
+    <line x1="60" y1="20" x2="60" y2="110" stroke="#FFFFFF" stroke-width="2"/>
+    <!-- Campfire -->
+    <line x1="130" y1="110" x2="160" y2="95" stroke="#8C5C38" stroke-width="4"/>
+    <line x1="160" y1="110" x2="130" y2="95" stroke="#8C5C38" stroke-width="4"/>
+    <path d="M 145,100 Q 140,75 145,65 Q 150,75 145,100" fill="#FF5722"/>
+    <path d="M 145,95 Q 142,80 145,72 Q 148,80 145,95" fill="#E5C158"/>
+  </g>
+
+  <!-- Right: Scout Rope Knot & Compass -->
+  <g transform="translate(550, 240)">
+    <!-- Compass -->
+    <circle cx="60" cy="65" r="45" fill="#E8F3EA" stroke="#073E28" stroke-width="3"/>
+    <text x="60" y="32" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#105A34" text-anchor="middle">N</text>
+    <text x="60" y="104" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#647268" text-anchor="middle">S</text>
+    <text x="96" y="69" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#647268" text-anchor="middle">E</text>
+    <text x="24" y="69" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#647268" text-anchor="middle">W</text>
+    <!-- Pointer -->
+    <polygon points="60,35 65,65 55,65" fill="#FF5722"/>
+    <polygon points="60,95 65,65 55,65" fill="#647268"/>
+    <circle cx="60" cy="65" r="4" fill="#073E28"/>
+  </g>
+
+  <!-- Swiss Header -->
+  <rect x="50" y="50" width="180" height="30" fill="#073E28"/>
+  <text x="140" y="70" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">SCOUT &amp; GUIDE • 06</text>
+  <text x="400" y="445" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#647268" text-anchor="middle">
+    Discipline, Leadership, Civic Duty, First Aid &amp; Community Service
+  </text>
+</svg>

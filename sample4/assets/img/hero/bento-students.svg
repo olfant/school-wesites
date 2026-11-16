@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="stSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2F1E8"/>
+      <stop offset="100%" stop-color="#C5E6D0"/>
+    </linearGradient>
+    <linearGradient id="stDarkOverlay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(6, 63, 39, 0.2)"/>
+      <stop offset="60%" stop-color="rgba(6, 63, 39, 0.6)"/>
+      <stop offset="100%" stop-color="rgba(6, 63, 39, 0.95)"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="700" fill="url(#stSky)"/>
+  
+  <!-- Campus Library & Garden Backdrop -->
+  <path d="M0,400 Q250,370 500,390 T1000,380 L1000,700 L0,700 Z" fill="#105A34"/>
+  <ellipse cx="200" cy="380" rx="140" ry="80" fill="#16864A"/>
+  <ellipse cx="800" cy="380" rx="140" ry="80" fill="#16864A"/>
+
+  <!-- Modern School Pavilion Silhouette -->
+  <rect x="250" y="240" width="500" height="180" rx="8" fill="#F5F9F6" stroke="#DCE8DF" stroke-width="2"/>
+  <rect x="230" y="225" width="540" height="20" rx="4" fill="#063F27"/>
+  <!-- Glass Windows -->
+  <g fill="#16864A" opacity="0.3">
+    <rect x="280" y="260" width="80" height="120" rx="4"/>
+    <rect x="380" y="260" width="80" height="120" rx="4"/>
+    <rect x="540" y="260" width="80" height="120" rx="4"/>
+    <rect x="640" y="260" width="80" height="120" rx="4"/>
+  </g>
+
+  <!-- Happy Students Graphic Group -->
+  <g transform="translate(500, 480)">
+    <!-- Student 1 (Left - Girl with notebook) -->
+    <g transform="translate(-160, 0)">
+      <circle cx="0" cy="-70" r="32" fill="#E8F1EC"/>
+      <!-- Ponytail -->
+      <path d="M-20,-75 C-40,-60 -35,-40 -20,-45 Z" fill="#063F27"/>
+      <!-- Uniform Torso -->
+      <path d="M-40,60 C-35,-25 35,-25 40,60 Z" fill="#105A34"/>
+      <!-- White Collar -->
+      <polygon points="-15,-20 0,-5 15,-20" fill="#FFFFFF"/>
+      <rect x="15" y="-5" width="30" height="40" rx="4" fill="#F9E076" transform="rotate(-15)"/>
+    </g>
+
+    <!-- Student 2 (Center - Boy with school bag) -->
+    <g transform="translate(0, -20)">
+      <circle cx="0" cy="-75" r="35" fill="#E8F1EC"/>
+      <path d="M-30,-90 Q0,-115 30,-90 Q0,-80 -30,-90 Z" fill="#063F27"/>
+      <!-- Uniform Torso -->
+      <path d="M-45,80 C-40,-25 40,-25 45,80 Z" fill="#063F27"/>
+      <!-- White Shirt -->
+      <polygon points="-18,-20 0,0 18,-20" fill="#FFFFFF"/>
+      <polygon points="-4,-5 4,-5 6,30 0,40 -6,30" fill="#43A76D"/>
+      <!-- Backpack Straps -->
+      <path d="M-35,-15 L-35,60" stroke="#AA771C" stroke-width="5" stroke-linecap="round"/>
+      <path d="M35,-15 L35,60" stroke="#AA771C" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Student 3 (Right - Girl smiling with science folder) -->
+    <g transform="translate(160, 0)">
+      <circle cx="0" cy="-70" r="32" fill="#E8F1EC"/>
+      <path d="M-28,-75 C-35,-45 35,-45 28,-75 Z" fill="#063F27"/>
+      <!-- Uniform Torso -->
+      <path d="M-40,60 C-35,-25 35,-25 40,60 Z" fill="#105A34"/>
+      <polygon points="-15,-20 0,-5 15,-20" fill="#FFFFFF"/>
+      <!-- Folder -->
+      <rect x="-40" y="-10" width="32" height="42" rx="4" fill="#D9F0DF" transform="rotate(20)"/>
+    </g>
+  </g>
+
+  <!-- Overlay for Bento Text -->
+  <rect width="1000" height="700" fill="url(#stDarkOverlay)"/>
+
+  <!-- Bento Text -->
+  <g transform="translate(60, 520)">
+    <rect x="0" y="0" width="190" height="30" rx="15" fill="#16864A"/>
+    <text x="95" y="19" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">
+      BEYOND THE CLASSROOM
+    </text>
+    <text x="0" y="70" font-family="'Plus Jakarta Sans', sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">
+      Vibrant Student Life & Activities
+    </text>
+    <text x="0" y="102" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="500" fill="#D9F0DF">
+      Holistic Development • Discipline • Practical Knowledge • Leadership
+    </text>
+  </g>
+</svg>

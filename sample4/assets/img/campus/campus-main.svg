@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cmGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E1F0E7"/>
+      <stop offset="60%" stop-color="#F5F9F6"/>
+      <stop offset="100%" stop-color="#D9F0DF"/>
+    </linearGradient>
+    <linearGradient id="cmBldg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#F5F9F6"/>
+      <stop offset="100%" stop-color="#E2ECE5"/>
+    </linearGradient>
+    <linearGradient id="cmRoof" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#16864A"/>
+      <stop offset="100%" stop-color="#105A34"/>
+    </linearGradient>
+    <linearGradient id="cmDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(6, 63, 39, 0.15)"/>
+      <stop offset="50%" stop-color="rgba(6, 63, 39, 0.45)"/>
+      <stop offset="100%" stop-color="rgba(6, 63, 39, 0.92)"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="650" fill="url(#cmGrad)"/>
+
+  <!-- Background hills & foliage -->
+  <path d="M0,420 Q250,380 500,410 T1000,390 L1000,650 L0,650 Z" fill="#D2E8DA"/>
+  <circle cx="80" cy="420" r="45" fill="#43A76D" opacity="0.6"/>
+  <circle cx="920" cy="410" r="55" fill="#43A76D" opacity="0.6"/>
+
+  <!-- Building -->
+  <rect x="250" y="240" width="500" height="240" rx="6" fill="url(#cmBldg)" stroke="#DCE8DF" stroke-width="2"/>
+  <rect x="230" y="220" width="540" height="22" rx="4" fill="url(#cmRoof)"/>
+  
+  <rect x="420" y="190" width="160" height="290" rx="6" fill="#FFFFFF" stroke="#DCE8DF" stroke-width="2"/>
+  <polygon points="410,190 500,120 590,190" fill="url(#cmRoof)"/>
+  <circle cx="500" cy="160" r="16" fill="#F9E076" stroke="#063F27" stroke-width="2"/>
+
+  <rect x="435" y="200" width="130" height="24" rx="4" fill="#105A34"/>
+  <text x="500" y="216" font-family="'Noto Sans Devanagari', sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+    +2 विद्या निकेतन
+  </text>
+
+  <!-- Pillars -->
+  <rect x="440" y="240" width="14" height="240" fill="#E2ECE5"/>
+  <rect x="475" y="240" width="14" height="240" fill="#E2ECE5"/>
+  <rect x="510" y="240" width="14" height="240" fill="#E2ECE5"/>
+  <rect x="545" y="240" width="14" height="240" fill="#E2ECE5"/>
+  <path d="M475,480 L475,390 Q500,370 525,390 L525,480 Z" fill="#063F27"/>
+
+  <!-- Windows -->
+  <g fill="#105A34" opacity="0.8">
+    <rect x="280" y="270" width="40" height="45" rx="3"/>
+    <rect x="340" y="270" width="40" height="45" rx="3"/>
+    <rect x="280" y="340" width="40" height="45" rx="3"/>
+    <rect x="340" y="340" width="40" height="45" rx="3"/>
+    <rect x="620" y="270" width="40" height="45" rx="3"/>
+    <rect x="680" y="270" width="40" height="45" rx="3"/>
+    <rect x="620" y="340" width="40" height="45" rx="3"/>
+    <rect x="680" y="340" width="40" height="45" rx="3"/>
+  </g>
+
+  <!-- Front Garden & Walkway -->
+  <path d="M0,480 L380,480 L440,650 L0,650 Z" fill="#105A34"/>
+  <path d="M1000,480 L620,480 L560,650 L1000,650 Z" fill="#105A34"/>
+  <polygon points="380,480 620,480 560,650 440,650" fill="#E8F1EC"/>
+
+  <!-- Dark Overlay -->
+  <rect width="1000" height="650" fill="url(#cmDark)"/>
+
+  <!-- Badge & Text -->
+  <g transform="translate(60, 490)">
+    <rect x="0" y="0" width="170" height="28" rx="14" fill="#16864A"/>
+    <text x="85" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">
+      CAMPUS OVERVIEW
+    </text>
+    <text x="0" y="65" font-family="'Plus Jakarta Sans', sans-serif" font-size="32" font-weight="800" fill="#FFFFFF">
+      Main Institutional Campus
+    </text>
+    <text x="0" y="95" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="500" fill="#D9F0DF">
+      Haldipokhar, Potka, East Singhbhum, Jharkhand – 831002
+    </text>
+  </g>
+</svg>
