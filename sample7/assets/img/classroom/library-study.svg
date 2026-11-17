@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <rect width="600" height="400" rx="16" fill="#FBFBF9"/>
+  <!-- Library Bookshelves -->
+  <rect x="40" y="40" width="520" height="220" rx="6" fill="#8D6E63" stroke="#5D4037" stroke-width="4"/>
+  <!-- Shelves -->
+  <line x1="40" y1="110" x2="560" y2="110" stroke="#5D4037" stroke-width="6"/>
+  <line x1="40" y1="180" x2="560" y2="180" stroke="#5D4037" stroke-width="6"/>
+  <!-- Books rows -->
+  <g fill="#105A34">
+    <rect x="60" y="55" width="16" height="55" fill="#105A34"/>
+    <rect x="78" y="60" width="14" height="50" fill="#36A66D"/>
+    <rect x="94" y="50" width="20" height="60" fill="#1E3A8A"/>
+    <rect x="116" y="58" width="12" height="52" fill="#D97706"/>
+    <rect x="130" y="52" width="18" height="58" fill="#B91C1C"/>
+    <rect x="200" y="125" width="22" height="55" fill="#047857"/>
+    <rect x="224" y="130" width="16" height="50" fill="#4338CA"/>
+    <rect x="242" y="122" width="20" height="58" fill="#B45309"/>
+    <rect x="350" y="55" width="18" height="55" fill="#0369A1"/>
+    <rect x="370" y="50" width="22" height="60" fill="#065F46"/>
+    <rect x="420" y="125" width="20" height="55" fill="#BE123C"/>
+  </g>
+  <!-- Reading Table with Lamp -->
+  <rect x="100" y="270" width="400" height="20" rx="4" fill="#A1887F"/>
+  <rect x="140" y="290" width="14" height="80" fill="#5D4037"/>
+  <rect x="450" y="290" width="14" height="80" fill="#5D4037"/>
+  <!-- Desk Lamp -->
+  <circle cx="200" cy="245" r="15" fill="#FEF08A"/>
+  <polygon points="185,250 215,250 225,268 175,268" fill="#16864A"/>
+</svg>

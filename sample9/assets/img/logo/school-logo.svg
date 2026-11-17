@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#032A1C"/>
+    </linearGradient>
+  </defs>
+  <!-- Geometric Diamond Outer Frame -->
+  <rect x="10" y="10" width="140" height="140" rx="8" fill="url(#logoGrad)" stroke="#3DAD72" stroke-width="3"/>
+  <rect x="18" y="18" width="124" height="124" rx="4" fill="none" stroke="#D6EBDD" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <!-- Corner architectural notches -->
+  <polygon points="10,10 26,10 10,26" fill="#3DAD72"/>
+  <polygon points="150,10 134,10 150,26" fill="#3DAD72"/>
+  <polygon points="10,150 26,150 10,134" fill="#3DAD72"/>
+  <polygon points="150,150 134,150 150,134" fill="#3DAD72"/>
+  <!-- Central Emblem Geometry -->
+  <g transform="translate(80, 80)">
+    <!-- Rising Sun Rays -->
+    <path d="M 0 -35 L 0 -50 M -20 -30 L -30 -44 M 20 -30 L 30 -44" stroke="#3DAD72" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="0" cy="-25" r="16" fill="#3DAD72"/>
+    <!-- Open Book / Academic Pages -->
+    <path d="M 0 10 C -25 -10 -50 0 -50 25 L 0 35 L 50 25 C 50 0 25 -10 0 10 Z" fill="#FFFFFF"/>
+    <line x1="0" y1="10" x2="0" y2="35" stroke="#105A34" stroke-width="2.5"/>
+    <path d="M -40 18 C -22 10 -8 18 0 25 C 8 18 22 10 40 18" fill="none" stroke="#D6EBDD" stroke-width="1.5"/>
+    <!-- Flame of Knowledge -->
+    <path d="M 0 -10 C -8 -2 0 10 0 10 C 0 10 8 -2 0 -10 Z" fill="#3DAD72"/>
+    <!-- Text Badge -->
+    <text x="0" y="52" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="800" fill="#D6EBDD" text-anchor="middle" letter-spacing="1">CM SOE VNIKETAN</text>
+  </g>
+</svg>

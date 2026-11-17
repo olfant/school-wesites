@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 420" width="100%" height="100%">
+  <rect width="650" height="420" rx="16" fill="#F4F9F5"/>
+  <!-- Vocational Training Workbench -->
+  <rect x="80" y="250" width="490" height="130" rx="8" fill="#78350F"/>
+  <rect x="60" y="230" width="530" height="26" rx="4" fill="#92400E"/>
+
+  <!-- Technical Circuit Board / Coding Terminal -->
+  <g transform="translate(140, 130)">
+    <rect x="10" y="10" width="130" height="90" rx="6" fill="#0F172A"/>
+    <rect x="18" y="18" width="114" height="74" rx="3" fill="#10B981"/>
+    <polygon points="0,105 150,105 140,115 10,115" fill="#64748B"/>
+  </g>
+
+  <!-- Technical Solar / Electrical Training Model -->
+  <g transform="translate(360, 110)">
+    <polygon points="50,10 190,10 160,115 20,115" fill="#1E3A8A" stroke="#3B82F6" stroke-width="3"/>
+    <line x1="85" y1="10" x2="55" y2="115" stroke="#60A5FA" stroke-width="2"/>
+    <line x1="120" y1="10" x2="90" y2="115" stroke="#60A5FA" stroke-width="2"/>
+    <line x1="155" y1="10" x2="125" y2="115" stroke="#60A5FA" stroke-width="2"/>
+  </g>
+
+  <!-- Badge -->
+  <g transform="translate(190, 40)">
+    <rect width="270" height="42" rx="21" fill="rgba(255,255,255,0.92)" stroke="#105A34" stroke-width="1.5"/>
+    <text x="135" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="800" fill="#105A34" text-anchor="middle">Practical Vocational Education</text>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="scCollab" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D7F0DF"/>
+      <stop offset="100%" stop-color="#EAF6EE"/>
+    </linearGradient>
+  </defs>
+  <rect width="650" height="420" rx="16" fill="url(#scCollab)"/>
+
+  <!-- Collaborative Project Table -->
+  <ellipse cx="325" cy="270" rx="220" ry="85" fill="#FFFFFF" stroke="#16864A" stroke-width="3"/>
+  <ellipse cx="325" cy="270" rx="180" ry="65" fill="#EAF6EE"/>
+
+  <!-- Robotics / Science Project Model in Center -->
+  <rect x="290" y="220" width="70" height="40" rx="6" fill="#042A1D"/>
+  <circle cx="310" cy="235" r="6" fill="#38BDF8"/>
+  <circle cx="340" cy="235" r="6" fill="#38BDF8"/>
+  <line x1="325" y1="220" x2="325" y2="190" stroke="#F59E0B" stroke-width="4"/>
+  <circle cx="325" cy="185" r="7" fill="#EF4444"/>
+
+  <!-- Student Figures Surrounding Table -->
+  <circle cx="160" cy="220" r="28" fill="#F5D0A9"/>
+  <circle cx="490" cy="220" r="28" fill="#E2B184"/>
+  <circle cx="325" cy="350" r="30" fill="#FDE047"/>
+
+  <!-- Badge -->
+  <g transform="translate(200, 35)">
+    <rect width="250" height="42" rx="21" fill="rgba(255,255,255,0.92)" stroke="#105A34" stroke-width="1.5"/>
+    <text x="125" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#105A34" text-anchor="middle">Student Innovation &amp; Teamwork</text>
+  </g>
+</svg>

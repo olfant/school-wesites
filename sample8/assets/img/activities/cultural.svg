@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 420" width="100%" height="100%">
+  <rect width="650" height="420" rx="16" fill="#F4F9F5"/>
+  <!-- Stage Drapes (Forest Green & Gold) -->
+  <path d="M 0,0 Q 90,140 0,300 L 0,0 Z" fill="#105A34"/>
+  <path d="M 650,0 Q 560,140 650,300 L 650,0 Z" fill="#105A34"/>
+  <path d="M 0,0 Q 325,100 650,0 L 650,35 Q 325,120 0,35 Z" fill="#063D27"/>
+
+  <!-- Traditional Dancer Silhouette in Joyful Rhythm -->
+  <g transform="translate(230, 95)">
+    <circle cx="100" cy="45" r="24" fill="#F59E0B"/>
+    <polygon points="100,12 85,32 115,32" fill="#D97706"/>
+    <path d="M 100,69 L 100,165" stroke="#B45309" stroke-width="12" stroke-linecap="round"/>
+    <path d="M 60,90 Q 100,75 140,90" stroke="#B45309" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <path d="M 100,150 L 60,210 Q 100,230 140,210 Z" fill="#DC2626"/>
+    <path d="M 100,165 L 70,245 L 50,245" stroke="#B45309" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M 100,165 L 130,215 L 130,245" stroke="#B45309" stroke-width="8" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Traditional Folk Drums (Mandar / Dholak) -->
+  <g transform="translate(410, 260)">
+    <ellipse cx="40" cy="50" rx="30" ry="20" fill="#78350F"/>
+    <ellipse cx="40" cy="46" rx="24" ry="14" fill="#FEF3C7" stroke="#1F2937" stroke-width="2"/>
+    <circle cx="40" cy="46" r="8" fill="#1F2937"/>
+  </g>
+
+  <!-- Badge -->
+  <g transform="translate(190, 40)">
+    <rect width="270" height="42" rx="21" fill="rgba(255,255,255,0.92)" stroke="#105A34" stroke-width="1.5"/>
+    <text x="135" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="800" fill="#105A34" text-anchor="middle">Cultural Heritage &amp; Arts</text>
+  </g>
+</svg>

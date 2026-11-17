@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" width="100%" height="100%">
+  <defs>
+    <!-- Architectural grid pattern -->
+    <pattern id="archGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#D6EBDD" stroke-width="0.8" opacity="0.6"/>
+      <circle cx="0" cy="0" r="1.5" fill="#105A34" opacity="0.4"/>
+    </pattern>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#EDF5EF"/>
+      <stop offset="100%" stop-color="#D6EBDD" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="diagonalGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#063D27"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="900" fill="url(#bgGrad)"/>
+  <rect width="800" height="900" fill="url(#archGrid)"/>
+
+  <!-- Architectural Corner Triangles / Diagonal Shapes -->
+  <polygon points="0,0 200.0,0 0,315.0" fill="#105A34" opacity="0.08"/>
+  <polygon points="800,900 600.0,900 800,585.0" fill="#3DAD72" opacity="0.12"/>
+  
+  <!-- Architectural Dimension Lines -->
+  <line x1="30" y1="30" x2="770" y2="30" stroke="#105A34" stroke-width="1" stroke-dasharray="8,6" opacity="0.3"/>
+  <line x1="30" y1="30" x2="30" y2="870" stroke="#105A34" stroke-width="1" stroke-dasharray="8,6" opacity="0.3"/>
+  <line x1="770" y1="30" x2="770" y2="870" stroke="#105A34" stroke-width="1" stroke-dasharray="8,6" opacity="0.3"/>
+  <line x1="30" y1="870" x2="770" y2="870" stroke="#105A34" stroke-width="1" stroke-dasharray="8,6" opacity="0.3"/>
+
+  <!-- Crosshairs -->
+  <g stroke="#105A34" stroke-width="1.5" opacity="0.5">
+    <path d="M 20 30 L 40 30 M 30 20 L 30 40"/>
+    <path d="M 760 30 L 780 30 M 770 20 L 770 40"/>
+    <path d="M 20 870 L 40 870 M 30 860 L 30 880"/>
+    <path d="M 760 870 L 780 870 M 770 860 L 770 880"/>
+  </g>
+
+  <!-- Decorative Architectural Centerpiece -->
+  
+        <!-- Architectural Leader Portrait Frame -->
+        <g transform="translate(400.0, 414.0)">
+            <!-- Diagonal Backdrop Hex/Square -->
+            <polygon points="0,-160 160,-70 160,110 0,200 -160,110 -160,-70" fill="#EDF5EF" stroke="#D6EBDD" stroke-width="3"/>
+            <polygon points="0,-145 145,-63 145,100 0,182 -145,100 -145,-63" fill="#063D27"/>
+            <circle cx="0" cy="-20" r="75" fill="#3DAD72" opacity="0.3"/>
+            <!-- Architectural Silhouette -->
+            <path d="M 0 -85 C 28 -85 45 -65 45 -35 C 45 -5 28 15 0 15 C -28 15 -45 -5 -45 -35 C -45 -65 -28 -85 0 -85 Z" fill="#D6EBDD"/>
+            <path d="M -90 135 C -90 65 -45 40 0 40 C 45 40 90 65 90 135 Z" fill="#3DAD72"/>
+            <!-- Formal Collar / Necktie Geometry -->
+            <polygon points="0,40 -20,80 0,135 20,80" fill="#105A34"/>
+            <polygon points="-25,40 0,55 25,40 0,46" fill="#FFFFFF"/>
+            <!-- Framing lines -->
+            <line x1="-180" y1="0" x2="-140" y2="0" stroke="#3DAD72" stroke-width="4"/>
+            <line x1="140" y1="0" x2="180" y2="0" stroke="#3DAD72" stroke-width="4"/>
+            <text x="0" y="160" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">OFFICE OF THE PRINCIPAL</text>
+        </g>
+        
+
+  <!-- Header Banner Text Overlay -->
+  <g transform="translate(45, 65)">
+    <rect x="-10" y="-18" width="391" height="32" fill="#063D27"/>
+    <polygon points="381,-18 396,14 381,14" fill="#3DAD72"/>
+    <text x="5" y="4" font-family="'Space Grotesk', 'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" letter-spacing="2">LEADERSHIP & ADMINISTRATION</text>
+  </g>
+
+  <!-- Bottom Details Label -->
+  <g transform="translate(45, 855)">
+    <rect x="-8" y="-14" width="320" height="26" fill="#FFFFFF" stroke="#D6EBDD" stroke-width="1"/>
+    <rect x="-8" y="-14" width="4" height="26" fill="#3DAD72"/>
+    <text x="10" y="4" font-family="'Space Grotesk', 'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#105A34" letter-spacing="1">CM SOE VNIKETAN HALDIPOKHAR</text>
+    <text x="235" y="4" font-family="'Space Grotesk', 'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#68756C">• Principal's Office Placeholder</text>
+  </g>
+</svg>

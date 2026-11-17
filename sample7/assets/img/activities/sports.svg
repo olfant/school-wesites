@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <rect width="600" height="400" rx="20" fill="#EDF7EF"/>
+  <path d="M 0,380 C 180,350 420,350 600,380 L 600,400 L 0,400 Z" fill="#DC2626"/>
+  <path d="M 0,330 C 180,290 420,290 600,330" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="10 8" fill="none"/>
+  <path d="M 0,280 C 180,240 420,240 600,280" stroke="#FFFFFF" stroke-width="3" fill="none"/>
+  <circle cx="120" cy="270" r="35" fill="#FFFFFF" stroke="#0F172A" stroke-width="3"/>
+  <polygon points="120,255 130,263 126,275 114,275 110,263" fill="#0F172A"/>
+  <g transform="translate(260, 80)">
+    <circle cx="50" cy="40" r="20" fill="#105A34"/>
+    <path d="M 50,60 L 65,120 L 40,165 L 15,160" stroke="#105A34" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 65,120 L 95,150 L 115,190" stroke="#105A34" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 50,75 L 20,105 L 10,95" stroke="#105A34" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 50,75 L 85,90 L 95,115" stroke="#105A34" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  <g transform="translate(430, 180)">
+    <ellipse cx="60" cy="50" rx="30" ry="38" fill="none" stroke="#2563EB" stroke-width="4"/>
+    <line x1="60" y1="88" x2="60" y2="170" stroke="#1E293B" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="110" cy="60" r="10" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+    <polygon points="110,60 125,40 135,50" fill="#E2E8F0"/>
+  </g>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Architectural grid pattern -->
+    <pattern id="archGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#D6EBDD" stroke-width="0.8" opacity="0.6"/>
+      <circle cx="0" cy="0" r="1.5" fill="#105A34" opacity="0.4"/>
+    </pattern>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#EDF5EF"/>
+      <stop offset="100%" stop-color="#D6EBDD" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="diagonalGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#063D27"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="400" height="400" fill="url(#bgGrad)"/>
+  <rect width="400" height="400" fill="url(#archGrid)"/>
+
+  <!-- Architectural Corner Triangles / Diagonal Shapes -->
+  <polygon points="0,0 100.0,0 0,140.0" fill="#105A34" opacity="0.08"/>
+  <polygon points="400,400 300.0,400 400,260.0" fill="#3DAD72" opacity="0.12"/>
+  
+  <!-- Architectural Dimension Lines -->
+  <line x1="30" y1="30" x2="370" y2="30" stroke="#105A34" stroke-width="1" stroke-dasharray="8,6" opacity="0.3"/>
+  <line x1="30" y1="30" x2="30" y2="370" stroke="#105A34" stroke-width="1" stroke-dasharray="8,6" opacity="0.3"/>
+  <line x1="370" y1="30" x2="370" y2="370" stroke="#105A34" stroke-width="1" stroke-dasharray="8,6" opacity="0.3"/>
+  <line x1="30" y1="370" x2="370" y2="370" stroke="#105A34" stroke-width="1" stroke-dasharray="8,6" opacity="0.3"/>
+
+  <!-- Crosshairs -->
+  <g stroke="#105A34" stroke-width="1.5" opacity="0.5">
+    <path d="M 20 30 L 40 30 M 30 20 L 30 40"/>
+    <path d="M 360 30 L 380 30 M 370 20 L 370 40"/>
+    <path d="M 20 370 L 40 370 M 30 360 L 30 380"/>
+    <path d="M 360 370 L 380 370 M 370 360 L 370 380"/>
+  </g>
+
+  <!-- Decorative Architectural Centerpiece -->
+  
+        <g transform="translate(200.0, 192.0)">
+            <polygon points="0,-120 160,-30 0,60 -160,-30" fill="#EDF5EF" stroke="#D6EBDD" stroke-width="2"/>
+            <polygon points="-160,-30 0,60 0,110 -160,20" fill="#105A34"/>
+            <polygon points="0,60 160,-30 160,20 0,110" fill="#063D27"/>
+            <!-- Modern geometric cube sculpture -->
+            <g transform="translate(0, -30)">
+                <polygon points="0,-60 60,-25 0,10 -60,-25" fill="#3DAD72"/>
+                <polygon points="-60,-25 0,10 0,80 -60,45" fill="#105A34"/>
+                <polygon points="0,10 60,-25 60,45 0,80" fill="#063D27"/>
+                <circle cx="0" cy="-25" r="15" fill="#FFFFFF"/>
+            </g>
+        </g>
+        
+
+  <!-- Header Banner Text Overlay -->
+  <g transform="translate(45, 65)">
+    <rect x="-10" y="-18" width="248" height="32" fill="#063D27"/>
+    <polygon points="238,-18 253,14 238,14" fill="#3DAD72"/>
+    <text x="5" y="4" font-family="'Space Grotesk', 'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" letter-spacing="2">GEOMETRY ELEMENT</text>
+  </g>
+
+  <!-- Bottom Details Label -->
+  <g transform="translate(45, 355)">
+    <rect x="-8" y="-14" width="320" height="26" fill="#FFFFFF" stroke="#D6EBDD" stroke-width="1"/>
+    <rect x="-8" y="-14" width="4" height="26" fill="#3DAD72"/>
+    <text x="10" y="4" font-family="'Space Grotesk', 'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#105A34" letter-spacing="1">CM SOE VNIKETAN HALDIPOKHAR</text>
+    <text x="235" y="4" font-family="'Space Grotesk', 'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#68756C">• Architectural Form</text>
+  </g>
+</svg>

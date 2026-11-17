@@ -1,0 +1,262 @@
+/* ==========================================================================
+   CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR
+   Responsive Stylesheet (responsive.css)
+   Targeting: 320px, 375px, 576px, 768px, 1024px, 1366px, 1440px
+   ========================================================================== */
+
+/* Large Desktop (1440px and up) */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1360px;
+  }
+  .hero-main-title {
+    font-size: 3.8rem;
+  }
+}
+
+/* Standard Desktop / Laptop (1024px to 1366px) */
+@media (max-width: 1366px) {
+  .hero-main-title {
+    font-size: 3.2rem;
+  }
+  .navbar-architectural .nav-link {
+    padding: 0.9rem 0.85rem !important;
+    font-size: 0.84rem;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .navbar-architectural .nav-link {
+    padding: 0.85rem 0.65rem !important;
+    font-size: 0.8rem;
+  }
+}
+
+/* Tablet (768px to 1023px) */
+@media (max-width: 1023.98px) {
+  .top-info-bar .container {
+    flex-direction: column;
+    gap: 0.35rem;
+    text-align: center;
+  }
+
+  .main-brand-header {
+    padding: 1rem 0;
+  }
+
+  .main-brand-header .header-action-btns {
+    display: none !important;
+  }
+
+  .desktop-nav-wrap {
+    display: none !important;
+  }
+
+  .mobile-nav-bar {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-deep-forest);
+    padding: 0.75rem 1rem;
+  }
+
+  .hero-architectural {
+    padding: 3rem 0;
+  }
+
+  .hero-architectural::before {
+    display: none;
+  }
+
+  .hero-visual-col {
+    margin-top: 2.5rem;
+  }
+
+  .directory-row-item {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .directory-num {
+    width: 45px;
+  }
+
+  .directory-label {
+    width: 100%;
+    margin-bottom: 0.2rem;
+  }
+
+  .directory-value {
+    width: 100%;
+  }
+
+  .directory-indicator {
+    display: none;
+  }
+
+  /* Academic row strip responsive */
+  .academic-row-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1.25rem;
+  }
+
+  .academic-strip-num {
+    width: 100%;
+  }
+}
+
+/* Tablet and Mobile (under 768px) */
+@media (max-width: 767.98px) {
+  .school-main-title {
+    font-size: 1.05rem;
+  }
+
+  .logo-frame {
+    width: 58px;
+    height: 58px;
+  }
+
+  .hero-main-title {
+    font-size: 2.3rem;
+  }
+
+  .principal-message-box {
+    padding: 2rem 1.5rem;
+  }
+
+  .principal-message-box::before {
+    font-size: 4rem;
+    top: 0.5rem;
+    left: 1rem;
+  }
+
+  /* SECTION 08: Circular diagram transforms to clean vertical sequence on mobile */
+  .arch-diagram-wrapper {
+    display: none !important;
+  }
+
+  .mobile-diagram-sequence {
+    display: flex !important;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .mobile-stage-card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-primary-green);
+    padding: 1.25rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .mobile-stage-num {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--color-bright-green);
+    flex-shrink: 0;
+  }
+
+  .mobile-stage-title {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-dark-green);
+    margin-bottom: 0.25rem;
+  }
+
+  .mobile-stage-desc {
+    font-size: 0.88rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  /* Responsive Tables */
+  .table-responsive-arch {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid var(--color-border);
+  }
+
+  .table-responsive-arch table {
+    min-width: 600px;
+    margin-bottom: 0;
+  }
+
+  /* Lightbox on mobile */
+  .lightbox-dialog {
+    padding: 0.5rem;
+  }
+
+  .lightbox-nav {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .lightbox-nav.prev { left: 5px; }
+  .lightbox-nav.next { right: 5px; }
+
+  .footer-architectural {
+    padding-top: 3.5rem;
+  }
+
+  .footer-bottom {
+    margin-top: 2.5rem;
+    text-align: center;
+  }
+}
+
+/* Small Mobile (375px and 320px) */
+@media (max-width: 575.98px) {
+  .hero-main-title {
+    font-size: 1.85rem;
+  }
+
+  .hero-school-name {
+    font-size: 0.92rem;
+  }
+
+  .arch-headline {
+    font-size: 1.55rem;
+  }
+
+  .arch-number-badge {
+    font-size: 2.8rem;
+  }
+
+  .arch-card {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .foundation-panel {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .btn-forest, .btn-outline-forest, .btn-bright {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .back-to-top-btn {
+    bottom: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Fallback visibility helper */
+.mobile-diagram-sequence {
+  display: none;
+}

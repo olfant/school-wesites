@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cvSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EAF6EE"/>
+      <stop offset="60%" stop-color="#D7F0DF"/>
+      <stop offset="100%" stop-color="#F4F9F5"/>
+    </linearGradient>
+    <linearGradient id="cvBldg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+  </defs>
+  <rect width="750" height="480" rx="16" fill="url(#cvSky)"/>
+  <circle cx="140" cy="90" r="48" fill="#FDE047" opacity="0.6"/>
+
+  <!-- Distant Green Hills of Potka -->
+  <path d="M 0,280 Q 200,200 420,260 T 750,230 L 750,480 L 0,480 Z" fill="#D7F0DF" opacity="0.8"/>
+  <path d="M 0,310 Q 260,250 560,310 T 750,280 L 750,480 L 0,480 Z" fill="#BBF7D0" opacity="0.9"/>
+
+  <!-- Main School Building Complex -->
+  <g transform="translate(100, 170)">
+    <rect x="0" y="60" width="550" height="170" rx="10" fill="url(#cvBldg)" stroke="#105A34" stroke-width="3"/>
+    <rect x="-10" y="50" width="570" height="18" rx="4" fill="#105A34"/>
+    <rect x="-5" y="130" width="560" height="8" fill="#16864A"/>
+    <!-- Central Portico -->
+    <rect x="220" y="30" width="110" height="200" fill="#FFFFFF" stroke="#105A34" stroke-width="2.5"/>
+    <polygon points="275,-10 200,32 350,32" fill="#063D27"/>
+    <!-- Flagpole -->
+    <line x1="275" y1="-10" x2="275" y2="-55" stroke="#334155" stroke-width="3"/>
+    <rect x="275" y="-55" width="28" height="6" fill="#FF9933"/>
+    <rect x="275" y="-49" width="28" height="6" fill="#FFFFFF"/>
+    <rect x="275" y="-43" width="28" height="6" fill="#138808"/>
+
+    <rect x="230" y="44" width="90" height="14" rx="4" fill="#D7F0DF"/>
+    <text x="275" y="54" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="800" fill="#063D27" text-anchor="middle">CM SOE GOVT +2</text>
+
+    <!-- Classrooms & Lab Windows -->
+    <g fill="#105A34" opacity="0.85">
+      <rect x="30" y="80" width="34" height="42" rx="4"/>
+      <rect x="85" y="80" width="34" height="42" rx="4"/>
+      <rect x="140" y="80" width="34" height="42" rx="4"/>
+      <rect x="375" y="80" width="34" height="42" rx="4"/>
+      <rect x="430" y="80" width="34" height="42" rx="4"/>
+      <rect x="485" y="80" width="34" height="42" rx="4"/>
+      <rect x="30" y="150" width="34" height="46" rx="4"/>
+      <rect x="85" y="150" width="34" height="46" rx="4"/>
+      <rect x="140" y="150" width="34" height="46" rx="4"/>
+      <rect x="375" y="150" width="34" height="46" rx="4"/>
+      <rect x="430" y="150" width="34" height="46" rx="4"/>
+      <rect x="485" y="150" width="34" height="46" rx="4"/>
+      <!-- Arch Doorway -->
+      <path d="M 250,230 L 250,150 Q 275,130 300,150 L 300,230 Z" fill="#063D27"/>
+    </g>
+  </g>
+
+  <!-- Campus Lawn & Walkways -->
+  <path d="M 0,390 Q 375,370 750,390 L 750,480 L 0,480 Z" fill="#16864A"/>
+  <path d="M 350,390 C 360,410 350,440 280,480 L 470,480 C 400,440 400,410 400,390 Z" fill="#F1F5F9"/>
+
+  <!-- Glass Info Badge -->
+  <g transform="translate(560, 40)">
+    <rect width="150" height="40" rx="20" fill="rgba(255,255,255,0.85)" stroke="#37AA70" stroke-width="2"/>
+    <circle cx="22" cy="20" r="11" fill="#D7F0DF"/>
+    <path d="M 18,20 Q 22,13 26,20 Q 22,27 18,20 Z" fill="#105A34"/>
+    <text x="42" y="25" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#105A34">Green Campus</text>
+  </g>
+</svg>

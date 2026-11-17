@@ -1,0 +1,1075 @@
+/* ===================================================================
+   CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR
+   PROMPT 06: ORGANIC NATURE-INSPIRED GREEN DESIGN SYSTEM
+   =================================================================== */
+
+:root {
+  /* Official Green Palette */
+  --primary-green: #105A34;
+  --dark-forest-green: #063E27;
+  --deep-green: #082D1E;
+  --accent-green: #16864A;
+  --fresh-green: #36A66D;
+  --soft-mint: #D9F0E0;
+  --pale-green: #EDF7EF;
+  --bg-light: #F7FAF7;
+  --white: #FFFFFF;
+  --text-main: #24362B;
+  --text-secondary: #66746A;
+  --border-color: #DCE8DF;
+  --gold-accent: #F59E0B;
+  
+  /* Fonts */
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Noto Serif Devanagari', 'Merriweather', serif;
+  
+  /* Organic Radii */
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-xl: 42px;
+  --radius-organic-1: 32px 14px 32px 14px;
+  --radius-organic-2: 14px 32px 14px 32px;
+  --radius-blob: 60% 40% 55% 45% / 45% 55% 45% 55%;
+
+  /* Elevation Shadows */
+  --shadow-sm: 0 4px 12px rgba(8, 45, 30, 0.05);
+  --shadow-md: 0 8px 24px rgba(8, 45, 30, 0.08);
+  --shadow-lg: 0 16px 38px rgba(8, 45, 30, 0.12);
+  --shadow-organic: 0 14px 30px -8px rgba(16, 90, 52, 0.16);
+
+  /* Transitions */
+  --trans-fast: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  --trans-smooth: 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base & Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  color: var(--text-main);
+  background-color: var(--bg-light);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Typography Utility */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--deep-green);
+  line-height: 1.25;
+}
+
+a {
+  color: var(--accent-green);
+  text-decoration: none;
+  transition: color var(--trans-fast);
+}
+
+a:hover {
+  color: var(--fresh-green);
+}
+
+/* Background Color Classes */
+.bg-primary-green { background-color: var(--primary-green) !important; }
+.bg-dark-forest { background-color: var(--dark-forest-green) !important; }
+.bg-deep-green { background-color: var(--deep-green) !important; }
+.bg-mint { background-color: var(--soft-mint) !important; }
+.bg-pale-green { background-color: var(--pale-green) !important; }
+.bg-cream-light { background-color: #FBFDFB !important; }
+
+/* Text Color Classes */
+.text-primary-green { color: var(--primary-green) !important; }
+.text-deep-green { color: var(--deep-green) !important; }
+.text-accent-green { color: var(--accent-green) !important; }
+.text-fresh-green { color: var(--fresh-green) !important; }
+.text-secondary-green { color: var(--text-secondary) !important; }
+.border-soft { border-color: var(--border-color) !important; }
+
+/* Top Information Strip */
+.top-info-bar {
+  background-color: var(--deep-green);
+  color: #EDF7EF;
+  font-size: 0.84rem;
+  padding: 7px 0;
+  border-bottom: 1px solid rgba(217, 240, 224, 0.15);
+}
+
+.top-info-bar a {
+  color: #EDF7EF;
+}
+
+.top-info-bar a:hover {
+  color: #FCD34D;
+}
+
+.top-info-bar .fs-ctl button {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #FFFFFF;
+  border-radius: 4px;
+  padding: 2px 7px;
+  font-size: 0.76rem;
+  margin-left: 3px;
+  cursor: pointer;
+  transition: all var(--trans-fast);
+}
+
+.top-info-bar .fs-ctl button:hover,
+.top-info-bar .fs-ctl button.active {
+  background: var(--fresh-green);
+  color: #FFFFFF;
+  border-color: var(--fresh-green);
+}
+
+/* Clean Branding Header */
+.branding-header {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.branding-header::after {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, var(--soft-mint) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.school-logo-frame {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(16, 90, 52, 0.14);
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--soft-mint);
+  flex-shrink: 0;
+}
+
+.school-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.school-title-wrap h1 {
+  font-size: 1.28rem;
+  letter-spacing: -0.2px;
+  margin-bottom: 2px;
+  color: var(--deep-green);
+}
+
+.school-sub-wrap {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.school-badge-pill {
+  background: var(--pale-green);
+  color: var(--primary-green);
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.78rem;
+  display: inline-block;
+  border: 1px solid var(--border-color);
+}
+
+/* Main Navigation Bar */
+.main-nav {
+  background-color: var(--dark-forest-green);
+  padding: 0;
+  border-bottom: 3px solid var(--fresh-green);
+  box-shadow: 0 4px 16px rgba(8, 45, 30, 0.12);
+  transition: all var(--trans-smooth);
+}
+
+.main-nav.nav-scrolled {
+  background-color: rgba(6, 62, 39, 0.96);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 20px rgba(8, 45, 30, 0.2);
+}
+
+.main-nav .nav-link {
+  color: #EDF7EF !important;
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 1rem 0.95rem !important;
+  letter-spacing: 0.3px;
+  position: relative;
+  transition: all var(--trans-fast);
+}
+
+.main-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: var(--fresh-green);
+  border-radius: 3px 3px 0 0;
+  transition: all var(--trans-smooth);
+  transform: translateX(-50%);
+}
+
+.main-nav .nav-link:hover,
+.main-nav .nav-link.active {
+  color: #FFFFFF !important;
+}
+
+.main-nav .nav-link:hover::after,
+.main-nav .nav-link.active::after {
+  width: 80%;
+}
+
+/* Dropdown Menus */
+.main-nav .dropdown-menu {
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  padding: 0.6rem 0;
+  margin-top: 0.2rem;
+  animation: dropdownFade 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-nav .dropdown-item {
+  color: var(--text-main);
+  font-weight: 500;
+  font-size: 0.88rem;
+  padding: 0.55rem 1.25rem;
+  transition: all var(--trans-fast);
+}
+
+.main-nav .dropdown-item:hover {
+  background-color: var(--pale-green);
+  color: var(--primary-green);
+  padding-left: 1.45rem;
+}
+
+/* Organic Nature Buttons */
+.btn-green {
+  background: linear-gradient(135deg, var(--fresh-green) 0%, var(--primary-green) 100%);
+  color: #FFFFFF !important;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  padding: 0.65rem 1.6rem;
+  box-shadow: 0 4px 14px rgba(54, 166, 109, 0.32);
+  transition: all var(--trans-smooth);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-green:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(54, 166, 109, 0.42);
+  color: #FFFFFF !important;
+}
+
+.btn-outline-green {
+  background: transparent;
+  color: var(--primary-green) !important;
+  font-weight: 600;
+  border: 2px solid var(--accent-green);
+  border-radius: 50px;
+  padding: 0.55rem 1.4rem;
+  transition: all var(--trans-smooth);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-outline-green:hover {
+  background: var(--primary-green);
+  color: #FFFFFF !important;
+  border-color: var(--primary-green);
+  transform: translateY(-2px);
+}
+
+.btn-mint {
+  background: var(--soft-mint);
+  color: var(--deep-green) !important;
+  font-weight: 600;
+  border: 1px solid rgba(16, 90, 52, 0.15);
+  border-radius: 50px;
+  padding: 0.55rem 1.4rem;
+  transition: all var(--trans-smooth);
+}
+
+.btn-mint:hover {
+  background: #C3E7CD;
+  transform: translateY(-2px);
+}
+
+/* Section Decorators & Headings */
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--pale-green);
+  color: var(--primary-green);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(22, 134, 74, 0.15);
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-size: 2.15rem;
+  font-weight: 800;
+  color: var(--deep-green);
+  letter-spacing: -0.5px;
+  margin-bottom: 0.85rem;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 680px;
+}
+
+/* Decorative Organic Wave Dividers */
+.organic-wave-divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: translateZ(0);
+}
+
+.organic-wave-divider svg {
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 48px;
+}
+
+/* SECTION 01: HERO SECTION */
+.hero-section {
+  background: linear-gradient(175deg, var(--pale-green) 0%, #FFFFFF 65%, var(--bg-light) 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 4.5rem 0 3.5rem;
+}
+
+.hero-blob-bg {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, rgba(217, 240, 224, 0.6) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero-organic-frame {
+  position: relative;
+  padding: 10px;
+}
+
+.hero-main-illustration {
+  width: 100%;
+  max-height: 460px;
+  object-fit: contain;
+  filter: drop-shadow(0 16px 28px rgba(16, 90, 52, 0.14));
+  animation: organicFloat 6s ease-in-out infinite alternate;
+}
+
+@keyframes organicFloat {
+  0% { transform: translateY(0px) rotate(0deg); }
+  100% { transform: translateY(-10px) rotate(0.8deg); }
+}
+
+/* Floating Nature Badges */
+.floating-chip {
+  position: absolute;
+  background: #FFFFFF;
+  padding: 10px 18px;
+  border-radius: 30px;
+  box-shadow: 0 10px 24px rgba(8, 45, 30, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--border-color);
+  z-index: 3;
+  animation: floatChip 5s ease-in-out infinite alternate;
+}
+
+.floating-chip-1 {
+  top: 15%;
+  left: -5%;
+}
+
+.floating-chip-2 {
+  bottom: 12%;
+  right: 0%;
+  animation-delay: -2.5s;
+}
+
+@keyframes floatChip {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-8px); }
+}
+
+.chip-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--soft-mint);
+  color: var(--primary-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+/* SECTION 03: SCHOOL INFORMATION BAR */
+.school-info-bar-wrap {
+  margin-top: -30px;
+  position: relative;
+  z-index: 5;
+}
+
+.info-surface-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+  padding: 1.8rem 2rem;
+}
+
+.info-item-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.info-icon-box {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: var(--pale-green);
+  color: var(--primary-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  flex-shrink: 0;
+}
+
+/* SECTION 04: CORE VALUES (Organic Shapes) */
+.organic-value-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  padding: 2.2rem 1.8rem;
+  transition: all var(--trans-smooth);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.organic-shape-1 { border-radius: 36px 14px 36px 14px; }
+.organic-shape-2 { border-radius: 14px 36px 14px 36px; }
+.organic-shape-3 { border-radius: 28px 28px 12px 28px; }
+.organic-shape-4 { border-radius: 12px 28px 28px 28px; }
+
+.organic-value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-organic);
+  border-color: var(--accent-green);
+}
+
+.value-icon-wrap {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  background: var(--soft-mint);
+  color: var(--primary-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  transition: all var(--trans-fast);
+}
+
+.organic-value-card:hover .value-icon-wrap {
+  background: var(--primary-green);
+  color: #FFFFFF;
+}
+
+/* SECTION 06: PRINCIPAL MESSAGE */
+.principal-banner-section {
+  background: linear-gradient(135deg, var(--soft-mint) 0%, #E8F5EC 100%);
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(16, 90, 52, 0.12);
+  overflow: hidden;
+}
+
+.principal-portrait-frame {
+  max-width: 320px;
+  margin: 0 auto;
+  border-radius: var(--radius-blob);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 4px solid #FFFFFF;
+}
+
+.quote-mark {
+  font-size: 3.5rem;
+  color: var(--fresh-green);
+  line-height: 1;
+  opacity: 0.6;
+}
+
+/* SECTION 07: ACADEMIC EXPLORATION PANELS */
+.academic-panel-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  padding: 1.8rem;
+  transition: all var(--trans-smooth);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.academic-panel-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--fresh-green);
+  box-shadow: var(--shadow-organic);
+}
+
+/* SECTION 08: STUDENT LEARNING JOURNEY (Interactive Timeline) */
+.journey-timeline-nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.5rem 0 1.5rem;
+  padding: 0 1rem;
+}
+
+.journey-connecting-line {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  right: 3%;
+  height: 4px;
+  background: var(--border-color);
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.journey-step-item {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.journey-step-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 3px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin: 0 auto 8px;
+  transition: all var(--trans-smooth);
+}
+
+.journey-step-item:hover .journey-step-circle,
+.journey-step-item.active .journey-step-circle {
+  background: var(--primary-green);
+  border-color: var(--fresh-green);
+  color: #FFFFFF;
+  transform: scale(1.15);
+  box-shadow: 0 0 0 6px var(--soft-mint);
+}
+
+.journey-step-label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--deep-green);
+}
+
+.journey-bubble {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  animation: fadeIn 0.35s ease-in-out;
+}
+
+/* SECTION 09: SCHOOL ACTIVITIES (Organic Photo Panels) */
+.organic-activity-card {
+  position: relative;
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--trans-smooth);
+}
+
+.organic-activity-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-organic);
+}
+
+.activity-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 220px;
+}
+
+.activity-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.organic-activity-card:hover .activity-img-wrapper img {
+  transform: scale(1.08);
+}
+
+.activity-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(4px);
+  color: var(--primary-green);
+  font-weight: 700;
+  font-size: 0.76rem;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(16, 90, 52, 0.15);
+}
+
+/* SECTION 11: NOTICES & ANNOUNCEMENTS */
+.notice-filter-pills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.notice-filter-pill {
+  background: #FFFFFF;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--trans-fast);
+}
+
+.notice-filter-pill:hover,
+.notice-filter-pill.active {
+  background: var(--primary-green);
+  color: #FFFFFF;
+  border-color: var(--primary-green);
+}
+
+.organic-notice-card {
+  transition: all var(--trans-fast);
+}
+
+.organic-notice-card:hover {
+  border-color: var(--fresh-green) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+/* SECTION 13: GALLERY SYSTEM */
+.gallery-filter-btn {
+  background: #FFFFFF;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  padding: 7px 18px;
+  border-radius: 30px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--trans-fast);
+}
+
+.gallery-filter-btn:hover,
+.gallery-filter-btn.active {
+  background: var(--primary-green);
+  color: #FFFFFF;
+  border-color: var(--primary-green);
+}
+
+.organic-gallery-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--trans-smooth);
+}
+
+.organic-gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-organic);
+}
+
+.organic-img-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 220px;
+}
+
+.gallery-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.organic-gallery-card:hover .gallery-thumb {
+  transform: scale(1.06);
+}
+
+.gallery-category-pill {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(8, 45, 30, 0.85);
+  backdrop-filter: blur(4px);
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 90, 52, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--trans-fast);
+}
+
+.organic-gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.zoom-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: var(--primary-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Lightbox Modal */
+.lightbox-modal .modal-content {
+  background-color: var(--deep-green);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(217, 240, 224, 0.2);
+  color: #FFFFFF;
+}
+
+.lightbox-img {
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+}
+
+/* SECTION 14: ADMISSION 5-STEP PROCESS */
+.admission-step-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-md);
+  padding: 1.4rem;
+  border: 1px solid var(--border-color);
+  position: relative;
+  height: 100%;
+  box-shadow: var(--shadow-sm);
+}
+
+.step-num-badge {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--fresh-green);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+/* DATA TABLES */
+.table-green {
+  --bs-table-bg: transparent;
+  --bs-table-striped-bg: rgba(237, 247, 239, 0.6);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.table-green thead {
+  background-color: var(--primary-green);
+  color: #FFFFFF;
+}
+
+.table-green thead th {
+  padding: 12px 16px;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.table-green tbody td {
+  padding: 12px 16px;
+  font-size: 0.88rem;
+  vertical-align: middle;
+}
+
+/* PAGE BANNER (INNER PAGES) */
+.inner-page-banner {
+  background: linear-gradient(135deg, var(--deep-green) 0%, var(--primary-green) 100%);
+  color: #FFFFFF;
+  padding: 3.2rem 0 2.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.inner-page-banner::after {
+  content: "";
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  width: 240px;
+  height: 240px;
+  background: radial-gradient(circle, rgba(54, 166, 109, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.banner-breadcrumb .breadcrumb-item a {
+  color: var(--soft-mint);
+  font-size: 0.88rem;
+}
+
+.banner-breadcrumb .breadcrumb-item.active {
+  color: #FFFFFF;
+  font-size: 0.88rem;
+}
+
+.banner-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* GLOBAL FOOTER */
+.site-footer {
+  background-color: var(--deep-green);
+  color: #D9F0E0;
+  position: relative;
+  padding-top: 3.5rem;
+  border-top: 4px solid var(--fresh-green);
+}
+
+.footer-school-brand h2 {
+  color: #FFFFFF;
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-heading {
+  color: #FFFFFF;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.footer-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 32px;
+  height: 2px;
+  background: var(--fresh-green);
+  border-radius: 2px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.65rem;
+}
+
+.footer-links a {
+  color: #D9F0E0;
+  font-size: 0.88rem;
+  transition: all var(--trans-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-links a:hover {
+  color: #FCD34D;
+  transform: translateX(4px);
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 0.85rem;
+  font-size: 0.88rem;
+}
+
+.footer-bottom-strip {
+  border-top: 1px solid rgba(217, 240, 224, 0.12);
+  padding: 1.5rem 0;
+  font-size: 0.84rem;
+  color: #A3C9B0;
+}
+
+/* Back to Top Button */
+.to-top-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--fresh-green);
+  color: #FFFFFF;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  box-shadow: 0 6px 18px rgba(8, 45, 30, 0.25);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--trans-smooth);
+  z-index: 99;
+}
+
+.to-top-btn.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.to-top-btn:hover {
+  background: var(--primary-green);
+  color: #FFFFFF;
+  transform: translateY(-4px);
+}
+
+/* Animations */
+.reveal, .reveal-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active, .reveal-up.active, .reveal-left.active, .reveal-right.active {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Accessibility Focus States */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--fresh-green);
+  outline-offset: 2px;
+}

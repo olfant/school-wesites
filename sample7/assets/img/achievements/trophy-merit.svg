@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldTr" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="50%" stop-color="#EAB308"/>
+      <stop offset="100%" stop-color="#CA8A04"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" rx="24" fill="#EDF7EF"/>
+  <g stroke="#16864A" stroke-width="6" fill="none" opacity="0.7">
+    <path d="M 120,320 C 80,220 120,120 220,90"/>
+    <path d="M 380,320 C 420,220 380,120 280,90"/>
+  </g>
+  <g transform="translate(150, 110)">
+    <path d="M 30,50 C -20,50 -20,130 30,130" stroke="url(#goldTr)" stroke-width="14" fill="none"/>
+    <path d="M 170,50 C 220,50 220,130 170,130" stroke="url(#goldTr)" stroke-width="14" fill="none"/>
+    <path d="M 20,40 L 180,40 C 180,140 130,180 100,180 C 70,180 20,140 20,40 Z" fill="url(#goldTr)" stroke="#A16207" stroke-width="4"/>
+    <polygon points="100,80 105,95 120,95 108,105 112,120 100,110 88,120 92,105 80,95 95,95" fill="#FFFFFF"/>
+    <rect x="90" y="180" width="20" height="50" fill="url(#goldTr)"/>
+    <polygon points="60,230 140,230 150,260 50,260" fill="url(#goldTr)"/>
+    <rect x="40" y="260" width="120" height="50" rx="6" fill="#082D1E"/>
+    <rect x="55" y="275" width="90" height="20" rx="3" fill="#D9F0E0"/>
+    <text x="100" y="290" font-family="sans-serif" font-size="10" font-weight="bold" fill="#082D1E" text-anchor="middle">EXCELLENCE</text>
+  </g>
+</svg>

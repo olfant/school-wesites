@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 420" width="100%" height="100%">
+  <rect width="650" height="420" rx="16" fill="#D7F0DF"/>
+  <!-- Scout Camp Tent in Green -->
+  <g transform="translate(200, 140)">
+    <polygon points="130,30 20,190 240,190" fill="#105A34"/>
+    <polygon points="130,30 130,190 240,190" fill="#063D27"/>
+    <polygon points="130,50 85,190 175,190" fill="#FDE047"/>
+    <line x1="130" y1="30" x2="130" y2="5" stroke="#FFFFFF" stroke-width="3"/>
+    <polygon points="130,5 155,15 130,25" fill="#EF4444"/>
+  </g>
+
+  <!-- Campfire Logs & Flame -->
+  <g transform="translate(450, 240)">
+    <line x1="20" y1="80" x2="80" y2="50" stroke="#78350F" stroke-width="10" stroke-linecap="round"/>
+    <line x1="20" y1="50" x2="80" y2="80" stroke="#78350F" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 50,70 C 40,55 35,40 50,15 C 65,40 60,55 50,70 Z" fill="#EF4444"/>
+    <path d="M 50,68 C 45,55 42,45 50,30 C 58,45 55,55 50,68 Z" fill="#F59E0B"/>
+  </g>
+
+  <!-- Scout & Guide Insignia Badge -->
+  <g transform="translate(70, 70)">
+    <circle cx="50" cy="50" r="48" fill="#FFFFFF" stroke="#16864A" stroke-width="3"/>
+    <path d="M 50,18 C 57,35 65,48 50,72 C 35,48 43,35 50,18 Z" fill="#16864A"/>
+    <path d="M 50,55 C 66,45 80,55 72,70 C 62,66 55,63 50,72 Z" fill="#16864A"/>
+    <path d="M 50,55 C 34,45 20,55 28,70 C 38,66 45,63 50,72 Z" fill="#16864A"/>
+  </g>
+
+  <!-- Badge -->
+  <g transform="translate(200, 35)">
+    <rect width="250" height="42" rx="21" fill="rgba(255,255,255,0.92)" stroke="#105A34" stroke-width="1.5"/>
+    <text x="125" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="800" fill="#105A34" text-anchor="middle">Bharat Scouts &amp; Guides Unit</text>
+  </g>
+</svg>

@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 650" width="100%" height="100%">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D9F0E0"/>
+      <stop offset="50%" stop-color="#EDF7EF"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="foliageGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#36A66D"/>
+      <stop offset="100%" stop-color="#105A34"/>
+    </linearGradient>
+    <linearGradient id="foliageGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#55C788"/>
+      <stop offset="100%" stop-color="#16864A"/>
+    </linearGradient>
+    <linearGradient id="trunkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5D4037"/>
+      <stop offset="100%" stop-color="#3E2723"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Large Nature-Inspired Organic Pebble Background -->
+  <path d="M 220,40 C 450,-30 680,60 740,220 C 800,380 750,540 600,600 C 450,660 250,640 120,530 C -10,420 10,240 70,140 C 130,40 180,50 220,40 Z" fill="url(#heroBg)" stroke="#DCE8DF" stroke-width="3"/>
+
+  <!-- Distant Hill & Sun -->
+  <circle cx="560" cy="180" r="90" fill="#FCD34D" opacity="0.35"/>
+  <path d="M 80,480 Q 250,370 500,430 T 780,420 L 780,640 L 80,640 Z" fill="#EDF7EF" opacity="0.7"/>
+  <path d="M 20,520 Q 300,440 600,490 T 800,470 L 800,650 L 20,650 Z" fill="#D9F0E0" opacity="0.8"/>
+
+  <!-- School Heritage Building Silhouette -->
+  <g transform="translate(180, 240)" opacity="0.85">
+    <rect x="80" y="70" width="220" height="110" rx="6" fill="#082D1E"/>
+    <polygon points="190,10 70,70 310,70" fill="#105A34"/>
+    <rect x="160" y="-30" width="60" height="50" rx="4" fill="#105A34"/>
+    <polygon points="190,-70 150,-30 230,-30" fill="#063E27"/>
+    <circle cx="190" cy="-10" r="14" fill="#FFFFFF"/>
+    <circle cx="190" cy="-10" r="12" fill="#082D1E"/>
+    <line x1="190" y1="-10" x2="190" y2="-18" stroke="#FCD34D" stroke-width="2"/>
+    <line x1="190" y1="-10" x2="196" y2="-10" stroke="#FCD34D" stroke-width="2"/>
+    <!-- Indian Tricolor Flagpole -->
+    <line x1="190" y1="-70" x2="190" y2="-110" stroke="#475569" stroke-width="3"/>
+    <path d="M 190,-110 L 222,-104 L 222,-90 L 190,-96 Z" fill="#FF9933"/>
+    <path d="M 190,-104 L 222,-98 L 222,-88 L 190,-94 Z" fill="#FFFFFF"/>
+    <path d="M 190,-98 L 222,-92 L 222,-82 L 190,-88 Z" fill="#138808"/>
+    <g fill="#D9F0E0" opacity="0.8">
+      <rect x="100" y="90" width="24" height="34" rx="12"/>
+      <rect x="140" y="90" width="24" height="34" rx="12"/>
+      <rect x="216" y="90" width="24" height="34" rx="12"/>
+      <rect x="256" y="90" width="24" height="34" rx="12"/>
+      <path d="M 175,180 L 175,135 Q 190,125 205,135 L 205,180 Z" fill="#FCD34D"/>
+    </g>
+  </g>
+
+  <!-- Big Green Banyan Tree of Wisdom -->
+  <g>
+    <path d="M 80,620 C 100,500 70,440 100,340 C 110,310 140,290 120,240 C 100,200 80,180 90,140" stroke="url(#trunkGrad)" stroke-width="32" stroke-linecap="round" fill="none"/>
+    <path d="M 115,330 C 160,300 200,280 230,260" stroke="url(#trunkGrad)" stroke-width="16" stroke-linecap="round" fill="none"/>
+    <path d="M 90,400 C 60,380 40,360 20,340" stroke="url(#trunkGrad)" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <path d="M 120,290 Q 130,420 110,580" stroke="#795548" stroke-width="4" stroke-dasharray="8 4" fill="none"/>
+    <path d="M 150,300 Q 165,450 145,600" stroke="#795548" stroke-width="3" stroke-dasharray="6 3" fill="none"/>
+    <circle cx="100" cy="140" r="85" fill="url(#foliageGrad1)"/>
+    <circle cx="170" cy="180" r="75" fill="url(#foliageGrad2)"/>
+    <circle cx="60" cy="220" r="70" fill="url(#foliageGrad1)"/>
+    <circle cx="140" cy="240" r="65" fill="url(#foliageGrad2)"/>
+    <circle cx="210" cy="220" r="55" fill="url(#foliageGrad1)"/>
+  </g>
+
+  <!-- Front Student Characters -->
+  <!-- Student 1 (Girl reading book) -->
+  <g transform="translate(420, 360)">
+    <ellipse cx="60" cy="210" rx="45" ry="10" fill="#082D1E" opacity="0.2"/>
+    <path d="M 35,110 L 85,110 L 95,200 L 25,200 Z" fill="#105A34"/>
+    <path d="M 40,55 L 80,55 L 85,110 L 35,110 Z" fill="#FFFFFF" stroke="#DCE8DF" stroke-width="2"/>
+    <polygon points="58,62 62,62 64,95 60,102 56,95" fill="#16864A"/>
+    <circle cx="60" cy="35" r="20" fill="#DEB887"/>
+    <path d="M 42,32 C 40,15 78,12 80,32 C 78,38 72,42 60,42 C 48,42 43,36 42,32 Z" fill="#2E1C0C"/>
+    <path d="M 44,28 C 30,30 20,45 22,60 C 26,62 34,50 38,40 Z" fill="#2E1C0C"/>
+    <path d="M 28,100 L 60,110 L 92,100 L 90,135 L 60,140 L 30,135 Z" fill="#EDF7EF" stroke="#105A34" stroke-width="2"/>
+    <path d="M 60,110 L 60,140" stroke="#105A34" stroke-width="2"/>
+    <path d="M 38,65 Q 26,90 35,108" stroke="#DEB887" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M 82,65 Q 94,90 85,108" stroke="#DEB887" stroke-width="8" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Student 2 (Boy with Science Model) -->
+  <g transform="translate(560, 380)">
+    <ellipse cx="60" cy="190" rx="42" ry="9" fill="#082D1E" opacity="0.2"/>
+    <rect x="42" y="115" width="16" height="75" rx="4" fill="#082D1E"/>
+    <rect x="62" y="115" width="16" height="75" rx="4" fill="#082D1E"/>
+    <path d="M 40,55 L 80,55 L 82,118 L 38,118 Z" fill="#FFFFFF" stroke="#DCE8DF" stroke-width="2"/>
+    <polygon points="58,62 62,62 64,95 60,102 56,95" fill="#16864A"/>
+    <circle cx="60" cy="35" r="19" fill="#D2A679"/>
+    <path d="M 42,30 C 42,14 78,14 78,30 C 76,22 66,18 58,18 C 50,18 44,22 42,30 Z" fill="#1A1A1A"/>
+    <circle cx="95" cy="88" r="22" fill="#36A66D" stroke="#063E27" stroke-width="3"/>
+    <path d="M 82,88 Q 95,78 108,88 Q 95,98 82,88 Z" fill="#D9F0E0"/>
+    <line x1="95" y1="64" x2="95" y2="114" stroke="#FCD34D" stroke-width="3"/>
+    <path d="M 90,114 L 100,114" stroke="#FCD34D" stroke-width="4"/>
+  </g>
+
+  <!-- Sprouting Sapling in foreground -->
+  <g transform="translate(330, 480)">
+    <path d="M 40,70 Q 40,40 20,20 Q 50,25 40,70 Z" fill="#36A66D"/>
+    <path d="M 40,65 Q 45,30 65,15 Q 45,35 40,65 Z" fill="#55C788"/>
+    <path d="M 40,70 L 40,90" stroke="#105A34" stroke-width="4"/>
+    <ellipse cx="40" cy="92" rx="20" ry="6" fill="#5D4037"/>
+  </g>
+
+  <!-- Floating Nature Elements -->
+  <g transform="translate(260, 180) rotate(-15)">
+    <path d="M 0,0 C 14,-22 36,-10 20,10 C 6,12 0,0 0,0 Z" fill="#FF7043" opacity="0.85"/>
+    <path d="M 0,0 C -14,-22 -36,-10 -20,10 C -6,12 0,0 0,0 Z" fill="#FF7043" opacity="0.85"/>
+    <path d="M 0,0 C 10,18 26,16 15,28 C 4,26 0,0 0,0 Z" fill="#FCD34D" opacity="0.85"/>
+    <path d="M 0,0 C -10,18 -26,16 -15,28 C -4,26 0,0 0,0 Z" fill="#FCD34D" opacity="0.85"/>
+  </g>
+  <g transform="translate(680, 240) rotate(25)">
+    <path d="M 0,0 C 10,-16 28,-8 16,8 C 4,10 0,0 0,0 Z" fill="#36A66D" opacity="0.8"/>
+    <path d="M 0,0 C -10,-16 -28,-8 -16,8 C -4,10 0,0 0,0 Z" fill="#36A66D" opacity="0.8"/>
+  </g>
+</svg>

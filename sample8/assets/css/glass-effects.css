@@ -1,0 +1,416 @@
+/**
+ * CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR
+ * Prompt 08 - Premium Glassmorphism & Digital Campus Portal
+ * Glass Effects Stylesheet: glass-effects.css
+ */
+
+/* 1. Core Glassmorphic Surfaces */
+.glass-panel {
+  background: var(--glass-white);
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  border: 1px solid var(--glass-border);
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  border-left: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-glass);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-panel-elevated {
+  background: var(--glass-white-high);
+  backdrop-filter: blur(18px) saturate(200%);
+  -webkit-backdrop-filter: blur(18px) saturate(200%);
+  border: 1px solid rgba(16, 90, 52, 0.18);
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 16px 40px rgba(16, 90, 52, 0.12);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: 0 6px 20px rgba(16, 90, 52, 0.06);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--bright-green), transparent);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: var(--shadow-hover);
+  border-color: rgba(55, 170, 112, 0.4);
+}
+
+.glass-card:hover::before {
+  opacity: 1;
+}
+
+/* Translucent Green Glass Surfaces */
+.glass-green-surface {
+  background: linear-gradient(135deg, rgba(16, 90, 52, 0.88) 0%, rgba(6, 61, 39, 0.92) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: var(--radius-lg);
+  color: #FFFFFF;
+  box-shadow: 0 12px 36px rgba(4, 42, 29, 0.25);
+}
+.glass-green-surface h2,
+.glass-green-surface h3,
+.glass-green-surface h4,
+.glass-green-surface p {
+  color: #FFFFFF;
+}
+.glass-green-surface p {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/* Glowing Accent Highlights */
+.glass-glow-accent {
+  position: relative;
+}
+.glass-glow-accent::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, var(--bright-green), transparent, var(--accent-green));
+  z-index: -1;
+  opacity: 0.35;
+  filter: blur(6px);
+  transition: opacity var(--transition-fast);
+}
+.glass-glow-accent:hover::after {
+  opacity: 0.7;
+}
+
+/* 2. Floating Badges & Information Nodes */
+.floating-glass-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  padding: 8px 18px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 4px 16px rgba(16, 90, 52, 0.08);
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--dark-green);
+  transition: transform var(--transition-normal);
+}
+.floating-glass-pill i {
+  color: var(--accent-green);
+}
+.floating-glass-pill:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 22px rgba(16, 90, 52, 0.15);
+}
+
+/* 3. Hero Section Glassmorphism */
+.hero-glass-section {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, var(--deep-forest-green) 0%, var(--primary-green) 55%, #0e4c2c 100%);
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+/* Background Layered Decorative Orbs */
+.orb-glow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(60px);
+  z-index: 1;
+}
+.orb-1 {
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(55, 170, 112, 0.45) 0%, transparent 70%);
+  top: -100px;
+  right: -50px;
+  animation: floatSlow 12s ease-in-out infinite alternate;
+}
+.orb-2 {
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(22, 134, 74, 0.4) 0%, transparent 70%);
+  bottom: -80px;
+  left: 10%;
+  animation: floatSlow 10s ease-in-out 2s infinite alternate;
+}
+.orb-3 {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(215, 240, 223, 0.25) 0%, transparent 70%);
+  top: 30%;
+  left: 45%;
+}
+
+@keyframes floatSlow {
+  0% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-25px) scale(1.05); }
+  100% { transform: translateY(15px) scale(0.95); }
+}
+
+/* Oversized Digital Hero Typography */
+.hero-oversized-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.8rem, 6vw, 4.8rem);
+  font-weight: 900;
+  color: #FFFFFF;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  margin-bottom: 20px;
+}
+.hero-oversized-title .text-gradient-green {
+  background: linear-gradient(135deg, #A7F3D0 0%, #34D399 50%, #10B981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.hero-school-name {
+  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+  font-weight: 700;
+  color: #D7F0DF;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+.hero-description {
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 580px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+/* Hero Floating Glass Showcase Card */
+.hero-glass-card {
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: var(--radius-xl);
+  padding: 30px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 2;
+}
+
+/* 4. Digital Portal Quick Stats Bar */
+.portal-stats-container {
+  margin-top: -45px;
+  position: relative;
+  z-index: 10;
+}
+.portal-stat-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid var(--glass-border);
+  border-top: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius-lg);
+  padding: 22px 20px;
+  box-shadow: 0 10px 30px rgba(16, 90, 52, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all var(--transition-normal);
+}
+.portal-stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--bright-green);
+  background: #FFFFFF;
+}
+.stat-icon-container {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--mint-green) 0%, #B8E4C7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--primary-green);
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(16, 90, 52, 0.12);
+}
+
+/* 5. Glass Interactive Notice Portal */
+.glass-notice-portal {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  padding: 30px;
+  box-shadow: var(--shadow-glass);
+}
+.notice-filter-btn {
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  color: var(--secondary-text);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+.notice-filter-btn:hover,
+.notice-filter-btn.active {
+  background: var(--primary-green);
+  color: #FFFFFF;
+  border-color: var(--primary-green);
+  box-shadow: 0 4px 12px rgba(16, 90, 52, 0.2);
+}
+.notice-item-glass {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 18px 22px;
+  margin-bottom: 14px;
+  transition: all var(--transition-fast);
+}
+.notice-item-glass:hover {
+  border-color: var(--bright-green);
+  transform: translateX(6px);
+  box-shadow: 0 6px 18px rgba(16, 90, 52, 0.08);
+}
+.notice-date-badge {
+  background: var(--pale-green);
+  color: var(--dark-green);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(16, 90, 52, 0.15);
+}
+
+/* 6. Glass Data Tables */
+.glass-table-wrapper {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-glass);
+}
+.glass-table {
+  width: 100%;
+  margin-bottom: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.glass-table th {
+  background: var(--dark-green);
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 16px 20px;
+  border: none;
+  letter-spacing: 0.5px;
+}
+.glass-table td {
+  padding: 15px 20px;
+  font-size: 0.88rem;
+  color: var(--main-text);
+  border-top: 1px solid rgba(16, 90, 52, 0.08);
+  background: rgba(255, 255, 255, 0.6);
+  transition: background var(--transition-fast);
+}
+.glass-table tr:hover td {
+  background: rgba(215, 240, 223, 0.35);
+}
+
+/* 7. Glass FAQ Accordion */
+.glass-accordion .accordion-item {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md) !important;
+  margin-bottom: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(16, 90, 52, 0.04);
+}
+.glass-accordion .accordion-button {
+  background: transparent;
+  color: var(--dark-green);
+  font-weight: 700;
+  font-size: 0.96rem;
+  padding: 18px 22px;
+}
+.glass-accordion .accordion-button:not(.collapsed) {
+  background: var(--pale-green);
+  color: var(--dark-green);
+  box-shadow: none;
+}
+.glass-accordion .accordion-button:focus {
+  box-shadow: none;
+  border-color: var(--accent-green);
+}
+.glass-accordion .accordion-body {
+  padding: 20px 22px;
+  color: var(--secondary-text);
+  font-size: 0.92rem;
+  background: rgba(255, 255, 255, 0.96);
+}
+
+/* 8. Lightbox Glass Modal */
+.glass-lightbox-modal .modal-content {
+  background: rgba(6, 61, 39, 0.92);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius-xl);
+  color: #FFFFFF;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+.glass-lightbox-modal .modal-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 18px 24px;
+}
+.glass-lightbox-modal .modal-title {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+.glass-lightbox-modal .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+.glass-lightbox-modal .modal-body {
+  padding: 24px;
+}
+.glass-lightbox-modal .modal-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 14px 24px;
+}

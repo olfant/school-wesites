@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="100%" height="100%">
+  <defs>
+    <!-- Architectural grid pattern -->
+    <pattern id="archGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#D6EBDD" stroke-width="0.8" opacity="0.6"/>
+      <circle cx="0" cy="0" r="1.5" fill="#105A34" opacity="0.4"/>
+    </pattern>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#EDF5EF"/>
+      <stop offset="100%" stop-color="#D6EBDD" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="diagonalGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#063D27"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="900" height="600" fill="url(#bgGrad)"/>
+  <rect width="900" height="600" fill="url(#archGrid)"/>
+
+  <!-- Architectural Corner Triangles / Diagonal Shapes -->
+  <polygon points="0,0 225.0,0 0,210.0" fill="#105A34" opacity="0.08"/>
+  <polygon points="900,600 675.0,600 900,390.0" fill="#3DAD72" opacity="0.12"/>
+  
+  <!-- Architectural Dimension Lines -->
+  <line x1="30" y1="30" x2="870" y2="30" stroke="#105A34" stroke-width="1" stroke-dasharray="8,6" opacity="0.3"/>
+  <line x1="30" y1="30" x2="30" y2="570" stroke="#105A34" stroke-width="1" stroke-dasharray="8,6" opacity="0.3"/>
+  <line x1="870" y1="30" x2="870" y2="570" stroke="#105A34" stroke-width="1" stroke-dasharray="8,6" opacity="0.3"/>
+  <line x1="30" y1="570" x2="870" y2="570" stroke="#105A34" stroke-width="1" stroke-dasharray="8,6" opacity="0.3"/>
+
+  <!-- Crosshairs -->
+  <g stroke="#105A34" stroke-width="1.5" opacity="0.5">
+    <path d="M 20 30 L 40 30 M 30 20 L 30 40"/>
+    <path d="M 860 30 L 880 30 M 870 20 L 870 40"/>
+    <path d="M 20 570 L 40 570 M 30 560 L 30 580"/>
+    <path d="M 860 570 L 880 570 M 870 560 L 870 580"/>
+  </g>
+
+  <!-- Decorative Architectural Centerpiece -->
+  
+        <!-- Bharat Scouts and Guides Geometric Compass & Knot -->
+        <g transform="translate(450.0, 288.0)">
+            <polygon points="0,-120 150,-35 0,50 -150,-35" fill="#EDF5EF"/>
+            <!-- Fleur-de-lis / Scout emblem geometry -->
+            <g transform="translate(0, -35)">
+                <!-- Compass Rose 8-point star -->
+                <polygon points="0,-75 14,-20 65,-20 22,10 38,65 0,30 -38,65 -22,10 -65,-20 -14,-20" fill="#3DAD72"/>
+                <polygon points="0,-75 14,-20 0,0" fill="#105A34"/>
+                <polygon points="65,-20 22,10 0,0" fill="#063D27"/>
+                <polygon points="38,65 0,30 0,0" fill="#105A34"/>
+                <polygon points="-38,65 -22,10 0,0" fill="#063D27"/>
+                <polygon points="-65,-20 -14,-20 0,0" fill="#105A34"/>
+                <!-- Scout Reef Knot -->
+                <ellipse cx="0" cy="50" rx="35" ry="12" fill="none" stroke="#063D27" stroke-width="6"/>
+                <circle cx="0" cy="0" r="10" fill="#FFFFFF" stroke="#105A34" stroke-width="3"/>
+            </g>
+        </g>
+        
+
+  <!-- Header Banner Text Overlay -->
+  <g transform="translate(45, 65)">
+    <rect x="-10" y="-18" width="352" height="32" fill="#063D27"/>
+    <polygon points="342,-18 357,14 342,14" fill="#3DAD72"/>
+    <text x="5" y="4" font-family="'Space Grotesk', 'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" letter-spacing="2">BHARAT SCOUTS AND GUIDES</text>
+  </g>
+
+  <!-- Bottom Details Label -->
+  <g transform="translate(45, 555)">
+    <rect x="-8" y="-14" width="320" height="26" fill="#FFFFFF" stroke="#D6EBDD" stroke-width="1"/>
+    <rect x="-8" y="-14" width="4" height="26" fill="#3DAD72"/>
+    <text x="10" y="4" font-family="'Space Grotesk', 'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#105A34" letter-spacing="1">CM SOE VNIKETAN HALDIPOKHAR</text>
+    <text x="235" y="4" font-family="'Space Grotesk', 'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#68756C">• Service, Duty & Leadership</text>
+  </g>
+</svg>

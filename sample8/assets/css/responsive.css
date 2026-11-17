@@ -1,0 +1,177 @@
+/**
+ * CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR
+ * Prompt 08 - Premium Glassmorphism & Digital Campus Portal
+ * Responsive Stylesheet: responsive.css
+ */
+
+/* 1440px + High-Resolution Monitors */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1360px;
+  }
+  .hero-glass-section {
+    min-height: 82vh;
+  }
+}
+
+/* 1200px - 1366px Laptops */
+@media (max-width: 1366px) {
+  .navbar-nav .nav-link {
+    font-size: 0.82rem;
+    padding: 7px 10px !important;
+  }
+}
+
+/* 1024px Tablet Landscape & Small Desktops */
+@media (max-width: 1024px) {
+  .navbar-nav .nav-link {
+    font-size: 0.8rem;
+    padding: 6px 8px !important;
+  }
+  .brand-text h1 {
+    font-size: 1.05rem;
+  }
+}
+
+/* 991px Down (Tablets & Mobile - Offcanvas / Collapsible Drawer) */
+@media (max-width: 991.98px) {
+  .navbar-wrapper {
+    padding: 6px 12px;
+  }
+  .main-navbar {
+    border-radius: var(--radius-lg);
+    padding: 10px 16px;
+  }
+  .navbar-collapse {
+    background: rgba(6, 61, 39, 0.98);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-radius: var(--radius-lg);
+    padding: 18px;
+    margin-top: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  .navbar-nav .nav-link {
+    font-size: 0.94rem;
+    padding: 10px 14px !important;
+    border-radius: var(--radius-sm);
+  }
+  .dropdown-menu {
+    background: rgba(4, 42, 29, 0.95);
+    border-color: rgba(55, 170, 112, 0.25);
+    padding: 6px;
+    margin-left: 10px;
+    box-shadow: none;
+  }
+  
+  .portal-stats-container {
+    margin-top: 20px;
+  }
+  
+  .hero-glass-section {
+    padding: 60px 0 40px 0;
+    min-height: auto;
+  }
+  .hero-oversized-title {
+    font-size: 2.8rem;
+  }
+  
+  .header-actions {
+    display: none;
+  }
+}
+
+/* 768px Small Tablets */
+@media (max-width: 768px) {
+  .top-bar .tb-hindi {
+    display: none;
+  }
+  .top-bar {
+    font-size: 0.78rem;
+  }
+  .school-brand .logo-img {
+    width: 52px;
+    height: 52px;
+  }
+  .brand-text h1 {
+    font-size: 0.96rem;
+  }
+  .brand-meta {
+    font-size: 0.75rem;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .page-banner {
+    padding: 40px 0 35px 0;
+  }
+  .page-banner h1 {
+    font-size: 1.8rem;
+  }
+  .glass-table th, .glass-table td {
+    padding: 12px 14px;
+    font-size: 0.82rem;
+  }
+}
+
+/* 576px Mobile Landscape */
+@media (max-width: 576px) {
+  .hero-oversized-title {
+    font-size: 2.3rem;
+  }
+  .glass-card {
+    padding: 18px;
+  }
+  .glass-panel {
+    border-radius: var(--radius-md);
+  }
+  .portal-stat-card {
+    padding: 16px;
+  }
+}
+
+/* 375px & 320px Ultra-Compact Mobile */
+@media (max-width: 375px) {
+  .brand-text h1 {
+    font-size: 0.85rem;
+  }
+  .hero-oversized-title {
+    font-size: 1.95rem;
+  }
+  .btn-glass-primary, .btn-glass-secondary {
+    padding: 8px 16px;
+    font-size: 0.82rem;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Low-Power Hardware Fallback (Optimized Backdrop Filter) */
+@supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .glass-panel,
+  .glass-card,
+  .portal-stat-card,
+  .glass-notice-portal {
+    background: #FFFFFF !important;
+  }
+  .main-navbar,
+  .dropdown-menu,
+  .glass-green-surface {
+    background: #063D27 !important;
+  }
+}
+
+/* Accessibility: Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .orb-1, .orb-2, .orb-3 {
+    animation: none !important;
+  }
+}

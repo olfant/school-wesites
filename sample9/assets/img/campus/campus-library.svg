@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="100%" height="100%">
+  <defs>
+    <!-- Architectural grid pattern -->
+    <pattern id="archGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#D6EBDD" stroke-width="0.8" opacity="0.6"/>
+      <circle cx="0" cy="0" r="1.5" fill="#105A34" opacity="0.4"/>
+    </pattern>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#EDF5EF"/>
+      <stop offset="100%" stop-color="#D6EBDD" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="diagonalGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#063D27"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="900" height="600" fill="url(#bgGrad)"/>
+  <rect width="900" height="600" fill="url(#archGrid)"/>
+
+  <!-- Architectural Corner Triangles / Diagonal Shapes -->
+  <polygon points="0,0 225.0,0 0,210.0" fill="#105A34" opacity="0.08"/>
+  <polygon points="900,600 675.0,600 900,390.0" fill="#3DAD72" opacity="0.12"/>
+  
+  <!-- Architectural Dimension Lines -->
+  <line x1="30" y1="30" x2="870" y2="30" stroke="#105A34" stroke-width="1" stroke-dasharray="8,6" opacity="0.3"/>
+  <line x1="30" y1="30" x2="30" y2="570" stroke="#105A34" stroke-width="1" stroke-dasharray="8,6" opacity="0.3"/>
+  <line x1="870" y1="30" x2="870" y2="570" stroke="#105A34" stroke-width="1" stroke-dasharray="8,6" opacity="0.3"/>
+  <line x1="30" y1="570" x2="870" y2="570" stroke="#105A34" stroke-width="1" stroke-dasharray="8,6" opacity="0.3"/>
+
+  <!-- Crosshairs -->
+  <g stroke="#105A34" stroke-width="1.5" opacity="0.5">
+    <path d="M 20 30 L 40 30 M 30 20 L 30 40"/>
+    <path d="M 860 30 L 880 30 M 870 20 L 870 40"/>
+    <path d="M 20 570 L 40 570 M 30 560 L 30 580"/>
+    <path d="M 860 570 L 880 570 M 870 560 L 870 580"/>
+  </g>
+
+  <!-- Decorative Architectural Centerpiece -->
+  
+        <!-- Geometric Academic STEM & Book -->
+        <g transform="translate(450.0, 288.0)">
+            <!-- Isometric Base Cube -->
+            <polygon points="0,-100 120,-35 0,30 -120,-35" fill="#EDF5EF"/>
+            <polygon points="-120,-35 0,30 0,110 -120,45" fill="#105A34"/>
+            <polygon points="0,30 120,-35 120,45 0,110" fill="#063D27"/>
+            
+            <!-- Open Academic Geometric Pages -->
+            <g transform="translate(0, -40)">
+                <path d="M 0 10 C -40 -15 -80 -5 -110 -25 L -110 -85 C -80 -65 -40 -75 0 -50 C 40 -75 80 -65 110 -85 L 110 -25 C 80 -5 40 -15 0 10 Z" fill="#FFFFFF" stroke="#3DAD72" stroke-width="3"/>
+                <line x1="0" y1="-50" x2="0" y2="10" stroke="#105A34" stroke-width="3"/>
+                <!-- Geometric measurement lines -->
+                <line x1="-90" y1="-55" x2="-20" y2="-37" stroke="#D6EBDD" stroke-width="2"/>
+                <line x1="-90" y1="-43" x2="-20" y2="-25" stroke="#D6EBDD" stroke-width="2"/>
+                <line x1="20" y1="-37" x2="90" y2="-55" stroke="#D6EBDD" stroke-width="2"/>
+                <line x1="20" y1="-25" x2="90" y2="-43" stroke="#D6EBDD" stroke-width="2"/>
+            </g>
+            <!-- Floating Geometry Compass & Atom -->
+            <circle cx="90" cy="-90" r="30" fill="#D6EBDD" opacity="0.3"/>
+            <ellipse cx="90" cy="-90" rx="26" ry="10" fill="none" stroke="#3DAD72" stroke-width="2" transform="rotate(30 90 -90)"/>
+            <ellipse cx="90" cy="-90" rx="26" ry="10" fill="none" stroke="#3DAD72" stroke-width="2" transform="rotate(-30 90 -90)"/>
+            <circle cx="90" cy="-90" r="5" fill="#3DAD72"/>
+        </g>
+        
+
+  <!-- Header Banner Text Overlay -->
+  <g transform="translate(45, 65)">
+    <rect x="-10" y="-18" width="391" height="32" fill="#063D27"/>
+    <polygon points="381,-18 396,14 381,14" fill="#3DAD72"/>
+    <text x="5" y="4" font-family="'Space Grotesk', 'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" letter-spacing="2">KNOWLEDGE & RESOURCE CENTER</text>
+  </g>
+
+  <!-- Bottom Details Label -->
+  <g transform="translate(45, 555)">
+    <rect x="-8" y="-14" width="320" height="26" fill="#FFFFFF" stroke="#D6EBDD" stroke-width="1"/>
+    <rect x="-8" y="-14" width="4" height="26" fill="#3DAD72"/>
+    <text x="10" y="4" font-family="'Space Grotesk', 'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#105A34" letter-spacing="1">CM SOE VNIKETAN HALDIPOKHAR</text>
+    <text x="235" y="4" font-family="'Space Grotesk', 'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#68756C">• Library & Reading Hall</text>
+  </g>
+</svg>

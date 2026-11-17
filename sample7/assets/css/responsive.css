@@ -1,0 +1,236 @@
+/* ===================================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR
+   =================================================================== */
+
+/* Large Desktops (1440px and up) */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1360px;
+  }
+  .section-title {
+    font-size: 2.35rem;
+  }
+}
+
+/* Standard Desktops (1024px to 1366px) */
+@media (max-width: 1366px) {
+  .hero-main-illustration {
+    max-height: 420px;
+  }
+}
+
+/* Laptops & Tablets Landscape (992px to 1024px) */
+@media (max-width: 1024px) {
+  .main-nav .nav-link {
+    padding: 0.9rem 0.65rem !important;
+    font-size: 0.86rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile & Tablet Portrait (< 992px) */
+@media (max-width: 991.98px) {
+  /* Branding Header */
+  .branding-header .d-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  .school-logo-frame {
+    margin: 0 auto;
+    width: 68px;
+    height: 68px;
+  }
+  .school-title-wrap h1 {
+    font-size: 1.15rem;
+  }
+  .header-actions-wrap {
+    justify-content: center !important;
+    margin-top: 0.5rem;
+  }
+
+  /* Navigation Collapsible */
+  .navbar-collapse {
+    background-color: var(--dark-forest-green);
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    margin-top: 0.8rem;
+    border: 1px solid rgba(217, 240, 224, 0.15);
+  }
+  .main-nav .nav-link {
+    padding: 0.65rem 1rem !important;
+    border-radius: 8px;
+  }
+  .main-nav .nav-link::after {
+    display: none;
+  }
+  .main-nav .nav-link:hover,
+  .main-nav .nav-link.active {
+    background-color: rgba(54, 166, 109, 0.2);
+  }
+  .main-nav .dropdown-menu {
+    background-color: rgba(8, 45, 30, 0.95);
+    border: 1px solid rgba(54, 166, 109, 0.3);
+    padding-left: 0.8rem;
+  }
+  .main-nav .dropdown-item {
+    color: #EDF7EF;
+  }
+  .main-nav .dropdown-item:hover {
+    background-color: var(--primary-green);
+    color: #FFFFFF;
+  }
+
+  /* Section Spacing */
+  .hero-section {
+    padding: 3rem 0 2.5rem;
+    text-align: center;
+  }
+  .hero-content-wrap {
+    margin-bottom: 2.5rem;
+  }
+  .hero-content-wrap .d-flex {
+    justify-content: center;
+  }
+  .floating-chip-1 {
+    left: 2%;
+    top: 5%;
+  }
+  .floating-chip-2 {
+    right: 2%;
+    bottom: 2%;
+  }
+
+  /* Student Journey Timeline on Mobile (Vertical layout) */
+  .journey-timeline-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2rem;
+    gap: 1.5rem;
+  }
+  .journey-connecting-line {
+    top: 15px;
+    bottom: 15px;
+    left: 45px;
+    right: auto;
+    width: 4px;
+    height: auto;
+    transform: none;
+  }
+  .journey-step-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-align: left;
+    width: 100%;
+  }
+  .journey-step-circle {
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  /* School info bar adjustment */
+  .school-info-bar-wrap {
+    margin-top: 1rem;
+  }
+}
+
+/* Mobile Devices (<= 768px) */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+  .section-subtitle {
+    font-size: 0.95rem;
+  }
+  .top-info-bar {
+    font-size: 0.78rem;
+    text-align: center;
+  }
+  .top-info-bar .d-flex {
+    justify-content: center !important;
+  }
+  .info-surface-card {
+    padding: 1.4rem;
+  }
+  .btn-green, .btn-outline-green {
+    padding: 0.55rem 1.25rem;
+    font-size: 0.9rem;
+  }
+  .activity-img-wrapper,
+  .organic-img-wrap {
+    height: 190px;
+  }
+}
+
+/* Small Mobile (<= 576px) */
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.55rem;
+  }
+  .school-title-wrap h1 {
+    font-size: 1.02rem;
+  }
+  .floating-chip {
+    padding: 6px 12px;
+    font-size: 0.78rem;
+  }
+  .chip-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 0.95rem;
+  }
+  .hero-main-illustration {
+    max-height: 280px;
+  }
+}
+
+/* Tiny Mobile (320px to 375px) */
+@media (max-width: 375px) {
+  html {
+    font-size: 14.5px;
+  }
+  .section-title {
+    font-size: 1.4rem;
+  }
+  .btn-green, .btn-outline-green {
+    width: 100%;
+    margin-bottom: 0.4rem;
+  }
+  .header-actions-wrap {
+    flex-direction: column;
+    width: 100%;
+  }
+  .header-actions-wrap .btn {
+    width: 100%;
+  }
+  .journey-timeline-nav {
+    padding-left: 0.5rem;
+  }
+  .journey-connecting-line {
+    left: 25px;
+  }
+}
+
+/* Print Stylesheet */
+@media print {
+  .top-info-bar,
+  .main-nav,
+  .to-top-btn,
+  .gallery-filter-btn,
+  .notice-filter-pills-wrap {
+    display: none !important;
+  }
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+  .site-footer {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    border-top: 1px solid #000000;
+  }
+}

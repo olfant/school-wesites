@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="stuBgG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EDF7EF"/>
+      <stop offset="100%" stop-color="#D9F0E0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="24" fill="url(#stuBgG)"/>
+  <circle cx="500" cy="80" r="120" fill="#FFFFFF" opacity="0.5"/>
+  <path d="M 50,330 Q 300,310 550,330 L 550,400 L 50,400 Z" fill="#105A34"/>
+  <rect x="120" y="270" width="360" height="15" rx="6" fill="#8D6E63"/>
+  <rect x="140" y="285" width="12" height="45" fill="#5D4037"/>
+  <rect x="440" y="285" width="12" height="45" fill="#5D4037"/>
+
+  <!-- Student Left -->
+  <g transform="translate(140, 160)">
+    <circle cx="40" cy="30" r="18" fill="#F5D0A9"/>
+    <path d="M 25,25 C 25,12 55,12 55,25 C 55,30 50,36 40,36 C 30,36 25,30 25,25 Z" fill="#2D3748"/>
+    <path d="M 20,50 L 60,50 L 65,115 L 15,115 Z" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <polygon points="38,55 42,55 44,80 40,86 36,80" fill="#16864A"/>
+    <rect x="18" y="115" width="44" height="40" fill="#082D1E"/>
+    <rect x="42" y="75" width="28" height="35" rx="3" fill="#FEF08A" stroke="#CA8A04" stroke-width="1.5"/>
+  </g>
+
+  <!-- Student Middle -->
+  <g transform="translate(260, 140)">
+    <circle cx="40" cy="30" r="18" fill="#E2B184"/>
+    <path d="M 22,28 C 22,10 58,10 58,28 C 55,34 40,36 22,28 Z" fill="#1A202C"/>
+    <path d="M 58,25 C 70,30 75,45 68,55" stroke="#1A202C" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M 20,50 L 60,50 L 65,115 L 15,115 Z" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <polygon points="38,55 42,55 44,80 40,86 36,80" fill="#16864A"/>
+    <rect x="15" y="115" width="50" height="50" fill="#105A34"/>
+    <rect x="25" y="70" width="30" height="40" rx="4" fill="#0F172A"/>
+    <rect x="27" y="73" width="26" height="34" rx="2" fill="#38BDF8"/>
+  </g>
+
+  <!-- Student Right -->
+  <g transform="translate(380, 160)">
+    <circle cx="40" cy="30" r="18" fill="#FCD34D"/>
+    <path d="M 24,24 C 24,12 56,12 56,24 C 56,32 50,35 40,35 C 30,35 24,32 24,24 Z" fill="#4B5563"/>
+    <path d="M 20,50 L 60,50 L 65,115 L 15,115 Z" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <polygon points="38,55 42,55 44,80 40,86 36,80" fill="#16864A"/>
+    <rect x="18" y="115" width="44" height="40" fill="#082D1E"/>
+    <line x1="15" y1="85" x2="35" y2="95" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Floating Leaf badges -->
+  <g transform="translate(40, 40)">
+    <rect width="180" height="38" rx="19" fill="#FFFFFF" stroke="#36A66D" stroke-width="1.5" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.06))"/>
+    <circle cx="22" cy="19" r="11" fill="#D9F0E0"/>
+    <path d="M 18,19 Q 22,13 26,19 Q 22,25 18,19 Z" fill="#16864A"/>
+    <text x="42" y="24" font-family="sans-serif" font-size="11" font-weight="700" fill="#105A34">Personal Growth</text>
+  </g>
+</svg>

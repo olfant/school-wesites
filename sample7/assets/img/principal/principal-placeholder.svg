@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="prBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D9F0E0"/>
+      <stop offset="50%" stop-color="#EDF7EF"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#063E27"/>
+    </linearGradient>
+    <filter id="prDrop" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#082D1E" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <path d="M 120,40 C 300,-10 440,50 470,220 C 500,390 440,540 280,580 C 120,620 40,500 30,340 C 20,180 60,60 120,40 Z" fill="url(#prBg)" stroke="#36A66D" stroke-width="3" filter="url(#prDrop)"/>
+
+  <g opacity="0.3" fill="#105A34">
+    <rect x="80" y="100" width="14" height="60" rx="2"/>
+    <rect x="98" y="110" width="12" height="50" rx="2"/>
+    <rect x="114" y="95" width="16" height="65" rx="2"/>
+    <rect x="360" y="105" width="14" height="55" rx="2"/>
+    <rect x="378" y="90" width="18" height="70" rx="2"/>
+  </g>
+
+  <g transform="translate(150, 130)">
+    <ellipse cx="100" cy="110" rx="45" ry="55" fill="#E2B184"/>
+    <path d="M 52,100 C 50,60 150,60 148,100 C 145,75 130,68 100,68 C 70,68 55,75 52,100 Z" fill="#374151"/>
+    <rect x="70" y="95" width="24" height="18" rx="4" fill="none" stroke="#1F2937" stroke-width="3"/>
+    <rect x="106" y="95" width="24" height="18" rx="4" fill="none" stroke="#1F2937" stroke-width="3"/>
+    <line x1="94" y1="104" x2="106" y2="104" stroke="#1F2937" stroke-width="3"/>
+    <polygon points="75,175 100,210 125,175" fill="#FFFFFF"/>
+    <polygon points="95,190 105,190 108,270 100,285 92,270" fill="#16864A"/>
+    <path d="M 20,200 L 75,175 L 95,280 L 10,340 Z" fill="url(#suitGrad)"/>
+    <path d="M 180,200 L 125,175 L 105,280 L 190,340 Z" fill="url(#suitGrad)"/>
+    <path d="M 10,340 L 75,370 L 125,370 L 190,340 L 200,430 L 0,430 Z" fill="#082D1E"/>
+  </g>
+
+  <g transform="translate(110, 480)">
+    <rect width="280" height="70" rx="35" fill="#FFFFFF" stroke="#105A34" stroke-width="2" filter="url(#prDrop)"/>
+    <circle cx="40" cy="35" r="22" fill="#D9F0E0"/>
+    <path d="M 40,22 L 44,30 L 53,31 L 46,38 L 48,47 L 40,42 L 32,47 L 34,38 L 27,31 L 36,30 Z" fill="#16864A"/>
+    <text x="75" y="32" font-family="sans-serif" font-size="14" font-weight="700" fill="#082D1E">[Principal's Name]</text>
+    <text x="75" y="50" font-family="sans-serif" font-size="11" font-weight="500" fill="#16864A">Official Desk • Placeholder</text>
+  </g>
+</svg>

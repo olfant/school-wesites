@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EDF7EF"/>
+      <stop offset="60%" stop-color="#D9F0E0"/>
+      <stop offset="100%" stop-color="#105A34"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="420" rx="16" fill="url(#gGrad1)"/>
+  <circle cx="300" cy="180" r="110" fill="#FFFFFF" opacity="0.4"/>
+  <g transform="translate(240, 120)">
+    <circle cx="60" cy="60" r="50" fill="#105A34" opacity="0.9"/>
+    <path d="M 40,60 L 55,75 L 85,45" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  <rect x="0" y="320" width="600" height="100" fill="#082D1E" opacity="0.92"/>
+  <text x="40" y="360" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Campus Green Quadrangle</text>
+  <text x="40" y="388" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#D9F0E0">CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR</text>
+  <circle cx="540" cy="370" r="20" fill="#105A34"/>
+  <polygon points="536,362 546,370 536,378" fill="#FFFFFF"/>
+</svg>
