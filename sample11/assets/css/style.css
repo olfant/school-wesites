@@ -398,6 +398,11 @@ img {
   color: var(--white);
   transform: translateX(4px);
 }
+.dropdown-item.active, .dropdown-item:active {
+    color: var(--light-green);
+    text-decoration: none;
+    background-color: rgba(69, 184, 117, 0.18);
+}
 
 /* Mobile Toggler */
 .sticky-floating-nav .navbar-toggler {
@@ -1554,14 +1559,14 @@ img {
 }
 
 .roadmap-step-title {
-  color: var(--white);
+  color: var(--black);
   font-size: 1.05rem;
   font-weight: 700;
   margin-bottom: 8px;
 }
 
 .roadmap-step-desc {
-  color: var(--mint-green);
+  color: var(--mint-black);
   font-size: 0.82rem;
   line-height: 1.4;
   margin: 0;
