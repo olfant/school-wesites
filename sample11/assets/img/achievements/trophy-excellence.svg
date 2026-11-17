@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#45B875"/>
+      <stop offset="50%" stop-color="#16864A"/>
+      <stop offset="100%" stop-color="#105A34"/>
+    </linearGradient>
+    <filter id="tShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#042B1D" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="600" height="600" rx="20" fill="#042B1D"/>
+  <!-- Central Glowing Halo -->
+  <circle cx="300" cy="270" r="160" fill="#073D27" stroke="#45B875" stroke-width="2" stroke-dasharray="8,6"/>
+  <!-- 3D Golden/Green Trophy -->
+  <g transform="translate(180, 100)" filter="url(#tShadow)">
+    <!-- Cup -->
+    <path d="M40,50 L200,50 C200,160 150,210 120,220 C90,210 40,160 40,50 Z" fill="url(#tGrad)" stroke="#FFFFFF" stroke-width="3"/>
+    <!-- Handles -->
+    <path d="M40,70 C0,70 0,140 45,150" fill="none" stroke="#45B875" stroke-width="12" stroke-linecap="round"/>
+    <path d="M200,70 C240,70 240,140 195,150" fill="none" stroke="#45B875" stroke-width="12" stroke-linecap="round"/>
+    <!-- Star on Cup -->
+    <polygon points="120,95 127,117 150,117 131,130 138,152 120,138 102,152 109,130 90,117 113,117" fill="#FFFFFF"/>
+    <!-- Stem & Base -->
+    <rect x="110" y="220" width="20" height="50" fill="#073D27"/>
+    <polygon points="70,270 170,270 180,310 60,310" fill="#16864A"/>
+    <rect x="50" y="310" width="140" height="30" rx="4" fill="#EDF6EF"/>
+    <text x="120" y="330" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="11" font-weight="800" fill="#042B1D" text-anchor="middle">EXCELLENCE AWARD</text>
+  </g>
+  <text x="300" y="520" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF" text-anchor="middle">ACADEMIC & CO-CURRICULAR HONORS</text>
+  <text x="300" y="550" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#45B875" text-anchor="middle">District • State • National Level Recognitions</text>
+</svg>

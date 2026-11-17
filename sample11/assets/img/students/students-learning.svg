@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="studGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#073D27"/>
+      <stop offset="60%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#16864A"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#studGrad)"/>
+  <!-- Student Silhouettes Collaborating -->
+  <!-- Student 1 -->
+  <g transform="translate(180, 160)">
+    <circle cx="50" cy="50" r="30" fill="#EDF6EF"/>
+    <path d="M10,170 C10,110 30,95 50,95 C70,95 90,110 90,170 Z" fill="#D9EFE0"/>
+  </g>
+  <!-- Student 2 (Center) -->
+  <g transform="translate(350, 130)">
+    <circle cx="50" cy="50" r="35" fill="#FFFFFF"/>
+    <path d="M5,190 C5,120 25,105 50,105 C75,105 95,120 95,190 Z" fill="#EDF6EF"/>
+    <!-- Book in Hand -->
+    <polygon points="35,160 65,160 75,190 25,190" fill="#45B875"/>
+  </g>
+  <!-- Student 3 -->
+  <g transform="translate(520, 160)">
+    <circle cx="50" cy="50" r="30" fill="#EDF6EF"/>
+    <path d="M10,170 C10,110 30,95 50,95 C70,95 90,110 90,170 Z" fill="#D9EFE0"/>
+  </g>
+  <!-- Study Pod Table in 3D -->
+  <polygon points="120,330 680,330 730,420 70,420" fill="#042B1D" stroke="#45B875" stroke-width="3"/>
+  <ellipse cx="400" cy="375" rx="180" ry="25" fill="#16864A" opacity="0.4"/>
+  <text x="400" y="465" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">ACTIVE COLLABORATIVE LEARNING</text>
+  <text x="400" y="488" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="12" font-weight="600" fill="#D9EFE0" text-anchor="middle">Critical Thinking • Peer Discussions • Value-Based Education</text>
+</svg>

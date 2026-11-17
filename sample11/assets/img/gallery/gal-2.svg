@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <rect width="600" height="450" rx="12" fill="#042B1D"/>
+  <rect x="30" y="30" width="540" height="390" rx="8" fill="#073D27"/>
+  <rect x="150" y="80" width="300" height="150" rx="8" fill="#105A34" stroke="#45B875" stroke-width="3"/>
+  <text x="300" y="165" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="16" font-weight="800" fill="#EDF6EF" text-anchor="middle">DIGITAL CLASSROOM</text>
+  <polygon points="120,290 480,290 520,350 80,350" fill="#16864A"/>
+  <text x="300" y="390" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">SMART CLASSROOM INTERACTION</text>
+  <text x="300" y="410" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="12" font-weight="600" fill="#45B875" text-anchor="middle">Category: Classrooms</text>
+</svg>

@@ -1,0 +1,150 @@
+/* ==========================================================================
+   CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR
+   ANIMATION & 3D MOTION SYSTEM
+   ========================================================================== */
+
+/* Dropdown Menu Fade & Slide */
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Subtle Floating Animation for 3D Badges */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateZ(60px) translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateZ(70px) translateY(-12px) rotate(1deg);
+  }
+}
+
+/* Scroll Mouse Wheel Indicator */
+@keyframes scrollWheel {
+  0% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  75% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(14px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* Pulse Glow Animation */
+@keyframes greenGlowPulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(69, 184, 117, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(69, 184, 117, 0.6);
+  }
+}
+
+/* Shimmer Sweep Animation */
+@keyframes shimmerSweep {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Scroll-triggered reveal utility classes handled via IntersectionObserver */
+.reveal-fade-up {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-fade-up.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-fade-in {
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity;
+}
+
+.reveal-fade-in.is-revealed {
+  opacity: 1;
+}
+
+.reveal-scale-in {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-scale-in.is-revealed {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Staggered Children Delays */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+.delay-600 { transition-delay: 600ms; }
+
+/* 3D Tilt Card Base */
+[data-tilt] {
+  transform-style: preserve-3d;
+  transition: transform 0.15s ease-out;
+}
+
+/* Interactive Card Image Depth */
+.tilt-depth-layer {
+  transform: translateZ(30px);
+  transition: transform 0.3s ease;
+}
+
+/* Magnetic Button hover response */
+.magnetic-btn {
+  display: inline-block;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Prefers Reduced Motion Accessibility Guard */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal-fade-up,
+  .reveal-fade-in,
+  .reveal-scale-in {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .hero-floating-pill {
+    animation: none !important;
+  }
+
+  [data-tilt] {
+    transform: none !important;
+  }
+}

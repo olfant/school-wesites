@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#073D27"/>
+      <stop offset="60%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#042B1D"/>
+    </linearGradient>
+    <filter id="cShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="4" dy="10" stdDeviation="8" flood-color="#042B1D" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#cGrad)"/>
+  <!-- Campus building perspective -->
+  <polygon points="120,180 680,180 720,400 80,400" fill="#EDF6EF" filter="url(#cShadow)"/>
+  <polygon points="100,180 140,150 660,150 700,180" fill="#16864A"/>
+  <!-- Front Portico -->
+  <rect x="250" y="200" width="300" height="200" fill="#D9EFE0"/>
+  <polygon points="230,200 400,120 570,200" fill="#073D27"/>
+  <rect x="290" y="230" width="20" height="170" fill="#105A34"/>
+  <rect x="360" y="230" width="20" height="170" fill="#105A34"/>
+  <rect x="420" y="230" width="20" height="170" fill="#105A34"/>
+  <rect x="490" y="230" width="20" height="170" fill="#105A34"/>
+  <!-- Windows -->
+  <g fill="#105A34">
+    <rect x="150" y="220" width="30" height="40" rx="4"/>
+    <rect x="195" y="220" width="30" height="40" rx="4"/>
+    <rect x="150" y="290" width="30" height="40" rx="4"/>
+    <rect x="195" y="290" width="30" height="40" rx="4"/>
+    <rect x="575" y="220" width="30" height="40" rx="4"/>
+    <rect x="620" y="220" width="30" height="40" rx="4"/>
+    <rect x="575" y="290" width="30" height="40" rx="4"/>
+    <rect x="620" y="290" width="30" height="40" rx="4"/>
+  </g>
+  <!-- Flag and name -->
+  <line x1="400" y1="120" x2="400" y2="70" stroke="#FFFFFF" stroke-width="3"/>
+  <polygon points="400,70 435,80 400,90" fill="#45B875"/>
+  <rect x="280" y="210" width="240" height="22" rx="4" fill="#042B1D"/>
+  <text x="400" y="225" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle">CM SOE VNIKETAN HALDIPOKHAR</text>
+  <!-- Lawn and path -->
+  <polygon points="0,400 800,400 800,500 0,500" fill="#105A34"/>
+  <polygon points="340,400 460,400 520,500 280,500" fill="#45B875" opacity="0.4"/>
+  <text x="400" y="475" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#EDF6EF" text-anchor="middle">CAMPUS INFRASTRUCTURE & FACILITIES</text>
+</svg>

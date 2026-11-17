@@ -1,0 +1,1757 @@
+/* ==========================================================================
+   CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR
+   PROMPT 10 — IMMERSIVE 3D INTERACTIVE SCHOOL WEBSITE
+   3D Parallax + Scroll-Driven Storytelling + Interactive Campus Experience
+   ========================================================================== */
+
+:root {
+  /* Green Color Theme */
+  --primary-green: #105A34;
+  --dark-green: #073D27;
+  --deep-green: #042B1D;
+  --accent-green: #16864A;
+  --fresh-green: #45B875;
+  --mint-green: #D9EFE0;
+  --light-green: #EDF6EF;
+  --white: #FFFFFF;
+  --bg-main: #F7FAF7;
+  --text-main: #20342A;
+  --text-secondary: #69766C;
+  --border-light: rgba(16, 90, 52, 0.12);
+  --border-accent: rgba(69, 184, 117, 0.35);
+
+  /* Shadows with Green Ambient Tints */
+  --shadow-sm: 0 4px 12px rgba(4, 43, 29, 0.06);
+  --shadow-md: 0 10px 25px rgba(4, 43, 29, 0.12);
+  --shadow-lg: 0 20px 40px rgba(4, 43, 29, 0.18);
+  --shadow-3d: 0 25px 50px -12px rgba(4, 43, 29, 0.28);
+  --shadow-glow: 0 0 30px rgba(69, 184, 117, 0.25);
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Text Size Accessibility Settings */
+html[data-fs="1"] { font-size: 110%; }
+html[data-fs="0"] { font-size: 100%; }
+html[data-fs="-1"] { font-size: 92%; }
+
+/* Global Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color: var(--text-main);
+  background-color: var(--bg-main);
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--deep-green);
+  font-weight: 800;
+  line-height: 1.25;
+  margin-top: 0;
+}
+
+a {
+  color: var(--accent-green);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+a:hover, a:focus {
+  color: var(--fresh-green);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 20px;
+  background: var(--fresh-green);
+  color: var(--deep-green);
+  padding: 10px 18px;
+  font-weight: 700;
+  z-index: 9999;
+  border-radius: 0 0 8px 8px;
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Scroll Progress Bar */
+#scrollProgress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--fresh-green), #86E3A9);
+  z-index: 1100;
+  width: 0%;
+  transition: width 0.1s ease-out;
+}
+
+/* ==========================================================================
+   Top Information Strip
+   ========================================================================== */
+.top-strip {
+  background-color: var(--deep-green);
+  color: var(--mint-green);
+  font-size: 0.82rem;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(69, 184, 117, 0.2);
+  position: relative;
+  z-index: 1020;
+}
+
+.top-strip a {
+  color: var(--mint-green);
+}
+
+.top-strip a:hover {
+  color: var(--white);
+}
+
+.top-strip-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.fs-control-group {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2px 4px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.fs-control-group button {
+  background: transparent;
+  border: none;
+  color: var(--mint-green);
+  padding: 2px 8px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background var(--transition-fast);
+}
+
+.fs-control-group button.active,
+.fs-control-group button:hover {
+  background: var(--fresh-green);
+  color: var(--deep-green);
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   Main School Header & Floating Sticky Navigation Bar
+   ========================================================================== */
+.main-school-header {
+  background: linear-gradient(135deg, #073D27 0%, #042B1D 60%, #0a4027 100%);
+  border-bottom: 1px solid rgba(69, 184, 117, 0.2);
+  padding: 14px 0;
+  position: relative;
+  z-index: 1010;
+}
+
+.header-brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.header-brand-logo {
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35));
+  transition: transform var(--transition-fast);
+}
+
+.header-brand-wrap:hover .header-brand-logo {
+  transform: scale(1.05) rotate(2deg);
+}
+
+.header-brand-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.header-school-name {
+  color: var(--white);
+  font-size: clamp(1.05rem, 1.7vw, 1.38rem);
+  font-weight: 800;
+  letter-spacing: -0.2px;
+  line-height: 1.25;
+  margin: 0 0 4px 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header-school-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--mint-green);
+}
+
+.header-school-meta .badge-level {
+  background: rgba(69, 184, 117, 0.2);
+  color: var(--fresh-green);
+  border: 1px solid rgba(69, 184, 117, 0.4);
+  font-weight: 700;
+  font-size: 0.74rem;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.header-school-meta .meta-tag {
+  color: #c9e6d3;
+  opacity: 0.9;
+}
+
+/* Header CTA Buttons */
+.header-cta-buttons {
+  flex-shrink: 0;
+}
+
+.btn-admission-header {
+  background: linear-gradient(135deg, var(--fresh-green) 0%, #2ea05f 100%);
+  color: var(--deep-green) !important;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 8px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  border: 1px solid var(--fresh-green);
+  box-shadow: 0 4px 12px rgba(69, 184, 117, 0.3);
+  transition: all var(--transition-smooth);
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.btn-admission-header:hover {
+  background: #5cd08e;
+  color: var(--deep-green) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(69, 184, 117, 0.45);
+}
+
+.btn-contact-header {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white) !important;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 8px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all var(--transition-smooth);
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.btn-contact-header:hover {
+  background: rgba(255, 255, 255, 0.16);
+  color: var(--white) !important;
+  border-color: var(--white);
+  transform: translateY(-2px);
+}
+
+/* Sticky Floating Navigation Bar */
+.sticky-floating-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(7, 61, 39, 0.96);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(69, 184, 117, 0.25);
+  box-shadow: 0 8px 24px rgba(4, 43, 29, 0.2);
+  transition: all var(--transition-smooth);
+}
+
+.sticky-floating-nav.scrolled {
+  background: rgba(4, 43, 29, 0.98);
+  padding: 2px 0;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+  border-bottom-color: rgba(69, 184, 117, 0.4);
+}
+
+.sticky-nav-brand {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.92rem;
+  letter-spacing: -0.2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sticky-nav-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.sticky-nav-text {
+  color: var(--mint-green);
+  font-size: 0.85rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Nav Links & Dropdowns */
+.sticky-floating-nav .navbar-nav .nav-link {
+  color: #EDF6EF !important;
+  font-size: 0.86rem;
+  font-weight: 600;
+  padding: 9px 12px !important;
+  border-radius: 6px;
+  position: relative;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+  transition: all var(--transition-fast);
+}
+
+.sticky-floating-nav .navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 12px;
+  right: 12px;
+  height: 2px;
+  background: var(--fresh-green);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sticky-floating-nav .navbar-nav .nav-link:hover::after,
+.sticky-floating-nav .navbar-nav .nav-link.active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.sticky-floating-nav .navbar-nav .nav-link:hover,
+.sticky-floating-nav .navbar-nav .nav-link.active {
+  color: var(--fresh-green) !important;
+}
+
+/* Dropdown Menu 3D depth */
+.dropdown-menu {
+  background: rgba(7, 61, 39, 0.98);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(69, 184, 117, 0.3);
+  box-shadow: 0 16px 36px rgba(4, 43, 29, 0.4);
+  border-radius: 12px;
+  padding: 8px;
+  margin-top: 6px !important;
+  animation: dropdownFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dropdown-item {
+  color: var(--light-green);
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 9px 16px;
+  border-radius: 8px;
+  transition: all var(--transition-fast);
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: rgba(69, 184, 117, 0.18);
+  color: var(--white);
+  transform: translateX(4px);
+}
+
+/* Mobile Toggler */
+.sticky-floating-nav .navbar-toggler {
+  border: 1px solid rgba(69, 184, 117, 0.4);
+  color: var(--white);
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.sticky-floating-nav .navbar-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(69, 184, 117, 0.35);
+}
+
+/* ==========================================================================
+   Section Components & Typography
+   ========================================================================== */
+.section-pad {
+  padding: 90px 0;
+  position: relative;
+}
+
+.section-pad-sm {
+  padding: 60px 0;
+}
+
+.section-dark {
+  background-color: var(--deep-green);
+  color: var(--light-green);
+}
+
+.section-dark h1,
+.section-dark h2,
+.section-dark h3,
+.section-dark h4 {
+  color: var(--white);
+}
+
+.section-light {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+.section-mint {
+  background-color: var(--light-green);
+  color: var(--text-main);
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(16, 90, 52, 0.08);
+  color: var(--primary-green);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 30px;
+  border: 1px solid rgba(16, 90, 52, 0.15);
+  margin-bottom: 16px;
+}
+
+.section-dark .section-tag {
+  background: rgba(69, 184, 117, 0.15);
+  color: var(--fresh-green);
+  border-color: rgba(69, 184, 117, 0.3);
+}
+
+.display-title {
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.display-title .text-highlight {
+  color: var(--fresh-green);
+  position: relative;
+  display: inline-block;
+}
+
+.lead-text {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.section-dark .lead-text {
+  color: var(--mint-green);
+}
+
+/* Buttons */
+.btn-primary-3d {
+  background: linear-gradient(135deg, var(--fresh-green), var(--primary-green));
+  color: var(--white);
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 10px 25px rgba(16, 90, 52, 0.35);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all var(--transition-smooth);
+}
+
+.btn-primary-3d:hover {
+  background: linear-gradient(135deg, #56C886, var(--accent-green));
+  color: var(--white);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(16, 90, 52, 0.45);
+}
+
+.btn-outline-3d {
+  background: transparent;
+  color: var(--white);
+  font-weight: 700;
+  padding: 13px 28px;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all var(--transition-smooth);
+}
+
+.btn-outline-3d:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--white);
+  border-color: var(--fresh-green);
+  transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   SECTION 01: Hero 3D Parallax Experience
+   ========================================================================== */
+.hero-3d-experience {
+  min-height: 90vh;
+  position: relative;
+  background: radial-gradient(circle at 75% 30%, #073D27 0%, var(--deep-green) 100%);
+  display: flex;
+  align-items: center;
+  padding: 60px 0 100px;
+  perspective: 1200px;
+  overflow: hidden;
+}
+
+.hero-3d-grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('../img/backgrounds/pattern-3d-grid.svg');
+  background-size: 40px 40px;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.hero-perspective-wrap {
+  transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+}
+
+.hero-badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(69, 184, 117, 0.18);
+  border: 1px solid rgba(69, 184, 117, 0.4);
+  color: var(--fresh-green);
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.hero-main-title {
+  color: var(--white);
+  font-size: clamp(2.4rem, 5.5vw, 4.4rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1.2px;
+  margin-bottom: 22px;
+}
+
+.hero-school-name {
+  color: var(--fresh-green);
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin-bottom: 18px;
+}
+
+.hero-desc {
+  color: var(--mint-green);
+  font-size: 1.15rem;
+  line-height: 1.7;
+  max-width: 560px;
+  margin-bottom: 34px;
+}
+
+/* 3D Visual Scene Composition */
+.hero-scene-3d {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-card-base {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-3d);
+  border: 1px solid rgba(69, 184, 117, 0.35);
+  background: var(--dark-green);
+  transform: translateZ(20px);
+}
+
+.hero-floating-pill {
+  position: absolute;
+  background: rgba(4, 43, 29, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(69, 184, 117, 0.4);
+  padding: 12px 20px;
+  border-radius: 50px;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  transform: translateZ(60px);
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+.hero-pill-1 {
+  top: 10%;
+  left: -5%;
+}
+
+.hero-pill-2 {
+  bottom: 12%;
+  right: -5%;
+  animation-delay: -2.5s;
+}
+
+.scroll-indicator-wrap {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--mint-green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+.scroll-mouse {
+  width: 24px;
+  height: 38px;
+  border: 2px solid var(--fresh-green);
+  border-radius: 14px;
+  position: relative;
+}
+
+.scroll-wheel {
+  width: 4px;
+  height: 8px;
+  background: var(--fresh-green);
+  border-radius: 2px;
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scrollWheel 2s infinite;
+}
+
+/* ==========================================================================
+   SECTION 02: Interactive School Introduction
+   ========================================================================== */
+.intro-layered-composition {
+  position: relative;
+  perspective: 1000px;
+}
+
+.intro-img-main {
+  border-radius: 20px;
+  box-shadow: var(--shadow-3d);
+  border: 1px solid var(--border-accent);
+  transition: transform var(--transition-smooth);
+}
+
+.intro-badge-overlay {
+  position: absolute;
+  bottom: -25px;
+  right: 20px;
+  background: var(--deep-green);
+  border: 2px solid var(--fresh-green);
+  padding: 18px 24px;
+  border-radius: 16px;
+  color: var(--white);
+  box-shadow: var(--shadow-lg);
+  max-width: 240px;
+}
+
+.check-highlights-list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 32px;
+}
+
+.check-highlights-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: var(--deep-green);
+}
+
+.check-icon-circle {
+  width: 28px;
+  height: 28px;
+  background: var(--mint-green);
+  color: var(--primary-green);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   SECTION 03: School Information Sequential Reveal
+   ========================================================================== */
+.info-reveal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.info-reveal-card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.info-reveal-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: var(--accent-green);
+  transition: width var(--transition-fast);
+}
+
+.info-reveal-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--fresh-green);
+}
+
+.info-reveal-card:hover::before {
+  width: 8px;
+  background: var(--fresh-green);
+}
+
+.info-card-icon {
+  width: 54px;
+  height: 54px;
+  background: var(--light-green);
+  color: var(--primary-green);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+  transition: all var(--transition-fast);
+}
+
+.info-reveal-card:hover .info-card-icon {
+  background: var(--primary-green);
+  color: var(--white);
+  transform: scale(1.1) rotate(5deg);
+}
+
+.info-card-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.info-card-value {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--deep-green);
+  line-height: 1.35;
+  margin: 0;
+}
+
+/* ==========================================================================
+   SECTION 04: Educational Philosophy (Knowledge, Values, Growth)
+   ========================================================================== */
+.philosophy-card-3d {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 40px 32px;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-smooth);
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.philosophy-card-3d:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--fresh-green);
+}
+
+.philosophy-num {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: rgba(16, 90, 52, 0.15);
+  line-height: 1;
+  margin-bottom: 12px;
+  transition: color var(--transition-fast);
+}
+
+.philosophy-card-3d:hover .philosophy-num {
+  color: var(--fresh-green);
+}
+
+.philosophy-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 14px;
+  position: relative;
+  display: inline-block;
+}
+
+.philosophy-title::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--accent-green);
+  margin-top: 8px;
+  transition: width var(--transition-smooth);
+}
+
+.philosophy-card-3d:hover .philosophy-title::after {
+  width: 100%;
+  background: var(--fresh-green);
+}
+
+/* ==========================================================================
+   SECTION 05: Principal's Desk Experience
+   ========================================================================== */
+.principal-profile-box {
+  background: var(--deep-green);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-3d);
+  border: 1px solid rgba(69, 184, 117, 0.35);
+  position: relative;
+}
+
+.principal-portrait-wrap {
+  position: relative;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.principal-portrait-img {
+  border-radius: 18px;
+  border: 2px solid var(--fresh-green);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+  max-height: 480px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.principal-quote-wrap {
+  padding: 50px 40px;
+}
+
+.quote-mark-icon {
+  font-size: 3.5rem;
+  color: var(--fresh-green);
+  opacity: 0.4;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.principal-quote-text {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--white);
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.principal-meta-name {
+  color: var(--fresh-green);
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.principal-meta-title {
+  color: var(--mint-green);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+/* ==========================================================================
+   SECTION 06: Academic Journey (Horizontal Experience)
+   ========================================================================== */
+.horizontal-scroll-container {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  gap: 24px;
+  padding: 30px 10px 40px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--fresh-green) var(--light-green);
+}
+
+.horizontal-scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-track {
+  background: var(--light-green);
+  border-radius: 4px;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar-thumb {
+  background: var(--fresh-green);
+  border-radius: 4px;
+}
+
+.academic-journey-card {
+  flex: 0 0 340px;
+  scroll-snap-align: start;
+  background: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+}
+
+.academic-journey-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--fresh-green);
+}
+
+.journey-card-img {
+  height: 190px;
+  width: 100%;
+  object-fit: cover;
+  background: var(--deep-green);
+}
+
+.journey-card-body {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.journey-card-num {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--accent-green);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.journey-card-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: var(--deep-green);
+}
+
+/* ==========================================================================
+   SECTION 07: Campus Life 3D Experience (6 visual sections)
+   ========================================================================== */
+.campus-life-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.campus-life-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 360px;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-smooth);
+}
+
+.campus-life-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.campus-life-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(4, 43, 29, 0.1) 0%, rgba(4, 43, 29, 0.95) 100%);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: background var(--transition-smooth);
+}
+
+.campus-life-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-3d);
+}
+
+.campus-life-card:hover img {
+  transform: scale(1.08);
+}
+
+.campus-life-card:hover .campus-life-overlay {
+  background: linear-gradient(180deg, rgba(4, 43, 29, 0.25) 0%, rgba(7, 61, 39, 0.98) 100%);
+}
+
+.campus-card-category {
+  color: var(--fresh-green);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+}
+
+.campus-card-title {
+  color: var(--white);
+  font-size: 1.45rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.campus-card-link {
+  color: var(--mint-green);
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.campus-life-card:hover .campus-card-link {
+  color: var(--white);
+  transform: translateX(4px);
+}
+
+/* ==========================================================================
+   SECTION 08: Interactive Learning Timeline (6 Stages)
+   ========================================================================== */
+.timeline-stages-wrapper {
+  position: relative;
+  padding: 40px 0;
+}
+
+.timeline-progress-track {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  right: 5%;
+  height: 4px;
+  background: rgba(69, 184, 117, 0.25);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.timeline-progress-bar-fill {
+  height: 100%;
+  width: 60%;
+  background: var(--fresh-green);
+  transition: width 0.5s ease;
+}
+
+.timeline-milestones-flex {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  gap: 16px;
+}
+
+.timeline-node-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.timeline-node-circle {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: var(--deep-green);
+  border: 4px solid var(--fresh-green);
+  color: var(--white);
+  font-weight: 800;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(69, 184, 117, 0.4);
+  transition: all var(--transition-fast);
+  margin-bottom: 16px;
+}
+
+.timeline-node-item:hover .timeline-node-circle {
+  background: var(--fresh-green);
+  color: var(--deep-green);
+  transform: scale(1.15);
+}
+
+.timeline-node-title {
+  color: var(--white);
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.timeline-node-desc {
+  color: var(--mint-green);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   SECTION 09: Student Development (Split-Content)
+   ========================================================================== */
+.skill-pill-card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 22px 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-smooth);
+}
+
+.skill-pill-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--fresh-green);
+  box-shadow: var(--shadow-md);
+}
+
+.skill-pill-icon {
+  width: 46px;
+  height: 46px;
+  background: var(--light-green);
+  color: var(--primary-green);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  transition: all var(--transition-fast);
+}
+
+.skill-pill-card:hover .skill-pill-icon {
+  background: var(--primary-green);
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+/* ==========================================================================
+   SECTION 10: School Activities Horizontal Showcase
+   ========================================================================== */
+.activities-showcase-box {
+  position: relative;
+  padding: 20px 0;
+}
+
+.activities-nav-arrows {
+  display: flex;
+  gap: 12px;
+}
+
+.activity-nav-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--fresh-green);
+  background: transparent;
+  color: var(--fresh-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.activity-nav-btn:hover {
+  background: var(--fresh-green);
+  color: var(--deep-green);
+}
+
+/* ==========================================================================
+   SECTION 11: Notices & Updates
+   ========================================================================== */
+.notice-filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.notice-filter-btn {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  color: var(--text-main);
+  padding: 7px 16px;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.notice-filter-btn.active,
+.notice-filter-btn:hover {
+  background: var(--primary-green);
+  color: var(--white);
+  border-color: var(--primary-green);
+}
+
+.notice-search-wrap {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.notice-search-input {
+  width: 100%;
+  padding: 14px 20px 14px 48px;
+  border-radius: 30px;
+  border: 1px solid var(--border-light);
+  background: var(--white);
+  font-size: 0.95rem;
+  outline: none;
+  transition: all var(--transition-fast);
+}
+
+.notice-search-input:focus {
+  border-color: var(--accent-green);
+  box-shadow: 0 0 0 4px rgba(69, 184, 117, 0.15);
+}
+
+.notice-search-icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+}
+
+.notice-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.notice-item-card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 14px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-smooth);
+}
+
+.notice-item-card:hover {
+  border-color: var(--fresh-green);
+  transform: translateX(6px);
+  box-shadow: var(--shadow-md);
+}
+
+.notice-item-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.notice-date-box {
+  background: var(--light-green);
+  color: var(--primary-green);
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+  min-width: 85px;
+}
+
+.notice-tag-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 12px;
+  background: rgba(16, 90, 52, 0.08);
+  color: var(--accent-green);
+  margin-bottom: 4px;
+}
+
+.notice-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--deep-green);
+}
+
+/* ==========================================================================
+   SECTION 12: Examination Results
+   ========================================================================== */
+.table-green-custom {
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+  width: 100%;
+}
+
+.table-green-custom thead {
+  background: var(--primary-green);
+  color: var(--white);
+}
+
+.table-green-custom thead th {
+  padding: 16px 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  border: none;
+}
+
+.table-green-custom tbody td {
+  padding: 16px 20px;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-main);
+  font-size: 0.92rem;
+}
+
+.table-green-custom tbody tr:hover {
+  background-color: var(--light-green);
+}
+
+/* ==========================================================================
+   SECTION 13: Interactive Photo Gallery & Lightbox
+   ========================================================================== */
+.gallery-filter-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.gallery-filter-pill {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.gallery-filter-pill.active,
+.gallery-filter-pill:hover {
+  background: var(--accent-green);
+  color: var(--white);
+  border-color: var(--accent-green);
+  box-shadow: 0 4px 14px rgba(22, 134, 74, 0.3);
+}
+
+.gallery-masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 22px;
+}
+
+.gallery-card-item {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  height: 250px;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-smooth);
+}
+
+.gallery-card-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.gallery-card-hover {
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 43, 29, 0.82);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  padding: 20px;
+  text-align: center;
+  transition: opacity var(--transition-fast);
+}
+
+.gallery-card-item:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.gallery-card-item:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-card-item:hover .gallery-card-hover {
+  opacity: 1;
+}
+
+.gallery-hover-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--fresh-green);
+  color: var(--deep-green);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Lightbox Modal */
+.modal-content-green {
+  background: var(--deep-green);
+  border: 1px solid var(--fresh-green);
+  border-radius: 20px;
+  color: var(--white);
+}
+
+.modal-content-green .btn-close {
+  filter: invert(1);
+}
+
+/* ==========================================================================
+   SECTION 14: Admission Experience (5-Stage Journey)
+   ========================================================================== */
+.admission-roadmap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+  margin: 40px 0;
+}
+
+.roadmap-step-card {
+  flex: 1 1 200px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(69, 184, 117, 0.25);
+  border-radius: 18px;
+  padding: 28px 20px;
+  text-align: center;
+  position: relative;
+  transition: all var(--transition-smooth);
+}
+
+.roadmap-step-card:hover {
+  background: rgba(69, 184, 117, 0.14);
+  transform: translateY(-6px);
+  border-color: var(--fresh-green);
+}
+
+.roadmap-step-num {
+  width: 46px;
+  height: 46px;
+  background: var(--fresh-green);
+  color: var(--deep-green);
+  font-weight: 900;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  box-shadow: 0 4px 12px rgba(69, 184, 117, 0.4);
+}
+
+.roadmap-step-title {
+  color: var(--white);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.roadmap-step-desc {
+  color: var(--mint-green);
+  font-size: 0.82rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ==========================================================================
+   SECTION 15: Contact Us & Map Locator
+   ========================================================================== */
+.contact-card-box {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 36px;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  height: 100%;
+}
+
+.form-floating-custom {
+  margin-bottom: 20px;
+}
+
+.form-floating-custom .form-control {
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+  padding: 14px 18px;
+}
+
+.form-floating-custom .form-control:focus {
+  border-color: var(--accent-green);
+  box-shadow: 0 0 0 4px rgba(22, 134, 74, 0.15);
+}
+
+/* ==========================================================================
+   SECTION 16 & 17: Closing Visual & Premium Deep-Green Footer
+   ========================================================================== */
+.closing-experience-banner {
+  background: linear-gradient(135deg, var(--deep-green) 0%, var(--dark-green) 100%);
+  border-radius: 30px;
+  padding: 80px 40px;
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-3d);
+  border: 1px solid rgba(69, 184, 117, 0.3);
+}
+
+.closing-banner-grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: url('../img/backgrounds/pattern-3d-grid.svg');
+  background-size: 40px 40px;
+  opacity: 0.2;
+}
+
+.site-footer {
+  background-color: var(--deep-green);
+  color: var(--mint-green);
+  padding-top: 80px;
+  border-top: 2px solid rgba(69, 184, 117, 0.25);
+  position: relative;
+}
+
+.footer-heading {
+  color: var(--white);
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: 22px;
+  position: relative;
+}
+
+.footer-heading::after {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: var(--fresh-green);
+  margin-top: 6px;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links-list li {
+  margin-bottom: 12px;
+}
+
+.footer-links-list a {
+  color: var(--mint-green);
+  font-size: 0.92rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-links-list a:hover {
+  color: var(--fresh-green);
+  transform: translateX(4px);
+}
+
+.footer-bottom-bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px 0;
+  margin-top: 60px;
+  font-size: 0.85rem;
+  color: rgba(217, 239, 224, 0.7);
+}
+
+/* Back to Top Button */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--fresh-green);
+  color: var(--deep-green);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(4, 43, 29, 0.3);
+  z-index: 990;
+  opacity: 0;
+  pointer-events: none;
+  transition: all var(--transition-smooth);
+}
+
+.back-to-top-btn.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.back-to-top-btn:hover {
+  background: #56C886;
+  transform: translateY(-4px);
+}
+
+/* ==========================================================================
+   Inner Page Banners & Breadcrumbs
+   ========================================================================== */
+.inner-page-banner {
+  background: linear-gradient(135deg, var(--deep-green) 0%, var(--dark-green) 60%, var(--primary-green) 100%);
+  padding: 70px 0;
+  position: relative;
+  overflow: hidden;
+  color: var(--white);
+  border-bottom: 1px solid rgba(69, 184, 117, 0.3);
+}
+
+.inner-page-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../img/backgrounds/pattern-3d-grid.svg');
+  opacity: 0.25;
+}
+
+.inner-page-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.breadcrumb-custom {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.breadcrumb-custom a {
+  color: var(--mint-green);
+}
+
+.breadcrumb-custom a:hover {
+  color: var(--white);
+}
+
+.breadcrumb-custom .active {
+  color: var(--fresh-green);
+}

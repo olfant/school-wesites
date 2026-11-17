@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grpGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042B1D"/>
+      <stop offset="50%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#073D27"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#grpGrad)"/>
+  <!-- Multi-student group representation with diverse badges -->
+  <g transform="translate(100, 100)">
+    <!-- 5 student avatars in staggered depth -->
+    <circle cx="100" cy="180" r="32" fill="#D9EFE0"/>
+    <path d="M60,280 C60,225 80,215 100,215 C120,215 140,225 140,280 Z" fill="#B2DFCB"/>
+    
+    <circle cx="220" cy="150" r="34" fill="#EDF6EF"/>
+    <path d="M180,280 C180,210 200,195 220,195 C240,195 260,210 260,280 Z" fill="#EDF6EF"/>
+
+    <circle cx="340" cy="130" r="38" fill="#FFFFFF"/>
+    <path d="M295,280 C295,190 315,175 340,175 C365,175 385,190 385,280 Z" fill="#D9EFE0"/>
+
+    <circle cx="460" cy="150" r="34" fill="#EDF6EF"/>
+    <path d="M420,280 C420,210 440,195 460,195 C480,195 500,210 500,280 Z" fill="#EDF6EF"/>
+
+    <circle cx="560" cy="180" r="32" fill="#D9EFE0"/>
+    <path d="M520,280 C520,225 540,215 560,215 C580,215 600,225 600,280 Z" fill="#B2DFCB"/>
+  </g>
+  <!-- Floor Shadow in 3D -->
+  <polygon points="120,380 680,380 720,440 80,440" fill="#042B1D" stroke="#45B875" stroke-width="2"/>
+  <text x="400" y="470" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">EMPOWERED YOUTH & ALL-ROUND DEVELOPMENT</text>
+</svg>

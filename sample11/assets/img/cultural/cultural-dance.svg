@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cultGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#073D27"/>
+      <stop offset="50%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#042B1D"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#cultGrad)"/>
+  <!-- Cultural Traditional Dance Performance Silhouette -->
+  <!-- Drum / Mandar Motif (Jharkhand Traditional Instrument) -->
+  <g transform="translate(140, 220)">
+    <ellipse cx="60" cy="50" rx="40" ry="25" fill="#45B875"/>
+    <path d="M20,50 L20,130 C20,150 100,150 100,130 L100,50 Z" fill="#105A34" stroke="#D9EFE0" stroke-width="3"/>
+    <line x1="20" y1="50" x2="100" y2="130" stroke="#EDF6EF" stroke-width="2"/>
+    <line x1="100" y1="50" x2="20" y2="130" stroke="#EDF6EF" stroke-width="2"/>
+  </g>
+  <!-- Tribal Folk Dancer Silhouette -->
+  <g transform="translate(360, 120)">
+    <!-- Headpiece / Feather -->
+    <path d="M40,30 Q30,-10 10,-30 Q40,-15 50,20" fill="#45B875"/>
+    <circle cx="40" cy="40" r="24" fill="#FFFFFF"/>
+    <!-- Dance Posture -->
+    <path d="M20,65 L60,65 L75,140 L5,140 Z" fill="#EDF6EF"/>
+    <!-- Flowing Skirt / Dhoti -->
+    <polygon points="5,140 75,140 105,250 -25,250" fill="#D9EFE0"/>
+    <!-- Outstretched Arms -->
+    <line x1="20" y1="75" x2="-20" y2="50" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+    <line x1="60" y1="75" x2="100" y2="50" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <!-- Decorative Mandala Floral Rangoli Base -->
+  <circle cx="400" cy="410" r="160" fill="none" stroke="#45B875" stroke-dasharray="10,6" stroke-width="2"/>
+  <circle cx="400" cy="410" r="120" fill="none" stroke="#D9EFE0" stroke-dasharray="6,4" stroke-width="1.5"/>
+  <text x="400" y="450" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">TRADITIONAL FOLK & CULTURAL DANCE</text>
+  <text x="400" y="475" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="12" font-weight="600" fill="#D9EFE0" text-anchor="middle">Celebrating Jharkhand Heritage • Music, Drama & Festivals</text>
+</svg>

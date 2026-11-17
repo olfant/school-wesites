@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="actGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#073D27"/>
+      <stop offset="50%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#042B1D"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#actGrad)"/>
+  <!-- Vocational Tools & Practical Learning 3D Composition -->
+  <g transform="translate(250, 100)">
+    <!-- Gear 1 -->
+    <circle cx="150" cy="120" r="60" fill="none" stroke="#45B875" stroke-width="18" stroke-dasharray="14,10"/>
+    <circle cx="150" cy="120" r="30" fill="#EDF6EF"/>
+    <!-- Gear 2 -->
+    <circle cx="230" cy="190" r="45" fill="none" stroke="#D9EFE0" stroke-width="14" stroke-dasharray="10,8"/>
+    <circle cx="230" cy="190" r="20" fill="#105A34"/>
+    <!-- Wrench / Screwdriver Silhouette -->
+    <rect x="70" y="180" width="12" height="90" rx="3" transform="rotate(-40 70 180)" fill="#45B875"/>
+    <polygon points="65,170 85,170 80,150 70,150" transform="rotate(-40 70 180)" fill="#FFFFFF"/>
+  </g>
+  <text x="400" y="440" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">VOCATIONAL & HANDS-ON PRACTICAL SKILLS</text>
+  <text x="400" y="468" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="12" font-weight="600" fill="#D9EFE0" text-anchor="middle">Electronics • Agriculture • IT Skills • Career Readiness</text>
+</svg>

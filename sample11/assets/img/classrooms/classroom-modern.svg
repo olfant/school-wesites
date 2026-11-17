@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="crGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EDF6EF"/>
+      <stop offset="100%" stop-color="#D9EFE0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#crGrad)"/>
+  <!-- Smart Board -->
+  <rect x="220" y="60" width="360" height="180" rx="8" fill="#042B1D" stroke="#16864A" stroke-width="6"/>
+  <rect x="235" y="75" width="330" height="150" fill="#073D27"/>
+  <text x="400" y="145" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#45B875" text-anchor="middle">DIGITAL SMART CLASSROOM</text>
+  <text x="400" y="175" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="12" font-weight="500" fill="#D9EFE0" text-anchor="middle">Interactive Pedagogical Tools • ICT Enabled</text>
+  <!-- Teacher Podium -->
+  <polygon points="120,380 180,380 170,260 130,260" fill="#105A34"/>
+  <polygon points="110,260 190,260 180,245 120,245" fill="#16864A"/>
+  <!-- Student Desks in Perspective -->
+  <g fill="#105A34" stroke="#042B1D" stroke-width="2">
+    <!-- Row 1 -->
+    <polygon points="200,320 340,320 320,350 180,350" fill="#16864A"/>
+    <polygon points="460,320 600,320 580,350 440,350" fill="#16864A"/>
+    <!-- Row 2 -->
+    <polygon points="160,380 320,380 300,420 140,420" fill="#105A34"/>
+    <polygon points="480,380 640,380 620,420 460,420" fill="#105A34"/>
+    <!-- Row 3 -->
+    <polygon points="120,450 300,450 280,490 100,490" fill="#073D27"/>
+    <polygon points="500,450 680,450 660,490 480,490" fill="#073D27"/>
+  </g>
+  <text x="400" y="480" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#042B1D" text-anchor="middle">LEARNER-CENTRIC ENVIRONMENT</text>
+</svg>

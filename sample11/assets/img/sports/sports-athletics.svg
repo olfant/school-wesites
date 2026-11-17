@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sportGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#073D27"/>
+      <stop offset="60%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#16864A"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#sportGrad)"/>
+  <!-- Athletic Running Track Curve in 3D -->
+  <ellipse cx="400" cy="400" rx="420" ry="240" fill="none" stroke="#D9EFE0" stroke-width="4"/>
+  <ellipse cx="400" cy="400" rx="360" ry="200" fill="none" stroke="#D9EFE0" stroke-width="4"/>
+  <ellipse cx="400" cy="400" rx="300" ry="160" fill="none" stroke="#D9EFE0" stroke-width="4"/>
+  <!-- Sprinter Runner Silhouette -->
+  <g transform="translate(360, 140)">
+    <!-- Head -->
+    <circle cx="60" cy="30" r="18" fill="#FFFFFF"/>
+    <!-- Torso leaning forward -->
+    <line x1="60" y1="45" x2="40" y2="110" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round"/>
+    <!-- Arms running -->
+    <line x1="55" y1="65" x2="85" y2="85" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+    <line x1="55" y1="65" x2="20" y2="50" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+    <!-- Legs in stride -->
+    <line x1="40" y1="110" x2="80" y2="140" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+    <line x1="80" y1="140" x2="95" y2="190" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+    <line x1="40" y1="110" x2="0" y2="150" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+    <line x1="0" y1="150" x2="-20" y2="140" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <text x="400" y="445" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">ATHLETICS & TRACK EVENTS</text>
+  <text x="400" y="470" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="12" font-weight="600" fill="#D9EFE0" text-anchor="middle">Speed • Endurance • Sportsmanship • Annual District Meets</text>
+</svg>

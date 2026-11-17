@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="aerialGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042B1D"/>
+      <stop offset="50%" stop-color="#073D27"/>
+      <stop offset="100%" stop-color="#16864A"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#aerialGrad)"/>
+  <!-- Aerial layout blocks -->
+  <polygon points="150,140 450,110 520,240 220,270" fill="#EDF6EF" opacity="0.9"/>
+  <polygon points="450,110 650,90 700,210 520,240" fill="#D9EFE0" opacity="0.95"/>
+  <polygon points="220,270 520,240 500,380 200,410" fill="#B2DFCB"/>
+  <!-- Green Courtyard & Sports Field -->
+  <ellipse cx="600" cy="330" rx="140" ry="80" fill="#105A34" stroke="#45B875" stroke-width="3"/>
+  <circle cx="600" cy="330" r="30" fill="none" stroke="#FFFFFF" stroke-dasharray="4,4"/>
+  <!-- Tree canopies -->
+  <circle cx="100" cy="200" r="25" fill="#45B875"/>
+  <circle cx="120" cy="240" r="30" fill="#16864A"/>
+  <circle cx="90" cy="280" r="25" fill="#105A34"/>
+  <circle cx="720" cy="120" r="30" fill="#45B875"/>
+  <text x="400" y="465" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">AERIAL MASTERPLAN VIEW</text>
+</svg>

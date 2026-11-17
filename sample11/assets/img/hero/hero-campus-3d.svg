@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#042B1D"/>
+      <stop offset="50%" stop-color="#073D27"/>
+      <stop offset="100%" stop-color="#105A34"/>
+    </linearGradient>
+    <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#105A34"/>
+      <stop offset="50%" stop-color="#16864A"/>
+      <stop offset="100%" stop-color="#073D27"/>
+    </linearGradient>
+    <linearGradient id="bldgGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EDF6EF"/>
+      <stop offset="70%" stop-color="#D9EFE0"/>
+      <stop offset="100%" stop-color="#B2DFCB"/>
+    </linearGradient>
+    <linearGradient id="bldgGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#105A34"/>
+      <stop offset="100%" stop-color="#073D27"/>
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#45B875"/>
+      <stop offset="100%" stop-color="#16864A"/>
+    </linearGradient>
+    <filter id="shadow3d" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="8" dy="16" stdDeviation="12" flood-color="#042B1D" flood-opacity="0.5"/>
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Sky Background with 3D Grid Overlay -->
+  <rect width="1200" height="800" fill="url(#skyGrad)"/>
+  
+  <!-- Perspective Sun Glow -->
+  <circle cx="950" cy="180" r="140" fill="#45B875" opacity="0.18" filter="url(#softGlow)"/>
+  <circle cx="950" cy="180" r="60" fill="#D9EFE0" opacity="0.4"/>
+
+  <!-- Distant Hills & Trees (Jharkhand Landscape) -->
+  <path d="M0,450 Q300,380 600,430 T1200,410 L1200,800 L0,800 Z" fill="#073D27" opacity="0.6"/>
+  <path d="M0,490 Q400,440 800,480 T1200,460 L1200,800 L0,800 Z" fill="#105A34" opacity="0.8"/>
+
+  <!-- Ground / Campus Courtyard Plane in 3D Perspective -->
+  <polygon points="100,560 1100,560 1200,800 0,800" fill="url(#groundGrad)"/>
+
+  <!-- 3D Grid Floor Lines -->
+  <line x1="200" y1="560" x2="100" y2="800" stroke="#45B875" stroke-width="1.5" opacity="0.25"/>
+  <line x1="400" y1="560" x2="350" y2="800" stroke="#45B875" stroke-width="1.5" opacity="0.25"/>
+  <line x1="600" y1="560" x2="600" y2="800" stroke="#45B875" stroke-width="1.5" opacity="0.3"/>
+  <line x1="800" y1="560" x2="850" y2="800" stroke="#45B875" stroke-width="1.5" opacity="0.25"/>
+  <line x1="1000" y1="560" x2="1100" y2="800" stroke="#45B875" stroke-width="1.5" opacity="0.25"/>
+  <line x1="50" y1="620" x2="1150" y2="620" stroke="#45B875" stroke-width="1.5" opacity="0.2"/>
+  <line x1="20" y1="700" x2="1180" y2="700" stroke="#45B875" stroke-width="1.5" opacity="0.2"/>
+
+  <!-- Central Academic Complex (3D Perspective Block) -->
+  <!-- Left Wing -->
+  <polygon points="180,380 340,340 340,540 180,570" fill="url(#bldgGrad2)" filter="url(#shadow3d)"/>
+  <polygon points="340,340 480,360 480,550 340,540" fill="url(#bldgGrad1)"/>
+  <!-- Windows Left Wing -->
+  <rect x="360" y="375" width="28" height="35" rx="3" fill="#105A34"/>
+  <rect x="405" y="380" width="28" height="35" rx="3" fill="#105A34"/>
+  <rect x="360" y="430" width="28" height="35" rx="3" fill="#105A34"/>
+  <rect x="405" y="435" width="28" height="35" rx="3" fill="#105A34"/>
+  <rect x="360" y="485" width="28" height="35" rx="3" fill="#105A34"/>
+  <rect x="405" y="490" width="28" height="35" rx="3" fill="#105A34"/>
+
+  <!-- Main School Center Tower -->
+  <polygon points="460,260 740,260 740,540 460,540" fill="url(#bldgGrad1)" filter="url(#shadow3d)"/>
+  <polygon points="440,280 460,260 460,540 440,550" fill="#B2DFCB"/>
+  <!-- Grand Portico & Columns -->
+  <polygon points="430,260 770,260 750,230 450,230" fill="#042B1D"/>
+  <rect x="475" y="275" width="250" height="30" rx="4" fill="#105A34"/>
+  <text x="600" y="296" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">CM SCHOOL OF EXCELLENCE</text>
+  
+  <!-- Clock Tower on Central Block -->
+  <polygon points="560,180 640,180 650,230 550,230" fill="#073D27"/>
+  <circle cx="600" cy="205" r="16" fill="#EDF6EF" stroke="#45B875" stroke-width="2"/>
+  <line x1="600" y1="205" x2="600" y2="195" stroke="#042B1D" stroke-width="2"/>
+  <line x1="600" y1="205" x2="608" y2="205" stroke="#042B1D" stroke-width="2"/>
+
+  <!-- Flagpole with Tricolor at the peak -->
+  <line x1="600" y1="180" x2="600" y2="110" stroke="#D9EFE0" stroke-width="3"/>
+  <polygon points="600,110 645,122 600,135" fill="#FF9933"/>
+  <rect x="600" y="122" width="45" height="6" fill="#FFFFFF"/>
+  <circle cx="622" cy="125" r="2.5" fill="#000080"/>
+  <polygon points="600,128 645,140 600,140" fill="#138808"/>
+
+  <!-- Pillars & Entrance Steps -->
+  <rect x="495" y="320" width="16" height="210" fill="#105A34"/>
+  <rect x="545" y="320" width="16" height="210" fill="#105A34"/>
+  <rect x="640" y="320" width="16" height="210" fill="#105A34"/>
+  <rect x="690" y="320" width="16" height="210" fill="#105A34"/>
+  <!-- Grand Arched Entrance -->
+  <path d="M575,530 L575,410 Q600,390 625,410 L625,530 Z" fill="#042B1D"/>
+  <polygon points="420,530 780,530 800,560 400,560" fill="#16864A"/>
+
+  <!-- Right Wing (Science & Vocational Lab Block) -->
+  <polygon points="740,360 880,340 880,540 740,550" fill="url(#bldgGrad1)" filter="url(#shadow3d)"/>
+  <polygon points="880,340 1020,380 1020,570 880,540" fill="url(#bldgGrad2)"/>
+  <!-- Windows Right Wing -->
+  <rect x="765" y="380" width="28" height="35" rx="3" fill="#105A34"/>
+  <rect x="815" y="375" width="28" height="35" rx="3" fill="#105A34"/>
+  <rect x="765" y="435" width="28" height="35" rx="3" fill="#105A34"/>
+  <rect x="815" y="430" width="28" height="35" rx="3" fill="#105A34"/>
+  <rect x="765" y="490" width="28" height="35" rx="3" fill="#105A34"/>
+  <rect x="815" y="485" width="28" height="35" rx="3" fill="#105A34"/>
+
+  <!-- Modern Green Solar Canopy on Roof -->
+  <polygon points="190,370 330,335 330,345 190,380" fill="#45B875"/>
+  <polygon points="890,335 1010,370 1010,380 890,345" fill="#45B875"/>
+
+  <!-- Floating 3D Badge 1: Quality Education -->
+  <g transform="translate(120, 220)" filter="url(#shadow3d)">
+    <rect width="210" height="70" rx="14" fill="#042B1D" stroke="#45B875" stroke-width="2"/>
+    <circle cx="38" cy="35" r="22" fill="#105A34"/>
+    <path d="M28,35 L35,42 L48,27" stroke="#45B875" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <text x="72" y="31" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="13" font-weight="800" fill="#FFFFFF">GOVT. ACCREDITED</text>
+    <text x="72" y="50" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="11" font-weight="600" fill="#D9EFE0">+2 Higher Secondary</text>
+  </g>
+
+  <!-- Floating 3D Badge 2: U-DISE Code -->
+  <g transform="translate(860, 210)" filter="url(#shadow3d)">
+    <rect width="220" height="70" rx="14" fill="#042B1D" stroke="#45B875" stroke-width="2"/>
+    <circle cx="38" cy="35" r="22" fill="#16864A"/>
+    <path d="M30,38 L38,30 L46,38" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <text x="72" y="31" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">U-DISE VERIFIED</text>
+    <text x="72" y="51" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#45B875">20180231602</text>
+  </g>
+
+  <!-- Foreground Landscaping: Palm & Sal Trees, Flower Beds -->
+  <circle cx="90" cy="550" r="35" fill="#073D27"/>
+  <circle cx="110" cy="530" r="30" fill="#105A34"/>
+  <rect x="98" y="560" width="8" height="50" fill="#042B1D"/>
+
+  <circle cx="1110" cy="550" r="35" fill="#073D27"/>
+  <circle cx="1090" cy="530" r="30" fill="#105A34"/>
+  <rect x="1098" y="560" width="8" height="50" fill="#042B1D"/>
+
+  <!-- Paved Pathway in 3D -->
+  <polygon points="560,560 640,560 760,800 440,800" fill="#D9EFE0" opacity="0.35"/>
+  <line x1="600" y1="560" x2="600" y2="800" stroke="#45B875" stroke-width="2" stroke-dasharray="12,12"/>
+</svg>

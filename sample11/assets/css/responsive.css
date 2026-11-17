@@ -1,0 +1,258 @@
+/* ==========================================================================
+   CM SOE UPG GOVT+2 SCHOOL VNIKETAN HALDIPOKHAR
+   RESPONSIVE DESIGN BREAKPOINTS
+   320px | 375px | 576px | 768px | 1024px | 1366px | 1440px
+   ========================================================================== */
+
+/* Large Desktops (1440px and up) */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* Standard Desktops (1200px to 1439px) */
+@media (max-width: 1366px) {
+  .hero-main-title {
+    font-size: 3.6rem;
+  }
+}
+
+/* Laptops & Tablets Landscape (992px to 1199px) */
+@media (max-width: 1199.98px) {
+  .display-title {
+    font-size: 2.6rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 8px 10px !important;
+    font-size: 0.85rem;
+  }
+
+  .hero-floating-pill {
+    padding: 8px 14px;
+    font-size: 0.78rem;
+  }
+}
+
+/* Tablets Portrait (768px to 991px) */
+@media (max-width: 991.98px) {
+  .hero-3d-experience {
+    min-height: auto;
+    padding: 60px 0 80px;
+  }
+
+  .hero-perspective-wrap {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-btn-group {
+    justify-content: center;
+  }
+
+  .principal-quote-wrap {
+    padding: 30px 20px;
+  }
+
+  .navbar-collapse {
+    background: rgba(4, 43, 29, 0.98);
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 14px;
+    border: 1px solid rgba(69, 184, 117, 0.3);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+  }
+
+  .nav-cta-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .timeline-progress-track {
+    display: none;
+  }
+
+  .timeline-milestones-flex {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .timeline-node-item {
+    flex-direction: row;
+    text-align: left;
+    gap: 18px;
+    align-items: flex-start;
+  }
+
+  .timeline-node-circle {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .admission-roadmap {
+    flex-direction: column;
+  }
+
+  /* Disable heavy 3D transforms on tablets for performance */
+  [data-tilt] {
+    transform: none !important;
+  }
+}
+
+/* Small Tablets & Large Phones (576px to 767px) */
+@media (max-width: 767.98px) {
+  .section-pad {
+    padding: 60px 0;
+  }
+
+  .display-title {
+    font-size: 2.1rem;
+  }
+
+  .hero-main-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-floating-pill {
+    display: none;
+  }
+
+  .horizontal-scroll-container {
+    flex-direction: column;
+    scroll-snap-type: none;
+    overflow-x: visible;
+  }
+
+  .academic-journey-card {
+    flex: 0 0 100%;
+  }
+
+  .notice-item-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .table-green-custom thead {
+    display: none;
+  }
+
+  .table-green-custom, 
+  .table-green-custom tbody, 
+  .table-green-custom tr, 
+  .table-green-custom td {
+    display: block;
+    width: 100%;
+  }
+
+  .table-green-custom tr {
+    margin-bottom: 16px;
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .table-green-custom td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    padding: 12px 16px;
+  }
+
+  .table-green-custom td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: var(--primary-green);
+    text-align: left;
+    margin-right: 12px;
+  }
+
+  .back-to-top-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+/* Mobile Phones (375px to 575px) */
+@media (max-width: 575.98px) {
+  .hero-main-title {
+    font-size: 2.1rem;
+  }
+
+  .header-brand-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .header-school-name {
+    font-size: 0.95rem;
+  }
+
+  .header-school-meta {
+    font-size: 0.72rem;
+  }
+
+  .brand-school-title {
+    font-size: 0.88rem;
+  }
+
+  .brand-school-sub {
+    font-size: 0.7rem;
+  }
+
+  .top-strip {
+    font-size: 0.74rem;
+  }
+
+  .btn-primary-3d,
+  .btn-outline-3d {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 20px;
+  }
+
+  .hero-btn-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .intro-badge-overlay {
+    position: static;
+    margin-top: 18px;
+    max-width: 100%;
+  }
+}
+
+/* Small Screens (320px to 374px) */
+@media (max-width: 374.98px) {
+  .hero-main-title {
+    font-size: 1.85rem;
+  }
+
+  .display-title {
+    font-size: 1.75rem;
+  }
+
+  .header-brand-logo,
+  .navbar-brand-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-school-name {
+    font-size: 0.88rem;
+  }
+}

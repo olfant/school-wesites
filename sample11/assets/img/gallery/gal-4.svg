@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <rect width="600" height="450" rx="12" fill="#042B1D"/>
+  <rect x="30" y="30" width="540" height="390" rx="8" fill="#073D27"/>
+  <g fill="#D9EFE0">
+    <circle cx="200" cy="180" r="22"/>
+    <rect x="188" y="206" width="24" height="60" rx="4"/>
+    <circle cx="300" cy="160" r="26"/>
+    <rect x="286" y="190" width="28" height="76" rx="4"/>
+    <circle cx="400" cy="180" r="22"/>
+    <rect x="388" y="206" width="24" height="60" rx="4"/>
+  </g>
+  <text x="300" y="390" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">STUDENT ASSEMBLY & DISCIPLINE</text>
+  <text x="300" y="410" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="12" font-weight="600" fill="#45B875" text-anchor="middle">Category: Students</text>
+</svg>
